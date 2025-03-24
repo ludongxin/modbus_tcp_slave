@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_MBX
+    bool "hpm_mbx ['riscv,hpm_mbx']"
+    select AWBUS
+    default n

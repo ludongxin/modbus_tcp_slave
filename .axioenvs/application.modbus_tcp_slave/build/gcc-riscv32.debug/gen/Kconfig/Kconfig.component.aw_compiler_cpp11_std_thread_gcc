@@ -1,0 +1,23 @@
+
+menuconfig AW_COMPILER_CPP11_STD_THREAD_GCC
+    bool "AWorks C++11 std thread for GCC"
+    libsafe 
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_CPLUSCPLUS
+    select RTK_OBJECT_CREATE_EN
+    select TLS_THREAD_KEY_SUPPORT
+    default n
+    help
+        Version: 0.1.0
+
+        Detail:help
+
+        AWorks C++11 GCC thread adapte.
+
+        Note: The use of `thread_local` is not supported at present.
+if AW_COMPILER_CPP11_STD_THREAD_GCC
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel_user_common/aw_compiler_cpp11_std_thread-gcc/Kconfig.opts"
+
+endif #AW_COMPILER_CPP11_STD_THREAD_GCC
+

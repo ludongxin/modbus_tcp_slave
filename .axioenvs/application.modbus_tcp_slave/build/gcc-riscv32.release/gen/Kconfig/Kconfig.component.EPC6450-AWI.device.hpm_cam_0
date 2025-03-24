@@ -1,0 +1,49 @@
+
+menuconfig DEV_CAM0
+    bool "cam0"
+    default n
+    visible if y
+    select DRV_HPM_CAM
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_97
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_7
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_3
+    select DEV_PIN_1_PIN_RES_8
+    select DEV_PIN_1_PIN_RES_9
+    select DEV_PIN_1_PIN_RES_0
+    select DEV_PIN_1_PIN_RES_4
+    select DEV_PIN_1_PIN_RES_1
+    select DEV_PIN_1_PIN_RES_2
+    select DEV_PIN_1_PIN_RES_11
+    select DEV_PIN_1_PIN_RES_10
+    select DEV_PIN_1_PIN_RES_6
+    select DEV_PIN_1_PIN_RES_5
+
+
+    help
+      DTS_device_prop:
+          name(unit): "hpm_cam" (0)
+          compatible: ['riscv,hpm-cam']
+          dts_path: /soc/camera@0xF1008000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\cam\riscv,hpm-cam.yaml
+
+
+if DEV_CAM0
+
+config DEV_CAM0_HEIGHT
+    int "max resolution height of camera"
+    default 480
+    range 0 1024
+
+
+config DEV_CAM0_WIDTH
+    int "max resolution width of camera"
+    default 640
+    range 0 1024
+
+endif #DEV_CAM0
+
+

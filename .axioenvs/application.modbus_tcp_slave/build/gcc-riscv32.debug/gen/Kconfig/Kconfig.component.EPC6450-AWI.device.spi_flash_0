@@ -1,0 +1,66 @@
+
+menuconfig DEV_SPIFLASH
+    bool "spiflash @ spi2 #CS0"
+    default n
+    visible if y
+    select DRV_SPI_FLASH
+    select DEV_SPI2
+    select DEV_SPI2_CHIPSELECT_0
+
+    help
+      Filename: "/dev/spiflash"
+
+      dts_dev_prop:
+          name(unit): "spi_flash" (0)
+          compatible: ['spi,flash']
+          dts_path: /soc/spi@0xF0038000/spi_flash@0
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\spi_flash\spi,flash.yaml
+
+
+if DEV_SPIFLASH
+
+config DEV_SPIFLASH_BLOCK_SIZE
+    int "Block size of erase operation"
+    default 4096
+
+
+config DEV_SPIFLASH_NBLOCKS
+    int "Number of corresponding blocks"
+    default 4096
+
+
+config DEV_SPIFLASH_PAGE_SIZE
+    int "The page size of the write operation"
+    default 256
+
+
+config DEV_SPIFLASH_SPI_BITS_PER_WORD
+    int "set spi bits per word"
+    default 8
+
+
+config DEV_SPIFLASH_SPI_MODE
+    string "select spi mode"
+    default "AW_SPI_MODE_0"
+    enum
+        "AW_SPI_MODE_0"
+        "AW_SPI_MODE_1"
+        "AW_SPI_MODE_2"
+        "AW_SPI_MODE_3"
+
+
+config DEV_SPIFLASH_SPI_IS_LSB_FIRST
+    string "set spi is lsb first"
+    default "AW_FALSE"
+    enum
+        "AW_TRUE"
+        "AW_FALSE"
+
+
+config DEV_SPIFLASH_SPI_SPEED_HZ
+    int "set bus speed(Hz)"
+    default 1000000
+
+endif #DEV_SPIFLASH
+
+

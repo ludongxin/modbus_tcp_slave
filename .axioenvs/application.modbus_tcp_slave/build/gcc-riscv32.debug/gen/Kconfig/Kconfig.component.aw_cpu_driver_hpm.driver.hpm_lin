@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_LIN
+    bool "hpm_lin ['riscv,hpm-lin']"
+    select AW_CLK_FRAMEWORK
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

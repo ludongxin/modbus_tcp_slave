@@ -1,0 +1,16 @@
+
+menuconfig SQLITE3
+    bool "SQlite3"
+    libsafe 
+    default n
+    help
+        Version: 1.1.3
+
+        
+if SQLITE3
+
+
+osource  "$(ax_imp_paths,sqlite3_adapter_interface,,False)"
+
+endif #SQLITE3
+

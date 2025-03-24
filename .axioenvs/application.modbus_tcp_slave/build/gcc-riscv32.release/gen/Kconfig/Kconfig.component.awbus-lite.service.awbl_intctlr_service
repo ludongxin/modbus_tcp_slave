@@ -1,0 +1,5 @@
+
+menuconfig AWBL_INTCTLR_SERVICE
+    bool "awbl_intctlr.service"
+    default n
+

@@ -1,0 +1,10 @@
+
+menuconfig AW_SUBSYS_PM_WAKEUP_TIMER
+    bool "Subsys for wakeup timer"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

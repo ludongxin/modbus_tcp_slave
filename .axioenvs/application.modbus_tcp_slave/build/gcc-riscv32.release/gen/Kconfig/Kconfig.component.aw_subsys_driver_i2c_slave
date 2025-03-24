@@ -1,0 +1,18 @@
+
+menuconfig AW_SUBSYS_DRIVER_I2C_SLAVE
+    bool "Subsys for i2c slave device"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AWBUS
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_SUBSYS_DRIVER_I2C_SLAVE
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_driver_i2c_slave/Kconfig.opts"
+
+endif #AW_SUBSYS_DRIVER_I2C_SLAVE
+

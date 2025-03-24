@@ -1,0 +1,4 @@
+
+menuconfig DRV_VIRTUAL_NVRAM
+    bool "virtual_nvram ['virtual,nvram']"
+    default n

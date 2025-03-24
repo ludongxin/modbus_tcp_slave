@@ -1,0 +1,31 @@
+
+menuconfig DEV_PWM3_CHAN5
+    bool "pwm3_chan5 @ pwm3"
+    default n
+    visible if y
+    select DRV_HPM_PWM
+
+    help
+      Filename: "/dev/pwm3_chan5"
+
+      dts_dev_prop:
+          name(unit): "hpm_pwm" (13)
+          compatible: ['riscv,hpm-pwm']
+          dts_path: /soc/pwm@0xF0230000/pwm3_chan5@5
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\pwm\riscv,hpm-pwm.yaml
+
+
+if DEV_PWM3_CHAN5
+
+config DEV_PWM3_CHAN5_PWM_DEFAULT_PERIOD_NS
+    int "Default PWM period (ns)"
+    default 2000000
+
+
+config DEV_PWM3_CHAN5_PWM_DEFAULT_DUTY_NS
+    int "Default PWM duty (ns)"
+    default 1000000
+
+endif #DEV_PWM3_CHAN5
+
+

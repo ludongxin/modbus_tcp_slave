@@ -1,0 +1,16 @@
+
+menuconfig AW_MODBUS
+    bool "Modbus"
+    libsafe 
+    default n
+    help
+        Version: 1.0.23
+
+        
+if AW_MODBUS
+
+
+osource  "$(ax_imp_paths,modbus_adapter_interface,,False)"
+
+endif #AW_MODBUS
+

@@ -1,0 +1,22 @@
+
+menuconfig AW_APP_AW_SHELL_WIFI
+    bool "AWorks Shell supports wifi commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_INTERFACE
+    select AW_DEV_API
+    select AW_WIFI_UTILS
+    select AW_STDLIB
+    select AW_STDIO_PRINTF_FLAGS_MINUS_EN
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_APP_AW_SHELL_WIFI
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/app/applications/aw_shell_wifi/Kconfig.opts"
+
+endif #AW_APP_AW_SHELL_WIFI
+

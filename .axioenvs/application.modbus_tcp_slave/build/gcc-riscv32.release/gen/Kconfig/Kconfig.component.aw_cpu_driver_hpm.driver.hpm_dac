@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_DAC
+    bool "hpm_dac ['riscv,hpm_dac']"
+    select AW_SUBSYS_DRIVER_DAC
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

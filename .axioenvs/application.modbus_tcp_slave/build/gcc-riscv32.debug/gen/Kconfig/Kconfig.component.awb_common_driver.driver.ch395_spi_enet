@@ -1,0 +1,51 @@
+
+menuconfig DRV_CH395_SPI_ENET
+    bool "ch395_spi_enet ['WCH,ch395-spi-enet']"
+    select AW_SUBSYS_DRIVER_SPI
+    select AWB_SUBSYS_NETIF
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        "WCH,ch395-spi-enet" is used to realize SPI to Ethernet.
+
+        Example of adding device to board.dts:
+
+        Step 1 add the following fragment to "board.dts"
+        /*注意：该spi0的dts配置与标准配置不同，由于cs信号控制自定义后，不再需要reg、chipselects参数，这两个参数必须被移除，否则会报错*/
+        
+
+        &spi0 {
+            ch395_spi_enet:ch395_spi_enet {
+                compatible = "WCH,ch395-spi-enet";
+                label = "ch395_spi_enet";
+                status = "disabled";
+            };
+        };
+        
+
+        Step 2 add the following fragment to "pins.dts"
+        
+
+        &ch395_spi_enet{
+                /*注意事项：驱动使用时，rst、isr、cs 3个引脚为必须引脚，不可省略，其他引脚的电平配置请参考官网ch395模块文档（章节4：引脚）自行定义*/
+                rst-pins  = <&pin1 PIN_PD24  (IOC_PD24_FUNC_CTL_GPIO_D_24  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD24_FUNC_CTL_GPIO_D_24  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD24_FUNC_CTL_GPIO_D_24  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)>;
+                rdy-pins  = <&pin1 PIN_PD23  (IOC_PD23_FUNC_CTL_GPIO_D_23  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD23_FUNC_CTL_GPIO_D_23  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD23_FUNC_CTL_GPIO_D_23  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)>;
+                sel-pins  = <&pin1 PIN_PB10  (IOC_PB10_FUNC_CTL_GPIO_B_10  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB10_FUNC_CTL_GPIO_B_10  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB10_FUNC_CTL_GPIO_B_10  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)>;
+                txd-pins = <&pin1 PIN_PE24   (IOC_PE24_FUNC_CTL_GPIO_E_24  | AW_PIN_CFG_GPIO_OUTPUT_LOW   | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PE24_FUNC_CTL_GPIO_E_24  | AW_PIN_CFG_GPIO_OUTPUT_LOW   | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PE24_FUNC_CTL_GPIO_E_24  | AW_PIN_CFG_GPIO_OUTPUT_LOW   | AW_PIN_CFG_PULL_UP)>;
+                isr-pins  = <&pin1 PIN_PB11  (IOC_PB11_FUNC_CTL_GPIO_B_11  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB11_FUNC_CTL_GPIO_B_11  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB11_FUNC_CTL_GPIO_B_11  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)>;
+                /*由于原生的@reg模式控制的cs信号，无法满足该模块驱动时序，模块内部驱动管脚cs，需要用户自行定义*/
+                cs-pins   = <&pin1 PIN_PZ02  (IOC_PZ02_FUNC_CTL_GPIO_Z_02  | AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                             (IOC_PZ02_FUNC_CTL_GPIO_Z_02  | AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                             (IOC_PZ02_FUNC_CTL_GPIO_Z_02  | AW_PIN_CFG_GPIO_OUTPUT_HIGH)>;
+        };

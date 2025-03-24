@@ -1,0 +1,29 @@
+
+menuconfig DEV_WDT1
+    bool "wdt1"
+    default n
+    visible if y
+    select DRV_HPM_WDT
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_53
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/wdt1"
+
+      dts_dev_prop:
+          name(unit): "hpm_wdt" (1)
+          compatible: ['riscv,hpm-wdt']
+          dts_path: /soc/wdt@F0094000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\wdt\riscv,hpm-wdt.yaml
+
+
+if DEV_WDT1
+
+config DEV_WDT1_IS_INTERNAL_CLK
+    bool "if setlect use Peripheral clk ,or use wdt external clk"
+    default n
+
+endif #DEV_WDT1
+
+

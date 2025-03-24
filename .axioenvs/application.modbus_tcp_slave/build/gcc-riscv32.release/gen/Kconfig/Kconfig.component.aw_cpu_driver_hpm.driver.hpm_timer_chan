@@ -1,0 +1,19 @@
+
+menuconfig DRV_HPM_TIMER_CHAN
+    bool "hpm_timer_chan ['riscv,hpm-timer-chan']"
+    select AW_MATH
+    select AW_SUBSYS_DRIVER_HWTIMER
+    select AW_SUBSYS_DRIVER_HWTIMER_DELAY
+    select AW_SUBSYS_DRIVER_HWTIMER_COUNT
+    select AW_SUBSYS_DRIVER_HWTIMER_CAP
+    select AW_SUBSYS_DRIVER_PWM
+    select AW_SUBSYS_DRIVER_HWTIMER_PERIOD
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AWBUS_DEV_SHUTDOWN_EN
+    default n
+
+if DRV_HPM_TIMER_CHAN
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_cpu_driver_hpm/dts/bindings/timer/riscv,hpm-timer-chan.Kconfig.opts"
+
+endif #DRV_HPM_TIMER_CHAN

@@ -1,0 +1,28 @@
+
+menuconfig DHCP_SERVER
+    bool "DHCP Server"
+    libsafe 
+    select AW_COMPILER_COMMON_POSIX_SOCKET
+    select AW_API_INET_LOCAL
+    select AW_API_TIME
+    select AW_DEV_API
+    select AW_IO_DIR
+    select COMPILER_IMPLEMENT_POSIX_API_CLOSE
+    select COMPILER_IMPLEMENT_POSIX_API_FCNTL
+    select COMPILER_IMPLEMENT_POSIX_API_WRITE
+    select COMPILER_IMPLEMENT_POSIX_API_OPEN
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select AWB_SUBSYS_NETIF
+    select AWB_NETIF_USER_INTERFACE
+    select LWIP_DHCP
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:DHCP Server only support IPV4
+if DHCP_SERVER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/app/applications/dhcp_server/Kconfig.opts"
+
+endif #DHCP_SERVER
+

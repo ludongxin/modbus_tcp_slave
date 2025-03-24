@@ -1,0 +1,47 @@
+
+menuconfig DEV_GPIOSPI0
+    bool "gpiospi0"
+    default n
+    visible if y
+    select DRV_GPIO_SPI
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_198
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_199
+    select DEV_PIN_1_PIN_RES_200
+    select DEV_PIN_1_PIN_RES_197
+
+    help
+      Filename: "/dev/gpiospi0"
+
+      dts_dev_prop:
+          name(unit): "gpio_spi" (0)
+          compatible: ['general,gpio_spi']
+          dts_path: /gpiospi_0
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\gpio_spi\general,gpio_spi.yaml
+
+
+if DEV_GPIOSPI0
+
+config DEV_GPIOSPI0_BUS_SPEED
+    int "Bus Speed"
+    default 400000
+    range 0 4000000
+    help 
+        The unit of parameter "bus_speed" is Hz.
+
+
+config DEV_GPIOSPI0_HIGH_PRECISION
+    bool "high_precision"
+    default n
+    help 
+        If "high_precision" is selected, means you can get a more accurate communication clock, however, this will reduce task scheduling.
+
+config DEV_GPIOSPI0_CHIPSELECT_0
+    bool "CS 0"
+    default n
+    help
+      gpiospi0 Chip Select 0
+endif #DEV_GPIOSPI0
+
+

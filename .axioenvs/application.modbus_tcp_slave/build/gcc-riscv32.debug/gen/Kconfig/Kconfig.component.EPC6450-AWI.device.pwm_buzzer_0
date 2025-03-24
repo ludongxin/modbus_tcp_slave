@@ -1,0 +1,27 @@
+
+menuconfig DEV_BUZZER
+    bool "Buzzer"
+    default n
+    visible if y
+    select DRV_PWM_BUZZER
+
+    help
+      Filename: "/dev/Buzzer"
+
+      dts_dev_prop:
+          name(unit): "pwm-buzzer" (0)
+          compatible: ['pwm-buzzer']
+          dts_path: /buzzer
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\buzzer\awb_pwm_buzzer.yaml
+
+
+if DEV_BUZZER
+
+config DEV_BUZZER_PWM_DEV_NAME
+    string "Device which provide PWM."
+    enum
+        $(user_dev_name,pwm)
+
+endif #DEV_BUZZER
+
+

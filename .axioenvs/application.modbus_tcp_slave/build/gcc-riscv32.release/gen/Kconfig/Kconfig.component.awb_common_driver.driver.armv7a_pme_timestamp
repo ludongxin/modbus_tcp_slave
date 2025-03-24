@@ -1,0 +1,11 @@
+
+menuconfig DRV_ARMV7A_PME_TIMESTAMP
+    bool "armv7a_pme_timestamp ['armv7a,pme_timestamp']"
+    select AWBUS
+    default n
+
+if DRV_ARMV7A_PME_TIMESTAMP
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/armv7a_pme/armv7a,pme_timestamp.Kconfig.opts"
+
+endif #DRV_ARMV7A_PME_TIMESTAMP

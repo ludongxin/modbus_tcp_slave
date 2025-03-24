@@ -1,0 +1,19 @@
+
+menuconfig AW_GOAHEAD_ADAPTER
+    bool "GoAhead adaptation layer of AWorks"
+    libsafe 
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_STDIO
+    default n
+    help
+        Version: 1.0.5
+
+        
+if AW_GOAHEAD_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_goahead_adapter/Kconfig.opts"
+
+endif #AW_GOAHEAD_ADAPTER
+

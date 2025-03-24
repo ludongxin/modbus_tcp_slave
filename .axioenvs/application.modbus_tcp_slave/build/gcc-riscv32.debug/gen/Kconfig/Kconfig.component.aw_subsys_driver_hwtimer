@@ -1,0 +1,12 @@
+
+menuconfig AW_SUBSYS_DRIVER_HWTIMER
+    bool "Subsys for hwtimer"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AW_MEM_MANAGER_RINGBUFFER
+    default n
+    help
+        Version: 0.0.0
+
+        

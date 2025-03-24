@@ -1,0 +1,9 @@
+
+menuconfig AW_API_INET_LOCAL
+    bool "AWorks API for local inet functions,such as aw_htonl"
+    libsafe 
+    default n
+    help
+        Version: 0.0.0
+
+        

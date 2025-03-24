@@ -1,0 +1,18 @@
+
+menuconfig AW_IOT_COMMON
+    bool "IOT Common"
+    libsafe 
+    select CJSON
+    select AW_MBEDTLS_ADAPTER
+    select MBEDTLS
+    default n
+    help
+        Version: 0.5.0
+
+        
+if AW_IOT_COMMON
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_iot_common/Kconfig.opts"
+
+endif #AW_IOT_COMMON
+

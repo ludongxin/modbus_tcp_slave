@@ -1,0 +1,163 @@
+
+menu "Devices"
+
+
+menu "ADC12 (3)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_adc12_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_adc12_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_adc12_2"
+endmenu
+
+menu "ADC16 (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_adc16_0"
+endmenu
+
+menu "CAM (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_cam_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_cam_1"
+endmenu
+
+menu "CAN (4)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_can_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_can_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_can_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_can_3"
+endmenu
+
+menu "DAO (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_dao_0"
+endmenu
+
+menu "DMA (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_dma_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_dma_1"
+endmenu
+
+menu "ENET (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_enet_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_enet_1"
+endmenu
+
+menu "I2C (4)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_i2c_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_i2c_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_i2c_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_i2c_3"
+endmenu
+
+menu "I2S (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_i2s_0"
+endmenu
+
+menu "LCDC (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_lcdc_0"
+endmenu
+
+menu "MBX (4)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_mbx_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_mbx_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_mbx_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_mbx_3"
+endmenu
+
+menu "Multi Core (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_multi_core_0"
+endmenu
+
+menu "OTP (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_otp_0"
+endmenu
+
+menu "PINS (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_gpio_0"
+endmenu
+
+menu "PLIC (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.riscv_hpm_plic_0"
+endmenu
+
+menu "PWM (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_timer_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_timer_1"
+endmenu
+
+menu "RTC (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_rtc_0"
+endmenu
+
+menu "SDIO (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_sdio_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_sdio_1"
+endmenu
+
+menu "SPI (4)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_spi_int_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_spi_int_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_spi_int_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_spi_int_3"
+endmenu
+
+menu "SPIEX (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_spiex_0"
+endmenu
+
+menu "Systmr (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_gtmr_systmr_0"
+endmenu
+
+menu "Timer (7)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_3"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_4"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_5"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_6"
+endmenu
+
+menu "Timestamp (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_ptpc_timestamp_0"
+endmenu
+
+menu "UART (17)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_debug_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_3"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_4"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_5"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_6"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_7"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_8"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_9"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_10"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_11"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_12"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_13"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_14"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_uart_15"
+endmenu
+
+menu "USB (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_usb_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_usb_1"
+endmenu
+
+menu "WDT (4)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_wdt_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_wdt_1"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_wdt_2"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_wdt_3"
+endmenu
+
+menu "Wkuptmr (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_ptmr_wkuptmr_0"
+endmenu
+
+menu "XPI (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_nor_xpi_0"
+endmenu
+
+
+endmenu # menu "Devices"

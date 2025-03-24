@@ -1,0 +1,17 @@
+
+menuconfig AW_PSP_RTK
+    bool "RTK Platform support"
+    libsafe 
+    select RTK
+    select AW_TLS
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_PSP_RTK
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/psp/aw_psp_rtk/Kconfig.opts"
+
+endif #AW_PSP_RTK
+

@@ -1,0 +1,10 @@
+
+menuconfig AW_MEM_MANAGER_RINGBUFFER
+    bool "AWorks Ringbuffer"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

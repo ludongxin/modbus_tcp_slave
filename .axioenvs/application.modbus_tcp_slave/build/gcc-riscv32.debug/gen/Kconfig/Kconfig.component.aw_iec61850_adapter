@@ -1,0 +1,19 @@
+
+menuconfig AW_IEC61850_ADAPTER
+    bool "AWorksLP adapter for IEC61850"
+    libsafe 
+    select SQLITE3
+    select MBEDTLS
+    select AWB_PACKET_SOCKET
+    select AW_SQLITE3_ADAPTER
+    select AW_MBEDTLS_ADAPTER
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_STDIO
+    select COMPILER_SUPPORT_LIBC_FILE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_POSIX_PTHREAD
+    default n
+    help
+        Version: 0.1.0+beta0
+
+        

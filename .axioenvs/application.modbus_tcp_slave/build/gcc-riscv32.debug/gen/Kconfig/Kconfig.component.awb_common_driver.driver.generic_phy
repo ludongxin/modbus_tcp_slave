@@ -1,0 +1,18 @@
+
+menuconfig DRV_GENERIC_PHY
+    bool "generic_phy ['none,generic_phy']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_PHY_POLL
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &enet {
+            phy-handle = <&generic>;
+            generic:generic_phy@1{
+                compatible = "none,generic_phy";
+                status = "disabled";
+                label = "generic";
+                reg = <0x01>;
+            };
+        };

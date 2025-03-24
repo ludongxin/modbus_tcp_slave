@@ -1,0 +1,14 @@
+
+menuconfig AW_APP_AW_SHELL_IP
+    bool "AWorks Shell supports ip commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_API_INET_LOCAL
+    select AWB_INET_NETDB
+    select AWB_SUBSYS_NETIF
+    select AWB_NETIF_USER_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

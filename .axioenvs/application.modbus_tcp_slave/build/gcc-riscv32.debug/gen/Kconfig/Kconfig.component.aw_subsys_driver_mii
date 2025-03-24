@@ -1,0 +1,12 @@
+
+menuconfig AW_SUBSYS_DRIVER_MII
+    bool "Subsys for ethernet mii bus"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_SUBSYS_NETIF
+    select AWBUS
+    default n
+    help
+        Version: 0.0.0
+
+        

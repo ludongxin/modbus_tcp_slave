@@ -1,0 +1,16 @@
+
+menuconfig AW_OS_SYS_DEFER
+    bool "AWorks system defer service"
+    libsafe 
+    select AW_OS_DEFER
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_OS_SYS_DEFER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/system/sys_defer/Kconfig.opts"
+
+endif #AW_OS_SYS_DEFER
+

@@ -1,0 +1,16 @@
+
+menuconfig IEC61850
+    bool "Official repository for libIEC61850"
+    libsafe 
+    default n
+    help
+        Version: 1.5.1+beta0
+
+        
+if IEC61850
+
+
+osource  "$(ax_imp_paths,iec61850_adapter_interface,,False)"
+
+endif #IEC61850
+

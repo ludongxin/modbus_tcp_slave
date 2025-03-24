@@ -1,0 +1,324 @@
+
+menuconfig DEV_ADC1
+    bool "adc1"
+    default n
+    visible if y
+    select DRV_HPM_ADC12
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_20
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/adc1"
+
+      dts_dev_prop:
+          name(unit): "hpm_adc12" (1)
+          compatible: ['riscv,hpm-adc12']
+          dts_path: /soc/adc12@0xF0014000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\adc12\riscv,hpm_adc12.yaml
+
+
+if DEV_ADC1
+
+config DEV_ADC1_BITS
+    string "Set adc12 Resolution"
+    default "ADC12_SELRES_12"
+    enum
+        "ADC12_SELRES_12"
+        "ADC12_SELRES_10"
+        "ADC12_SELRES_8"
+        "ADC12_SELRES_6"
+
+
+config DEV_ADC1_CONV_MODE
+    string "Set adc12 conversion modes"
+    default "ADC12_CONV_MODE_SEQUENCE"
+    enum
+        "ADC12_CONV_MODE_ONESHOT"
+        "ADC12_CONV_MODE_PERIOD"
+        "ADC12_CONV_MODE_SEQUENCE"
+
+
+config DEV_ADC1_PERIOD_US
+    int "the period conversion time (unit:us)"
+    default 100
+
+
+config DEV_ADC1_VREFH
+    int "high lever of reference voltage"
+    default 3300
+
+
+config DEV_ADC1_AWB_ADC_SERVICE
+    def_bool y
+
+if DEV_ADC1_AWB_ADC_SERVICE
+config DEV_ADC1_ADC_RES_0
+    bool "adc1_ch0 (19)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_142
+
+if DEV_ADC1_ADC_RES_0
+
+config DEV_ADC1_ADC1_CH0_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_0
+config DEV_ADC1_ADC_RES_1
+    bool "adc1_ch1 (20)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_143
+
+if DEV_ADC1_ADC_RES_1
+
+config DEV_ADC1_ADC1_CH1_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_1
+config DEV_ADC1_ADC_RES_2
+    bool "adc1_ch2 (21)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_144
+
+if DEV_ADC1_ADC_RES_2
+
+config DEV_ADC1_ADC1_CH2_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_2
+config DEV_ADC1_ADC_RES_3
+    bool "adc1_ch3 (22)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_145
+
+if DEV_ADC1_ADC_RES_3
+
+config DEV_ADC1_ADC1_CH3_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_3
+config DEV_ADC1_ADC_RES_4
+    bool "adc1_ch4 (23)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_146
+
+if DEV_ADC1_ADC_RES_4
+
+config DEV_ADC1_ADC1_CH4_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_4
+config DEV_ADC1_ADC_RES_5
+    bool "adc1_ch5 (24)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_147
+
+if DEV_ADC1_ADC_RES_5
+
+config DEV_ADC1_ADC1_CH5_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_5
+config DEV_ADC1_ADC_RES_6
+    bool "adc1_ch6 (25)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_148
+
+if DEV_ADC1_ADC_RES_6
+
+config DEV_ADC1_ADC1_CH6_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_6
+config DEV_ADC1_ADC_RES_7
+    bool "adc1_ch7 (26)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_149
+
+if DEV_ADC1_ADC_RES_7
+
+config DEV_ADC1_ADC1_CH7_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_7
+config DEV_ADC1_ADC_RES_8
+    bool "adc1_ch8 (27)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_150
+
+if DEV_ADC1_ADC_RES_8
+
+config DEV_ADC1_ADC1_CH8_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_8
+config DEV_ADC1_ADC_RES_9
+    bool "adc1_ch9 (28)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_151
+
+if DEV_ADC1_ADC_RES_9
+
+config DEV_ADC1_ADC1_CH9_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_9
+config DEV_ADC1_ADC_RES_10
+    bool "adc1_ch10 (29)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_152
+
+if DEV_ADC1_ADC_RES_10
+
+config DEV_ADC1_ADC1_CH10_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_10
+config DEV_ADC1_ADC_RES_11
+    bool "adc1_ch11 (30)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_153
+
+if DEV_ADC1_ADC_RES_11
+
+config DEV_ADC1_ADC1_CH11_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_11
+config DEV_ADC1_ADC_RES_12
+    bool "adc1_ch12 (31)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_158
+
+if DEV_ADC1_ADC_RES_12
+
+config DEV_ADC1_ADC1_CH12_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_12
+config DEV_ADC1_ADC_RES_13
+    bool "adc1_ch13 (32)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_159
+
+if DEV_ADC1_ADC_RES_13
+
+config DEV_ADC1_ADC1_CH13_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_13
+config DEV_ADC1_ADC_RES_14
+    bool "adc1_ch14 (33)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_160
+
+if DEV_ADC1_ADC_RES_14
+
+config DEV_ADC1_ADC1_CH14_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_14
+config DEV_ADC1_ADC_RES_15
+    bool "adc1_ch15 (34)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_161
+
+if DEV_ADC1_ADC_RES_15
+
+config DEV_ADC1_ADC1_CH15_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_15
+config DEV_ADC1_ADC_RES_16
+    bool "adc1_ch16 (35)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_162
+
+if DEV_ADC1_ADC_RES_16
+
+config DEV_ADC1_ADC1_CH16_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_16
+config DEV_ADC1_ADC_RES_17
+    bool "adc1_ch17 (36)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_164
+
+if DEV_ADC1_ADC_RES_17
+
+config DEV_ADC1_ADC1_CH17_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_17
+config DEV_ADC1_ADC_RES_18
+    bool "adc1_ch18 (37)"
+    default n
+
+
+if DEV_ADC1_ADC_RES_18
+
+config DEV_ADC1_ADC1_CH18_IS_DIFF_SEL
+    bool "enable differential mode"
+    default n
+
+endif #DEV_ADC1_ADC_RES_18
+endif # DEV_ADC1_AWB_ADC_SERVICE
+
+endif #DEV_ADC1
+
+

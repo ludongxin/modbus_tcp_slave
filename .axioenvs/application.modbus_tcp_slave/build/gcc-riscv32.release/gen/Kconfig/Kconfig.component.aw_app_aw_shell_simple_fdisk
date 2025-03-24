@@ -1,0 +1,11 @@
+
+menuconfig AW_APP_AW_SHELL_SIMPLE_FDISK
+    bool "AWorks Shell supports simple fdisk commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_SUBSYS_STORAGE_BLOCKDEV
+    default n
+    help
+        Version: 0.0.0
+
+        

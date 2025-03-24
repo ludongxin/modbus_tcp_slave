@@ -1,0 +1,46 @@
+
+menuconfig DRV_CH395_UART_ENET
+    bool "ch395_uart_enet ['WCH,ch395-uart-enet']"
+    select AWBUS
+    select AWB_SUBSYS_NETIF
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        "WCH,ch395-uart-enet" is used to realize UART to Ethernet.
+
+        Example of adding device to board.dts:
+
+        Step 1 add the following fragment to "board.dts"
+        / {
+           ch395_uart_enet:ch395_uart_enet{
+               compatible = "WCH,ch395-uart-enet";
+               label = "ch395_uart_enet";
+               uart_id = <&uart5>;
+               status = "disabled";
+           };
+        };
+        
+
+        Step 2 add the following fragment to "pins.dts"
+        
+
+        &ch395_uart_enet{
+                rst-pins  = <&pin1 PIN_PD24  (IOC_PD24_FUNC_CTL_GPIO_D_24  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD24_FUNC_CTL_GPIO_D_24  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD24_FUNC_CTL_GPIO_D_24  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)>;
+                rdy-pins  = <&pin1 PIN_PD23  (IOC_PD23_FUNC_CTL_GPIO_D_23  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD23_FUNC_CTL_GPIO_D_23  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PD23_FUNC_CTL_GPIO_D_23  | AW_PIN_CFG_GPIO_INPUT        | AW_PIN_CFG_PULL_UP)>;
+                sel-pins  = <&pin1 PIN_PB10  (IOC_PB10_FUNC_CTL_GPIO_B_10  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB10_FUNC_CTL_GPIO_B_10  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB10_FUNC_CTL_GPIO_B_10  | AW_PIN_CFG_GPIO_OUTPUT_HIGH  | AW_PIN_CFG_PULL_UP)>;
+                isr-pins  = <&pin1 PIN_PB11  (IOC_PB11_FUNC_CTL_GPIO_B_11  | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB11_FUNC_CTL_GPIO_B_11  | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)
+                                             (IOC_PB11_FUNC_CTL_GPIO_B_11  | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)>;
+        };
+
+        Parameters:
+
+           uart_id:  Must be bound to the uart port, otherwise, device operate will fail.
+

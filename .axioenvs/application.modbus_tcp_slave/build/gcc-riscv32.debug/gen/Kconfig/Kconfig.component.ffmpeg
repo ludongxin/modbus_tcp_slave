@@ -1,0 +1,28 @@
+
+menuconfig FFMPEG
+    bool "ffmpeg"
+    libsafe 
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_STDIO
+    select AW_IO_DIR
+    default n
+    help
+        Version: 6.0.2
+
+        Detail:help
+
+        FFmpeg is a collection of libraries and tools to process multimedia 
+
+        content such as audio, video, subtitles and related metadata.
+
+        
+
+         Source Code Version: FFmpeg 5.1
+if FFMPEG
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/ffmpeg/Kconfig.opts"
+
+endif #FFMPEG
+

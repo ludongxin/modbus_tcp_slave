@@ -1,0 +1,26 @@
+
+menuconfig DRV_MMC5883MA
+    bool "mmc5883ma ['MEMSIC,mmc5883ma']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            mmc5883ma:mmc5883ma@30 {
+                compatible = "MEMSIC,mmc5883ma";
+                label = "MMC5883MA";
+                status = "disabled";
+                reg = <0x30>;
+                data-pins = <&pin1 GPIO1_29 GPIO1_29_GPIO (GPIO1_29_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_29_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &mmc5883ma{
+            data-pins = <&pin1 GPIO1_29 GPIO1_29_GPIO (GPIO1_29_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_29_GPIO>;
+        };

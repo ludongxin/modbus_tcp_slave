@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_MULTI_CORE
+    bool "hpm_multi_core ['riscv,hpm_multi_core']"
+    select AWBUS
+    default n

@@ -1,0 +1,24 @@
+
+menuconfig DEV_BU21029MUV
+    bool "bu21029muv @ i2c3"
+    default n
+    visible if y
+    select DRV_BU21029MUV
+    select DEV_I2C3
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_130
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+    help
+      Filename: "/dev/bu21029muv"
+
+      dts_dev_prop:
+          name(unit): "bu21029muv" (0)
+          compatible: ['rohm,bu21029muv']
+          dts_path: /soc/i2c@0xF302C000/bu21029muv@0x40
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\touchscreen\bu21029muv\rohm,bu21029muv.yaml
+
+
+
+
+

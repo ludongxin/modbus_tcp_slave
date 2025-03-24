@@ -1,0 +1,18 @@
+
+menuconfig TELNET
+    bool "AWorks Telnet Shell Terminals"
+    libsafe 
+    select AW_API_SOCKET
+    select AWB_INET_SOCKET
+    select AW_APP_SHELL
+    default n
+    help
+        Version: 1.0.5-lp
+
+        
+if TELNET
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/telnet/Kconfig.opts"
+
+endif #TELNET
+

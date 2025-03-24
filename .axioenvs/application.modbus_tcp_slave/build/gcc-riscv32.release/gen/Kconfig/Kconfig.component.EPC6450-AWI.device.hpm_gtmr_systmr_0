@@ -1,0 +1,23 @@
+
+menuconfig DEV_SYSTMR
+    bool "systmr"
+    default y
+    visible if y
+    select DRV_HPM_GTMR_SYSTMR
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_62
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/systmr"
+
+      dts_dev_prop:
+          name(unit): "hpm_gtmr_systmr" (0)
+          compatible: ['riscv,hpm_gtmr_systmr']
+          dts_path: /soc/systmr@F3008000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\gtmr\riscv,hpm_gtmr_systmr.yaml
+
+
+
+
+

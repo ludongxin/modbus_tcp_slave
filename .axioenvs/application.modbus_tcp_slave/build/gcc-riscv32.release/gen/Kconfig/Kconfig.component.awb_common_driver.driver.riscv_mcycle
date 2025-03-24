@@ -1,0 +1,11 @@
+
+menuconfig DRV_RISCV_MCYCLE
+    bool "riscv_mcycle ['riscv,mcycle']"
+    select AWBUS
+    default n
+
+if DRV_RISCV_MCYCLE
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/riscv_mcycle/riscv,mcycle.Kconfig.opts"
+
+endif #DRV_RISCV_MCYCLE

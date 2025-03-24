@@ -1,0 +1,693 @@
+
+menuconfig DEV_PLIC0
+    bool "plic0"
+    default y
+    visible if y
+    select DRV_RISCV_HPM_PLIC
+
+    help
+      Filename: "/dev/plic0"
+
+      dts_dev_prop:
+          name(unit): "riscv_hpm_plic" (0)
+          compatible: ['riscv,hpm_plic']
+          dts_path: /soc/interrupt-controller@0xE4000000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\plic\riscv,hpm_plic.yaml
+
+
+if DEV_PLIC0
+
+config DEV_PLIC0_ISR_INFO_COUNT
+    int "count of isr information"
+    default 127
+
+
+config DEV_PLIC0_PLIC_MAX_PRIO
+    int "plic support max prio"
+    default 7
+
+
+config DEV_PLIC0_PLIC_IRQ_EN_REGS
+    int "plic enalble regs"
+    default 3825213440
+
+
+config DEV_PLIC0_PLIC_IRQ_PENDING_REGS
+    int "plic enalble regs"
+    default 3825209344
+
+
+config DEV_PLIC0_PLIC_THRESHOLD_CLAIM_COMPLETE_REGS
+    int "plic support max prio"
+    default 3827302400
+
+
+config DEV_PLIC0_PLIC_PRIO_REGS
+    int "plic support max prio"
+    default 3825205252
+
+
+config DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    def_bool y
+
+if DEV_PLIC0_AWBL_INTCTLR_SERVICE
+config DEV_PLIC0_INTERRUPT_RES_0
+    bool "interrupt 0 (0)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_1
+    bool "interrupt 1 (1)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_2
+    bool "interrupt 2 (2)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_3
+    bool "interrupt 3 (3)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_4
+    bool "interrupt 4 (4)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_5
+    bool "interrupt 5 (5)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_6
+    bool "interrupt 6 (6)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_7
+    bool "interrupt 7 (7)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_8
+    bool "interrupt 8 (8)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_9
+    bool "interrupt 9 (9)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_10
+    bool "interrupt 10 (10)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_11
+    bool "interrupt 11 (11)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_12
+    bool "interrupt 12 (12)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_13
+    bool "interrupt 13 (13)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_14
+    bool "interrupt 14 (14)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_15
+    bool "interrupt 15 (15)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_16
+    bool "interrupt 16 (16)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_17
+    bool "interrupt 17 (17)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_18
+    bool "interrupt 18 (18)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_19
+    bool "interrupt 19 (19)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_20
+    bool "interrupt 20 (20)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_21
+    bool "interrupt 21 (21)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_22
+    bool "interrupt 22 (22)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_23
+    bool "interrupt 23 (23)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_24
+    bool "interrupt 24 (24)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_25
+    bool "interrupt 25 (25)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_26
+    bool "interrupt 26 (26)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_27
+    bool "interrupt 27 (27)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_28
+    bool "interrupt 28 (28)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_29
+    bool "interrupt 29 (29)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_30
+    bool "interrupt 30 (30)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_31
+    bool "interrupt 31 (31)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_32
+    bool "interrupt 32 (32)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_33
+    bool "interrupt 33 (33)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_34
+    bool "interrupt 34 (34)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_35
+    bool "interrupt 35 (35)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_36
+    bool "interrupt 36 (36)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_37
+    bool "interrupt 37 (37)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_38
+    bool "interrupt 38 (38)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_39
+    bool "interrupt 39 (39)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_40
+    bool "interrupt 40 (40)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_41
+    bool "interrupt 41 (41)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_42
+    bool "interrupt 42 (42)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_43
+    bool "interrupt 43 (43)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_44
+    bool "interrupt 44 (44)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_45
+    bool "interrupt 45 (45)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_46
+    bool "interrupt 46 (46)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_47
+    bool "interrupt 47 (47)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_48
+    bool "interrupt 48 (48)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_49
+    bool "interrupt 49 (49)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_50
+    bool "interrupt 50 (50)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_51
+    bool "interrupt 51 (51)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_52
+    bool "interrupt 52 (52)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_53
+    bool "interrupt 53 (53)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_54
+    bool "interrupt 54 (54)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_55
+    bool "interrupt 55 (55)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_56
+    bool "interrupt 56 (56)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_57
+    bool "interrupt 57 (57)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_58
+    bool "interrupt 58 (58)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_59
+    bool "interrupt 59 (59)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_60
+    bool "interrupt 60 (60)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_61
+    bool "interrupt 61 (61)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_62
+    bool "interrupt 62 (62)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_63
+    bool "interrupt 63 (63)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_64
+    bool "interrupt 64 (64)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_65
+    bool "interrupt 65 (65)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_66
+    bool "interrupt 66 (66)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_67
+    bool "interrupt 67 (67)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_68
+    bool "interrupt 68 (68)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_69
+    bool "interrupt 69 (69)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_70
+    bool "interrupt 70 (70)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_71
+    bool "interrupt 71 (71)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_72
+    bool "interrupt 72 (72)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_73
+    bool "interrupt 73 (73)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_74
+    bool "interrupt 74 (74)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_75
+    bool "interrupt 75 (75)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_76
+    bool "interrupt 76 (76)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_77
+    bool "interrupt 77 (77)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_78
+    bool "interrupt 78 (78)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_79
+    bool "interrupt 79 (79)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_80
+    bool "interrupt 80 (80)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_81
+    bool "interrupt 81 (81)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_82
+    bool "interrupt 82 (82)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_83
+    bool "interrupt 83 (83)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_84
+    bool "interrupt 84 (84)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_85
+    bool "interrupt 85 (85)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_86
+    bool "interrupt 86 (86)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_87
+    bool "interrupt 87 (87)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_88
+    bool "interrupt 88 (88)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_89
+    bool "interrupt 89 (89)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_90
+    bool "interrupt 90 (90)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_91
+    bool "interrupt 91 (91)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_92
+    bool "interrupt 92 (92)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_93
+    bool "interrupt 93 (93)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_94
+    bool "interrupt 94 (94)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_95
+    bool "interrupt 95 (95)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_96
+    bool "interrupt 96 (96)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_97
+    bool "interrupt 97 (97)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_98
+    bool "interrupt 98 (98)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_99
+    bool "interrupt 99 (99)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_100
+    bool "interrupt 100 (100)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_101
+    bool "interrupt 101 (101)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_102
+    bool "interrupt 102 (102)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_103
+    bool "interrupt 103 (103)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_104
+    bool "interrupt 104 (104)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_105
+    bool "interrupt 105 (105)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_106
+    bool "interrupt 106 (106)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_107
+    bool "interrupt 107 (107)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_108
+    bool "interrupt 108 (108)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_109
+    bool "interrupt 109 (109)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_110
+    bool "interrupt 110 (110)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_111
+    bool "interrupt 111 (111)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_112
+    bool "interrupt 112 (112)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_113
+    bool "interrupt 113 (113)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_114
+    bool "interrupt 114 (114)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_115
+    bool "interrupt 115 (115)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_116
+    bool "interrupt 116 (116)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_117
+    bool "interrupt 117 (117)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_118
+    bool "interrupt 118 (118)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_119
+    bool "interrupt 119 (119)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_120
+    bool "interrupt 120 (120)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_121
+    bool "interrupt 121 (121)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_122
+    bool "interrupt 122 (122)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_123
+    bool "interrupt 123 (123)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_124
+    bool "interrupt 124 (124)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_125
+    bool "interrupt 125 (125)"
+    default n
+
+
+config DEV_PLIC0_INTERRUPT_RES_126
+    bool "interrupt 126 (126)"
+    default n
+
+
+endif # DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+endif #DEV_PLIC0
+
+

@@ -1,0 +1,38 @@
+
+menuconfig DEV_I2C1
+    bool "i2c1"
+    default n
+    visible if y
+    select DRV_HPM_I2C
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_69
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_11
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_10
+
+    help
+      Filename: "/dev/i2c1"
+
+      dts_dev_prop:
+          name(unit): "hpm_i2c" (1)
+          compatible: ['riscv,hpm_i2c']
+          dts_path: /soc/i2c@0xF3024000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\i2c\riscv,hpm-i2c.yaml
+
+
+if DEV_I2C1
+
+config DEV_I2C1_TIMEOUT
+    int "the bus timeout(us, step: 1000us) for i2c"
+    default 5000
+
+
+config DEV_I2C1_BUS_SPEED
+    int "the bus speed for i2c"
+    default 100000
+
+endif #DEV_I2C1
+
+

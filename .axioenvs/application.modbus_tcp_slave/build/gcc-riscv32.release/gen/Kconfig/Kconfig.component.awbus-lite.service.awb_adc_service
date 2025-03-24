@@ -1,0 +1,5 @@
+
+menuconfig AWB_ADC_SERVICE
+    bool "awb_adc.service"
+    default n
+

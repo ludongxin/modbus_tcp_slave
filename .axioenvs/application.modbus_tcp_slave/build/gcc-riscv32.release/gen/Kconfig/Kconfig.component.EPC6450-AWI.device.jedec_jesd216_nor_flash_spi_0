@@ -1,0 +1,59 @@
+
+menuconfig DEV_W25Q64FW
+    bool "w25q64fw @ spi0 #CS0"
+    default n
+    visible if y
+    select DRV_JEDEC_JESD216_NOR_FLASH_SPI
+    select DEV_SPI0
+    select DEV_SPI0_CHIPSELECT_0
+
+    help
+      Filename: "/dev/w25q64fw"
+
+      dts_dev_prop:
+          name(unit): "jedec_jesd216_nor_flash_spi" (0)
+          compatible: ['jedec,jesd216_nor_flash_spi']
+          dts_path: /soc/spi@0xF0030000/w25q64fw@0
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\nor_flash\jedec,jesd216_nor_flash_spi.yaml
+
+
+if DEV_W25Q64FW
+config DEV_W25Q64FW_W25_NOR0
+    bool "w25_nor0"
+    default y
+
+
+
+    help
+       Filename:"/dev/w25_nor0"
+
+if DEV_W25Q64FW_W25_NOR0
+
+endif #DEV_W25Q64FW_W25_NOR0
+config DEV_W25Q64FW_W25_NOR1
+    bool "w25_nor1"
+    default y
+
+
+
+    help
+       Filename:"/dev/w25_nor1"
+
+if DEV_W25Q64FW_W25_NOR1
+
+endif #DEV_W25Q64FW_W25_NOR1
+config DEV_W25Q64FW_W25_NOR2
+    bool "w25_nor2"
+    default y
+
+
+
+    help
+       Filename:"/dev/w25_nor2"
+
+if DEV_W25Q64FW_W25_NOR2
+
+endif #DEV_W25Q64FW_W25_NOR2
+endif #DEV_W25Q64FW
+
+

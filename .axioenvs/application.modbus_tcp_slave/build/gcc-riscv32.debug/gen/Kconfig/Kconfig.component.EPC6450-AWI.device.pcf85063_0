@@ -1,0 +1,27 @@
+
+menuconfig DEV_PCF85063
+    bool "PCF85063 @ i2c3"
+    default n
+    visible if y
+    select DRV_PCF85063
+    select DEV_I2C3
+
+    help
+      Filename: "/dev/PCF85063"
+
+      dts_dev_prop:
+          name(unit): "pcf85063" (0)
+          compatible: ['nxp,pcf85063']
+          dts_path: /soc/i2c@0xF302C000/pcf85063@0x51
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\rtc\nxp,pcf85063.yaml
+
+
+if DEV_PCF85063
+
+config DEV_PCF85063_CAPACITOR_MODE
+    bool "if check this option, capacitor is 12.5pf, otherwise capacitor is 7pf"
+    default n
+
+endif #DEV_PCF85063
+
+

@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_UART_LIN
+    bool "hpm_uart_lin ['riscv,hpm_uart_lin']"
+    select AW_SUBSYS_DRIVER_SERIAL
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

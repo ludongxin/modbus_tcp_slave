@@ -1,0 +1,17 @@
+
+menuconfig AW_LIBJPEG_TURBO_ADAPTER
+    bool "libjpeg-turbo adaptation layer of AWorks"
+    libsafe 
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_STDIO
+    default n
+    help
+        Version: 0.1.0
+
+        
+if AW_LIBJPEG_TURBO_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_libjpeg_turbo_adapter/Kconfig.opts"
+
+endif #AW_LIBJPEG_TURBO_ADAPTER
+

@@ -1,0 +1,9 @@
+
+menuconfig AW_SUBSYS_SYSTEM_PIN
+    bool "component aw_subsys_system_pin"
+    libsafe 
+    default n
+    help
+        Version: 0.0.0
+
+        

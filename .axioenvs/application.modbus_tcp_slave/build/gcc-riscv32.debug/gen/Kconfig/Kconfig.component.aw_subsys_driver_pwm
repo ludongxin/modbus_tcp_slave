@@ -1,0 +1,12 @@
+
+menuconfig AW_SUBSYS_DRIVER_PWM
+    bool "Subsys for pwm"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AWBUS_DEV_REF_CHILD_EN
+    default n
+    help
+        Version: 0.0.0
+
+        

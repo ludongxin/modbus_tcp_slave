@@ -1,0 +1,11 @@
+
+menuconfig AW_APP_AW_SHELL_CLK_TREE
+    bool "AWorks Shell supports clk_tree commands to show clock tree on system"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_API_CLK
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,10 @@
+
+menuconfig AW_OS_DEFER
+    bool "AWorks defer base"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

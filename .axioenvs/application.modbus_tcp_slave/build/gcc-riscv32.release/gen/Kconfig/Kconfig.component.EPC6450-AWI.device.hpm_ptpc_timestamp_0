@@ -1,0 +1,23 @@
+
+menuconfig DEV_PTPC
+    bool "ptpc"
+    default y
+    visible if y
+    select DRV_HPM_PTPC_TIMESTAMP
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_51
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/ptpc"
+
+      dts_dev_prop:
+          name(unit): "hpm_ptpc_timestamp" (0)
+          compatible: ['riscv,hpm_ptpc']
+          dts_path: /soc/ptpc@0xF00B0000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\ptpc\riscv,hpm_ptpc_timestamp.yaml
+
+
+
+
+

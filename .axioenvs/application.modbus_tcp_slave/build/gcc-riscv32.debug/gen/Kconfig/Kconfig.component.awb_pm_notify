@@ -1,0 +1,16 @@
+
+menuconfig AWB_PM_NOTIFY
+    bool "AWorks Power Manager Notify"
+    libsafe 
+    select AW_NOTIFIER
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AWB_PM_NOTIFY
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/awb_pm_notify/Kconfig.opts"
+
+endif #AWB_PM_NOTIFY
+

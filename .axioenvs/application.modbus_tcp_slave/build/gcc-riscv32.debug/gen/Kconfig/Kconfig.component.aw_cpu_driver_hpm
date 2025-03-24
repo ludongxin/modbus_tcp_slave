@@ -1,0 +1,9 @@
+
+menuconfig AW_CPU_DRIVER_HPM
+    bool "HPM Drivers"
+    libsafe 
+    default n
+    help
+        Version: 0.0.0
+
+        

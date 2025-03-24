@@ -1,0 +1,78 @@
+
+menuconfig DEV_CAN0
+    bool "can0"
+    default n
+    visible if y
+    select DRV_HPM_CAN
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_47
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_47
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_49
+
+    help
+      Filename: "/dev/can0"
+
+      dts_dev_prop:
+          name(unit): "hpm_can" (0)
+          compatible: ['riscv,hpm_can']
+          dts_path: /soc/can@F0080000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\can\riscv,hpm_can.yaml
+
+
+if DEV_CAN0
+
+config DEV_CAN0_DEFAULT_BAUDRATE
+    int "the default baudrate (Kbps) for can,or arbitration field baudrate for canfd"
+    default 500
+
+
+config DEV_CAN0_RX_BUF_MSG_COUNT
+    int "number of msg count that the rx buffer contain"
+    default 256
+
+
+config DEV_CAN0_ERR_BUF_MSG_COUNT
+    int "number of msg count that the err buffer contain"
+    default 16
+
+
+config DEV_CAN0_ENABLE_TIMESTAMP
+    bool "CAN msg add timestamp info"
+    default y
+    select DEV_PTPC 
+
+
+config DEV_CAN0_IS_LISTEN_ONLY
+    bool "CAN work in listen only mode"
+    default n
+
+
+config DEV_CAN0_RECV_SELF_SEND
+    bool "CAN recv frames which is sent by himself"
+    default n
+
+
+config DEV_CAN0_IS_LOOPBACK
+    bool "CAN work in loopback mode"
+    default n
+
+
+config DEV_CAN0_IS_CANFD_DEV
+    bool "register CANFD device"
+    default y
+
+
+if DEV_CAN0_IS_CANFD_DEV
+
+config DEV_CAN0_DATA_BAUDRATE
+    int "data field baudrate (Kbps)"
+    default 1000
+
+endif #DEV_CAN0_IS_CANFD_DEV
+
+endif #DEV_CAN0
+
+

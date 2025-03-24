@@ -1,0 +1,71 @@
+
+menuconfig DEV_LCDC0
+    bool "lcdc0"
+    default n
+    visible if y
+    select DRV_HPM_LCDC
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_99
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_35
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_36
+    select DEV_PIN_1_PIN_RES_32
+    select DEV_PIN_1_PIN_RES_31
+    select DEV_PIN_1_PIN_RES_26
+    select DEV_PIN_1_PIN_RES_21
+    select DEV_PIN_1_PIN_RES_27
+    select DEV_PIN_1_PIN_RES_28
+    select DEV_PIN_1_PIN_RES_38
+    select DEV_PIN_1_PIN_RES_33
+    select DEV_PIN_1_PIN_RES_22
+    select DEV_PIN_1_PIN_RES_23
+    select DEV_PIN_1_PIN_RES_29
+    select DEV_PIN_1_PIN_RES_24
+    select DEV_PIN_1_PIN_RES_30
+    select DEV_PIN_1_PIN_RES_25
+    select DEV_PIN_1_PIN_RES_37
+    select DEV_PIN_1_PIN_RES_39
+    select DEV_PIN_1_PIN_RES_34
+    select DEV_PIN_1_PIN_RES_16
+    select DEV_PIN_1_PIN_RES_12
+    select DEV_PIN_1_PIN_RES_17
+    select DEV_PIN_1_PIN_RES_13
+    select DEV_PIN_1_PIN_RES_18
+    select DEV_PIN_1_PIN_RES_20
+    select DEV_PIN_1_PIN_RES_15
+    select DEV_PIN_1_PIN_RES_19
+    select DEV_PIN_1_PIN_RES_14
+
+    help
+      Filename: "/dev/lcdc0"
+
+      dts_dev_prop:
+          name(unit): "hpm_lcdc" (0)
+          compatible: ['riscv,hpm-lcdc']
+          dts_path: /soc/lcdc@0xF1000000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\lcdc\riscv,hpm-lcdc.yaml
+
+
+if DEV_LCDC0
+
+config DEV_LCDC0_BUFFER_MODE
+    string "Number of frame buffers"
+    default "AW_FB_DOUBLE_BUFFER"
+    enum
+        "AW_FB_SINGLE_BUFFER"
+        "AW_FB_DOUBLE_BUFFER"
+        "AW_FB_TRIPLE_BUFFER"
+
+
+config DEV_LCDC0_FRAME_BUFFER_FIXEL_FMT
+    string "Frame Buffer Pixel format"
+    default "AW_FB_FIXEL_FMT_RGB565"
+    enum
+        "AW_FB_FIXEL_FMT_RGB565"
+        "AW_FB_FIXEL_FMT_RGB888"
+
+endif #DEV_LCDC0
+
+

@@ -1,0 +1,16 @@
+
+menuconfig DRV_PCF85063
+    bool "pcf85063 ['nxp,pcf85063']"
+    select AW_SUBSYS_TIME
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c0{
+            pcf85063:pcf85063@0x51{
+                compatible = "nxp,pcf85063";
+                status = "disabled";
+                label = "pcf85063";
+                reg = <0x51>;
+            };
+        };

@@ -1,0 +1,25 @@
+
+menuconfig DEV_GT911
+    bool "gt911 @ i2c3"
+    default n
+    visible if y
+    select DRV_GT911
+    select DEV_I2C3
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_130
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_129
+
+    help
+      Filename: "/dev/gt911"
+
+      dts_dev_prop:
+          name(unit): "gt911" (0)
+          compatible: ['goodix,gt911']
+          dts_path: /soc/i2c@0xF302C000/gt911@5d
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\touchscreen\gt911\goodix,gt911_ts.yaml
+
+
+
+
+

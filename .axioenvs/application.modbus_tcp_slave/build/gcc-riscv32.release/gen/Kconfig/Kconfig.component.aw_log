@@ -1,0 +1,20 @@
+
+menuconfig AW_LOG
+    bool "AWorks Logger"
+    libsafe 
+    select AW_INTERFACE
+    select AW_API_TIME
+    select AW_COMMON_IOCTL_CODE
+    select AW_OS_DELAYED_WORK
+    select AW_OS_SYS_DEFER
+    default n
+    help
+        Version: 1.0.4
+
+        
+if AW_LOG
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_log/Kconfig.opts"
+
+endif #AW_LOG
+

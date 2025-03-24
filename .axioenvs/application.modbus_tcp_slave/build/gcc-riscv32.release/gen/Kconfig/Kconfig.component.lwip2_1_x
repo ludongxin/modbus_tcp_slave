@@ -1,0 +1,10 @@
+
+menuconfig LWIP2_1_X
+    bool "lwip TCP/IP protocol suite"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

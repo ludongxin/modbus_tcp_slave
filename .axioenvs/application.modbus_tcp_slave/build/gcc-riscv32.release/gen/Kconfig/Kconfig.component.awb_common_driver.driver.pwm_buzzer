@@ -1,0 +1,31 @@
+
+menuconfig DRV_PWM_BUZZER
+    bool "pwm-buzzer ['pwm-buzzer']"
+    select AW_SUBSYS_DRIVER_PWM
+    select AWBUS
+    default n
+    help
+        Example of adding device to board.dts:
+
+        / {
+            buzzer{
+                compatible = "pwm-buzzer";
+                label = "Buzzer";
+                status = "disabled";
+                beep_level = <50>;
+                pwm_freq = <2731>;
+            };
+        };
+
+        Parameters:
+
+           beep_level:  PWM duty cycle(0%-100%).
+
+           pwm_freq:  PWM input frequency(unit:Hz)
+
+
+if DRV_PWM_BUZZER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/buzzer/awb_pwm_buzzer.Kconfig.opts"
+
+endif #DRV_PWM_BUZZER

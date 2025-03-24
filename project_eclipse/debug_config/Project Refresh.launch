@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ui.externaltools.ProgramLaunchConfigurationType">
+<stringAttribute key="org.eclipse.debug.core.ATTR_REFRESH_SCOPE" value="${workspace}"/>
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="AXIO_HOME_DIR" value="D:\aworks_lp_hpm6450_general_sdk-0.9.1"/>
+<mapEntry key="AXIO_PLATFORM_NAME" value="platform-hpm-aworks-lp"/>
+<mapEntry key="AXIO_PLATFORM_VERSION" value="0.1.13"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LAUNCH_CONFIGURATION_BUILD_SCOPE" value="${none}"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="true"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="D:\aworks_lp_hpm6450_general_sdk-0.9.1\packages\venv-axio-cli\Scripts\axio.exe"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="build -e application.modbus_tcp_slave -Xbuildsets=gcc-riscv32.debug -tide-prj "/>
+<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="D:\aworks_lp_hpm6450_general_sdk-0.9.1\demos\component\modbus\modbus_tcp_slave"/>
+</launchConfiguration>

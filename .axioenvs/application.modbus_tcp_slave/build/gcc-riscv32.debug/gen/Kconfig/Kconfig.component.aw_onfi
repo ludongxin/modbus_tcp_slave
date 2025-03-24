@@ -1,0 +1,10 @@
+
+menuconfig AW_ONFI
+    bool "ONFI"
+    libsafe 
+    select AW_SUBSYS_DRIVER_MTD
+    default n
+    help
+        Version: 0.0.0
+
+        

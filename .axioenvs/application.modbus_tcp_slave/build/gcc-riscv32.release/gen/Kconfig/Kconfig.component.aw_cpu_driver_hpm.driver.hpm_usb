@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_USB
+    bool "hpm_usb ['riscv,hpm-usb']"
+    select AW_SUBSYS_USB
+    default n

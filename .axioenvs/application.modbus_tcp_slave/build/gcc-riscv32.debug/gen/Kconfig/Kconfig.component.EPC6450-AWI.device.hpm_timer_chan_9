@@ -1,0 +1,96 @@
+
+menuconfig DEV_TIMER3_CHAN1
+    bool "timer3_chan1 @ timer3"
+    default n
+    visible if y
+    select DRV_HPM_TIMER_CHAN
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_145
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+    help
+      Filename: "/dev/timer3_chan1"
+
+      dts_dev_prop:
+          name(unit): "hpm_timer_chan" (9)
+          compatible: ['riscv,hpm-timer-chan']
+          dts_path: /soc/timer@0xF300C000/timer_chan@0xF300C040
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\timer\riscv,hpm-timer-chan.yaml
+
+
+if DEV_TIMER3_CHAN1
+
+config DEV_TIMER3_CHAN1_HWTIMER_DELAY_ENABLE
+    bool "Enable support for hwtimer delay"
+    default n
+    select DRV_TIMER_CHAN_HWTIMER_DELAY_EN 
+
+
+config DEV_TIMER3_CHAN1_HWTIMER_COUNTER_ENABLE
+    bool "Enable support for hwtimer count"
+    default n
+    select DRV_TIMER_CHAN_HWTIMER_COUNT_EN 
+
+
+if DEV_TIMER3_CHAN1_HWTIMER_COUNTER_ENABLE
+
+config DEV_TIMER3_CHAN1_HWTIMER_COUNTER_DEFAULT_PRESCALER
+    int "Default counter prescaler"
+    default 1
+    range 1 256
+
+endif #DEV_TIMER3_CHAN1_HWTIMER_COUNTER_ENABLE
+
+
+config DEV_TIMER3_CHAN1_HWTIMER_PERIOD_ENABLE
+    bool "Enable support for hwtimer period"
+    default n
+    select DRV_TIMER_CHAN_HWTIMER_PERIOD_EN 
+
+
+config DEV_TIMER3_CHAN1_HWTIMER_CAP_ENABLE
+    bool "Enable support for input capture"
+    default n
+    select DRV_TIMER_CHAN_HWTIMER_CAP_EN 
+
+
+if DEV_TIMER3_CHAN1_HWTIMER_CAP_ENABLE
+
+config DEV_TIMER3_CHAN1_DEFAULT_CAP_EDGE_FLAG
+    string "Default capture edge flags"
+    default "AW_CAPTURE_RISING_EDGE"
+    enum
+        "AW_CAPTURE_RISING_EDGE"
+        "AW_CAPTURE_FALLING_EDGE"
+        "AW_CAPTURE_DOUBLE_EDGE"
+
+endif #DEV_TIMER3_CHAN1_HWTIMER_CAP_ENABLE
+
+
+config DEV_TIMER3_CHAN1_PWM_ENABLE
+    bool "Enable support for pwm"
+    default n
+    select DRV_TIMER_CHAN_HWTIMER_PWM_EN 
+
+
+if DEV_TIMER3_CHAN1_PWM_ENABLE
+
+config DEV_TIMER3_CHAN1_PWM_DEFAULT_PERIOD_NS
+    int "Default PWM period (ns)"
+    default 2000000
+
+
+config DEV_TIMER3_CHAN1_PWM_DEFAULT_DUTY_NS
+    int "Default PWM duty (ns)"
+    default 1000000
+
+
+config DEV_TIMER3_CHAN1_PWM_DEFAULT_POLARITY
+    bool "Default PWM polarity"
+    default n
+
+endif #DEV_TIMER3_CHAN1_PWM_ENABLE
+
+endif #DEV_TIMER3_CHAN1
+
+

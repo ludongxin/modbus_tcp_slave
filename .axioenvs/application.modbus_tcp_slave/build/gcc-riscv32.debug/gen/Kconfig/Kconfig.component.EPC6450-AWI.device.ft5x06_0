@@ -1,0 +1,30 @@
+
+menuconfig DEV_FT5X06
+    bool "ft5x06 @ i2c3"
+    default n
+    visible if y
+    select DRV_FT5X06
+    select DEV_I2C3
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_130
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+    help
+      Filename: "/dev/ft5x06"
+
+      dts_dev_prop:
+          name(unit): "ft5x06" (0)
+          compatible: ['focaltech,ft5x06']
+          dts_path: /soc/i2c@0xF302C000/ft5x06@0x38
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\touchscreen\ft5x06\focaltech,ft5x06.yaml
+
+
+if DEV_FT5X06
+
+config DEV_FT5X06_SWAP_XY_EN
+    bool "swap x,y coordinate"
+    default y
+
+endif #DEV_FT5X06
+
+

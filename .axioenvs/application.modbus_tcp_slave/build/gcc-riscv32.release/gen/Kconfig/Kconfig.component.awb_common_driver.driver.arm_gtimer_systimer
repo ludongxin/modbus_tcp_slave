@@ -1,0 +1,10 @@
+
+menuconfig DRV_ARM_GTIMER_SYSTIMER
+    bool "arm_gtimer_systimer ['arm,arm-gtimer-systimer']"
+    default n
+
+if DRV_ARM_GTIMER_SYSTIMER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/arm_gtimer/arm,arm-gtimer-systmr.Kconfig.opts"
+
+endif #DRV_ARM_GTIMER_SYSTIMER

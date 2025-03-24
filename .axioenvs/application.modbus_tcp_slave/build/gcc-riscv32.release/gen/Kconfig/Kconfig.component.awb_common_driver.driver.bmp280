@@ -1,0 +1,17 @@
+
+menuconfig DRV_BMP280
+    bool "bmp280 ['BOSCH,bmp280']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            bmp280:bmp280@77 {
+                compatible = "BOSCH,bmp280";
+                label = "BMP280";
+                status = "disabled";
+                reg = <0x77>;
+            };
+        };

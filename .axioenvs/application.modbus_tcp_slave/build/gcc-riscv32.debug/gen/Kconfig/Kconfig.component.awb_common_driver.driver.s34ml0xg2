@@ -1,0 +1,68 @@
+
+menuconfig DRV_S34ML0XG2
+    bool "s34ml0xg2 ['spansion,s34ml0xg2']"
+    select AW_SUBSYS_DRIVER_MTD
+    select AW_ONFI
+    select AW_MATH
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &semc {
+            s34ml01g2:s34ml01g2@0 {
+                compatible = "spansion,s34ml0xg2";
+                label  = "s34ml01g2";
+                reg    = <0x00>;
+                status = "disabled";
+        
+                /*
+                 * If the typical value is set to 0, the ONFI driver will use the
+                 * maximum value.
+                 */
+                typical_time_ns_page_read    = <0>;
+                typical_time_ns_page_program = <(300*1000)>;
+                typical_time_ns_block_erase  = <(3*1000*1000)>;
+        
+                /* ECC */
+                ecc_mode      = "AWB_ONFI_ECC_MODE_CONTROLLER";
+                ecc_algorithm = "AWB_RAWNAND_CTRL_ECC_ALGO_BCH";
+        
+                partition_0 {
+                    label        = "s34_nand0";
+                    block_start  = <0>;
+                    block_number = <1024>;
+                };
+                partition_1 {
+                    label        = "s34_nand1";
+                    block_start  = <512>;
+                    block_number = <500>;
+                };
+                partition_2 {
+                    label        = "s34_nand2";
+                    block_start  = <1012>;
+                    block_number = <12>;
+                };
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &s34ml01g2{  
+            /*
+             * The index of the device's  selection pin in the controller.
+             * format:
+             * cs_pin_index = < CS index of target 0
+             *                  CS index of target 1
+             *                  CS index of target 2>;
+             */
+            cs_pin_index = <__CS_PIN_INDEX_SEMC_CSX0>;
+        };
+
+        Subnode parameters:
+
+           block_start:  The block number at the beginning of a partition
+
+           block_number:  Number of blocks occupied by a partition
+

@@ -1,0 +1,26 @@
+
+menuconfig DRV_LPS22HB
+    bool "lps22hb ['ST,lps22hb']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            lps22hb:lps22hb@5c {
+                compatible = "ST,lps22hb";
+                label = "LPS22HB";
+                status = "disabled";
+                reg = <0x5c>;
+                data-pins = <&pin1 GPIO1_24 GPIO1_24_GPIO (GPIO1_24_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_24_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &lps22hb{
+            data-pins = <&pin1 GPIO1_24 GPIO1_24_GPIO (GPIO1_24_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_24_GPIO>;
+        };

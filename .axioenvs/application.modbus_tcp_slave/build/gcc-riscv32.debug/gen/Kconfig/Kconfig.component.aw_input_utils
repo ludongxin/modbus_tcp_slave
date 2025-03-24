@@ -1,0 +1,17 @@
+
+menuconfig AW_INPUT_UTILS
+    bool "AWorks Input Utils"
+    libsafe 
+    select AW_INTERFACE
+    select AW_DEV_API
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_INPUT_UTILS
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/app/applications/aw_input_utils/Kconfig.opts"
+
+endif #AW_INPUT_UTILS
+

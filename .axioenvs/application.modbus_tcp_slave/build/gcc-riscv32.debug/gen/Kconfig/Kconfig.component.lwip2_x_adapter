@@ -1,0 +1,18 @@
+
+menuconfig LWIP2_X_ADAPTER
+    bool "lwip 2.1.x adapter"
+    libsafe 
+    select LWIP2_1_X
+    select AW_STDLIB
+    select AW_ERR_TO_ERRNO
+    default n
+    help
+        Version: 0.0.0
+
+        
+if LWIP2_X_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/net/lwip2.x_adapter/Kconfig.opts"
+
+endif #LWIP2_X_ADAPTER
+

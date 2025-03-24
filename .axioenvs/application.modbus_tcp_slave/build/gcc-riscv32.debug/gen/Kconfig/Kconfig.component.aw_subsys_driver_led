@@ -1,0 +1,11 @@
+
+menuconfig AW_SUBSYS_DRIVER_LED
+    bool "Subsys for led"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,22 @@
+
+menuconfig DRV_SPICARD
+    bool "spicard ['general,spicard']"
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &spi0 {
+            spicard{
+                compatible = "general,spicard";
+                label = "spi_mem_card";
+                status = "disabled";
+                /* cs-pins must be configured */
+                cs-pins = <&pin1 PIN_PZ02   (IOC_PZ02_FUNC_CTL_GPIO_Z_02|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                            (IOC_PZ02_FUNC_CTL_GPIO_Z_02|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                            (IOC_PZ02_FUNC_CTL_GPIO_Z_02|AW_PIN_CFG_GPIO_OUTPUT_HIGH)>;
+                /* you can configure the int-pins when you device supports hot swap */
+                int-pins = <&pin1 PIN_PZ11   (IOC_PZ11_FUNC_CTL_GPIO_Z_11|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                             (IOC_PZ11_FUNC_CTL_GPIO_Z_11|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                             (IOC_PZ11_FUNC_CTL_GPIO_Z_11|AW_PIN_CFG_GPIO_OUTPUT_HIGH)>;
+            };
+        };

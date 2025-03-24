@@ -1,0 +1,23 @@
+
+menuconfig AW_FS_LFFS
+    bool "Lffs"
+    libsafe 
+    select AW_IO_BASE
+    select AW_SUBSYS_DRIVER_MTD
+    select AW_OS_SYS_DEFER
+    select AW_OS_DELAYED_WORK
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_API_TIME
+    select AW_STDIO
+    select AWB_VFS_MOUNT_EN
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_FS_LFFS
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/aw_fs_lffs/Kconfig.opts"
+
+endif #AW_FS_LFFS
+

@@ -1,0 +1,28 @@
+
+menuconfig DRV_LSM6DSL
+    bool "lsm6dsl ['ST,lsm6dsl']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            lsm6dsl:lsm6dsl@6b {
+                compatible = "ST,lsm6dsl";
+                label = "LSM6DSL";
+                status = "disabled";
+                reg = <0x6b>;
+                event-pins = <&pin1 GPIO1_14 GPIO1_14_GPIO (GPIO1_14_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_14_GPIO>;
+                data-pins  = <&pin1 GPIO1_15 GPIO1_15_GPIO (GPIO1_15_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_15_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &lsm6dsl{
+            event-pins = <&pin1 GPIO1_14 GPIO1_14_GPIO (GPIO1_14_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_14_GPIO>;
+            data-pins  = <&pin1 GPIO1_15 GPIO1_15_GPIO (GPIO1_15_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_15_GPIO>;
+        };

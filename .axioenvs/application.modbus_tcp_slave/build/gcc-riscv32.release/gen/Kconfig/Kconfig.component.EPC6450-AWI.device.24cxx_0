@@ -1,0 +1,42 @@
+
+menuconfig DEV_DS2460
+    bool "ds2460 @ i2c0"
+    default n
+    visible if y
+    select DRV_24CXX
+    select DEV_I2C0
+
+    help
+      Filename: "/dev/ds2460"
+
+      dts_dev_prop:
+          name(unit): "24cxx" (0)
+          compatible: ['atmel,24cxx']
+          dts_path: /soc/i2c@0xF3020000/atmel_ds2460@40
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\atmel_24cxx\atmel,24cxx.yaml
+
+
+if DEV_DS2460
+
+config DEV_DS2460_DEVICE_TYPE
+    string "Capacity Type"
+    default "AWBL_EP24CXX_DS2460"
+    help 
+        Must choice correct device-type, otherwise, device operate will fail.
+    enum
+        "AWBL_EP24CXX_EP24C01"
+        "AWBL_EP24CXX_EP24C02"
+        "AWBL_EP24CXX_EP24C04"
+        "AWBL_EP24CXX_EP24C08"
+        "AWBL_EP24CXX_EP24C16"
+        "AWBL_EP24CXX_EP24C32"
+        "AWBL_EP24CXX_EP24C64"
+        "AWBL_EP24CXX_EP24C128"
+        "AWBL_EP24CXX_EP24C256"
+        "AWBL_EP24CXX_EP24C512"
+        "AWBL_EP24CXX_EP24C1024"
+        "AWBL_EP24CXX_DS2460"
+
+endif #DEV_DS2460
+
+

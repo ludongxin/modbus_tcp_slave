@@ -1,0 +1,20 @@
+
+menuconfig AW_FS_ROMFS
+    bool "Romfs"
+    libsafe 
+    select AW_SUBSYS_DRIVER_MTD
+    select AW_SUBSYS_STORAGE_BLOCKDEV
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_IO_BASE
+    select AWB_VFS_MOUNT_EN
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_FS_ROMFS
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/aw_fs_romfs/Kconfig.opts"
+
+endif #AW_FS_ROMFS
+

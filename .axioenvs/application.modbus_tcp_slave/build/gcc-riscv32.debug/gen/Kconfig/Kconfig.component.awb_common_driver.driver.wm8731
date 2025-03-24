@@ -1,0 +1,47 @@
+
+menuconfig DRV_WM8731
+    bool "wm8731 ['wolfson,wm8731']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_I2C
+    select AWSA_FRAMEWORK
+    select AW_DEV_API
+    default n
+    help
+        Example of adding device to board.dts:
+
+        To use wm8731,need to invoke the open interface to open the wm8731 character device before using the awsa interface.
+        make sure that after awsa platform registration,invoke the wm8731 interface to register the decoder and sound card.
+        the value of i2s-handle is determined by the selected platform i2s dev. 
+        &i2c1{
+            wm8731:wm8731@0x34 {
+                i2s-handle = <&i2s1>;
+                compatible = "wolfson,wm8731";
+                status = "disabled";
+                label = "wm8731";
+                reg = <0x34>;
+                ck-pins    = <&pin1 GPIOF_6 GPIO_FUNC_54_G3_I2S1_CK GPIO_FUNC_54_G3_I2S1_CK GPIO_FUNC_54_G3_I2S1_CK>;
+                sd-pins    = <&pin1 GPIOF_7 GPIO_FUNC_56_G3_I2S1_SD GPIO_FUNC_56_G3_I2S1_SD GPIO_FUNC_56_G3_I2S1_SD>;
+                ws-pins    = <&pin1 GPIOF_8 GPIO_FUNC_55_G3_I2S1_WS GPIO_FUNC_55_G3_I2S1_WS GPIO_FUNC_55_G3_I2S1_WS>;
+                mck-pins   = <&pin1 GPIOA_5 GPIOA_5_FUNC_17_I2S1_MCK GPIOA_5_FUNC_17_I2S1_MCK GPIOA_5_FUNC_17_I2S1_MCK>;
+                exck-pins  = <&pin1 GPIOG_7 GPIOG_7_FUNC_17_I2S1_EXCK GPIOG_7_FUNC_17_I2S1_EXCK GPIOG_7_FUNC_17_I2S1_EXCK>;
+                sdin-pins  = <&pin1 GPIOI_2 GPIOI_2_FUNC_17_I2S1_SDIN GPIOI_2_FUNC_17_I2S1_SDIN GPIOI_2_FUNC_17_I2S1_SDIN>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &wm8731{
+            ck-pins    = <&pin1 GPIOF_6 GPIO_FUNC_54_G3_I2S1_CK GPIO_FUNC_54_G3_I2S1_CK GPIO_FUNC_54_G3_I2S1_CK>;
+            sd-pins    = <&pin1 GPIOF_7 GPIO_FUNC_56_G3_I2S1_SD GPIO_FUNC_56_G3_I2S1_SD GPIO_FUNC_56_G3_I2S1_SD>;
+            ws-pins    = <&pin1 GPIOF_8 GPIO_FUNC_55_G3_I2S1_WS GPIO_FUNC_55_G3_I2S1_WS GPIO_FUNC_55_G3_I2S1_WS>;
+            mck-pins   = <&pin1 GPIOA_5 GPIOA_5_FUNC_17_I2S1_MCK GPIOA_5_FUNC_17_I2S1_MCK GPIOA_5_FUNC_17_I2S1_MCK>;
+            exck-pins  = <&pin1 GPIOG_7 GPIOG_7_FUNC_17_I2S1_EXCK GPIOG_7_FUNC_17_I2S1_EXCK GPIOG_7_FUNC_17_I2S1_EXCK>;
+            sdin-pins  = <&pin1 GPIOI_2 GPIOI_2_FUNC_17_I2S1_SDIN GPIOI_2_FUNC_17_I2S1_SDIN GPIOI_2_FUNC_17_I2S1_SDIN>;
+        };
+
+        Parameters:
+
+           i2s-handle:  select platform i2s dev
+

@@ -1,0 +1,10 @@
+
+menuconfig AW_TENCENTCLOUD
+    bool "component aw_tencentcloud"
+    libsafe 
+    select AW_TENCENTCLOUD_ADAPTER
+    default n
+    help
+        Version: 0.1.0
+
+        

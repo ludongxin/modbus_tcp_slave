@@ -1,0 +1,8 @@
+axtoml_version="1.0.0"
+
+[axio]
+    enable_long_paths = true
+
+[env.application.modbus_tcp_slave]
+    name = "modbus_tcp_slave"
+    platform = 'platform-hpm-aworks-lp'

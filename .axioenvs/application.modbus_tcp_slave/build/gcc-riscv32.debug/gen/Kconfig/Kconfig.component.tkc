@@ -1,0 +1,18 @@
+
+menuconfig TKC
+    bool "cross-platform universal c library toolkit"
+    libsafe 
+    select AW_COMPILER_COMMON_POSIX_SOCKET
+    select AW_IO_BASE
+    select AW_DEV_API
+    default n
+    help
+        Version: 0.2.2
+
+        
+if TKC
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/tkc/Kconfig.opts"
+
+endif #TKC
+

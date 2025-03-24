@@ -1,0 +1,21 @@
+
+menuconfig AW_FS_FATFS
+    bool "Fatfs"
+    libsafe 
+    select AW_SUBSYS_STORAGE_BLOCKDEV
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_API_TIMETRANS
+    select AW_IO_BASE
+    select AW_CH_ENCODING_CONVERT
+    select AWB_VFS_MOUNT_EN
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_FS_FATFS
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/aw_fs_fatfs/Kconfig.opts"
+
+endif #AW_FS_FATFS
+

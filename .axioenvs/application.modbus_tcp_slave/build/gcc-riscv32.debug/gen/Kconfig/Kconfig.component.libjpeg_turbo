@@ -1,0 +1,16 @@
+
+menuconfig LIBJPEG_TURBO
+    bool "libjpeg-turbo"
+    libsafe 
+    default n
+    help
+        Version: 3.0.0
+
+        
+if LIBJPEG_TURBO
+
+
+osource  "$(ax_imp_paths,aw_libjpeg_turbo_adapter_interface,,False)"
+
+endif #LIBJPEG_TURBO
+

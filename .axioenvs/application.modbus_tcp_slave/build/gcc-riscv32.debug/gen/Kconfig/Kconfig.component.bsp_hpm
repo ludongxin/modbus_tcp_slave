@@ -1,0 +1,9 @@
+
+menuconfig BSP_HPM
+    bool "HPM Common Board Support"
+    libsafe 
+    default n
+    help
+        Version: 1.0.0
+
+        

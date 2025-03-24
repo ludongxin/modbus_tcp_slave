@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_CAN_FAST
+    bool "hpm_can_fast ['riscv,hpm_can,fast']"
+    select AW_SUBSYS_DRIVER_CAN
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

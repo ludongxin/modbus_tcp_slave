@@ -1,0 +1,43 @@
+
+menuconfig DRV_CYW43362_SDIO
+    bool "cyw43362_sdio ['cypress,cyw43362_sdio']"
+    select AW_SUBSYS_DRIVER_SDIO
+    select AWB_SUBSYS_NETIF
+    select AW_SUBSYS_DRIVER_WIFI
+    select WICED
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &sdio2 {
+            cyw43362:cyw43362_sdio{
+                compatible = "cypress,cyw43362_sdio";
+                label = "cyw43362";
+                status = "disabled";
+                wake-pins = <&pin1 PIN_PD25 (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_DOWN|IOC_PD25_FUNC_CTL_GPIO_D_25)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_DOWN|IOC_PD25_FUNC_CTL_GPIO_D_25)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_DOWN|IOC_PD25_FUNC_CTL_GPIO_D_25)>;
+                reset-pins= <&pin1 PIN_PD15 (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_DOWN|IOC_PD15_FUNC_CTL_GPIO_D_15)
+                                            (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_DOWN|IOC_PD15_FUNC_CTL_GPIO_D_15)
+                                            (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_DOWN|IOC_PD15_FUNC_CTL_GPIO_D_15)>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &cyw43362{
+            wake-pins = <&pin1 PIN_PD25 (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_DOWN|IOC_PD25_FUNC_CTL_GPIO_D_25)
+                                        (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_DOWN|IOC_PD25_FUNC_CTL_GPIO_D_25)
+                                        (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_DOWN|IOC_PD25_FUNC_CTL_GPIO_D_25)>;
+            reset-pins= <&pin1 PIN_PD15 (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_DOWN|IOC_PD15_FUNC_CTL_GPIO_D_15)
+                                        (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_DOWN|IOC_PD15_FUNC_CTL_GPIO_D_15)
+                                        (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_DOWN|IOC_PD15_FUNC_CTL_GPIO_D_15)>;
+        };
+
+if DRV_CYW43362_SDIO
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/cyw43xxx/cypress,cyw43362_sdio.Kconfig.opts"
+
+endif #DRV_CYW43362_SDIO

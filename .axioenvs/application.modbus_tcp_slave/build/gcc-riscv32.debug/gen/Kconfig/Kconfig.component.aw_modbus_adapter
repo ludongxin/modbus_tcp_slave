@@ -1,0 +1,21 @@
+
+menuconfig AW_MODBUS_ADAPTER
+    bool "AWorks Mudbus Adapter"
+    libsafe 
+    select AW_INTERFACE
+    select AW_DEV_API
+    select COMPILER_SUPPORT_POSIX_FILE
+    default n
+    help
+        Version: 1.0.12
+
+        Detail:help
+
+        modbus protocol support.
+
+if AW_MODBUS_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/24eb128d-aw_modbus_adapter/Kconfig.opts"
+
+endif #AW_MODBUS_ADAPTER
+

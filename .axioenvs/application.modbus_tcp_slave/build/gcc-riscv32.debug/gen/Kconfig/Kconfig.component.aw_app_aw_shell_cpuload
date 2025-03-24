@@ -1,0 +1,23 @@
+
+menuconfig AW_APP_AW_SHELL_CPULOAD
+    bool "AWorks Shell supports cpuload commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_API_TIMETRANS_LOCAL
+    select AW_STDIO
+    select AW_STDIO_PRINTF_TYPES_FLOAT_EN
+    select AW_STDIO_PRINTF_PRECISION_POINTER_EN
+    select AW_STDIO_PRINTF_WIDTH_POINTER_EN
+    select RTK_PERFORMANCE_STATISTIC_EN
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:CPU usage statistics function; You can input 'cpuload' to shell for show it. 
+
+if AW_APP_AW_SHELL_CPULOAD
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/app/applications/aw_shell_cpuload/Kconfig.opts"
+
+endif #AW_APP_AW_SHELL_CPULOAD
+

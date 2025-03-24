@@ -1,0 +1,20 @@
+
+menuconfig AW_SUBSYS_TIME
+    bool "Subsys for time and RTC device"
+    libsafe 
+    select AW_INTERFACE
+    select AW_API_TIMETRANS
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AW_API_TIMETRANS_LOCAL
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_SUBSYS_TIME
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_time/Kconfig.opts"
+
+endif #AW_SUBSYS_TIME
+

@@ -1,0 +1,66 @@
+
+menuconfig DRV_CSM300X_SPI_CAN
+    bool "csm300x_spi_can ['zlg,csm300x-spi-can']"
+    select AW_SUBSYS_DRIVER_SPI
+    select AW_SUBSYS_DRIVER_CAN
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        "zlg,csm300x-spi-can" is used to realize SPI to CAN.
+
+        Example of adding device to board.dts:
+
+        &spi1 {
+            csm300x_spi_can:csm300x_spi_can@0{
+                compatible = "zlg,csm300x-spi-can";
+                label = "csm300x_spi_can";
+                reg = <0>; /* cs index, chipselects from the spi host */
+                status = "disabled";
+                cfg-pins  = <&pin1 GPIO1_8   (GPIO1_8_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+                /* if exist mode pin to control cam300x */
+                mode-pins = <&pin1 GPIO1_9   (GPIO1_9_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_9_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_9_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+                rst-pins  = <&pin1 GPIO3_4   (GPIO3_4_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)
+                                             (GPIO3_4_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)
+                                             (GPIO3_4_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)>;
+                int-pins  = <&pin1 GPIO1_20  (GPIO1_20_GPIO | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_20_GPIO | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_20_GPIO | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)>;
+                ctl0-pins = <&pin1 GPIO1_26  (GPIO1_26_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_26_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_26_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+                ctl1-pins = <&pin1 GPIO1_27  (GPIO1_27_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_27_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_27_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &csm300x_spi_can{  
+                cfg-pins  = <&pin1 GPIO1_8   (GPIO1_8_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+                /* if exist mode pin to control cam300x */
+                mode-pins = <&pin1 GPIO1_9   (GPIO1_9_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_9_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_9_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+                rst-pins  = <&pin1 GPIO3_4   (GPIO3_4_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)
+                                             (GPIO3_4_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)
+                                             (GPIO3_4_GPIO  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)>;
+                int-pins  = <&pin1 GPIO1_20  (GPIO1_20_GPIO | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_20_GPIO | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_20_GPIO | AW_PIN_CFG_GPIO_INPUT       | AW_PIN_CFG_PULL_UP)>;
+                ctl0-pins = <&pin1 GPIO1_26  (GPIO1_26_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_26_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_26_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+                ctl1-pins = <&pin1 GPIO1_27  (GPIO1_27_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_27_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_27_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+        };

@@ -1,0 +1,10 @@
+
+menuconfig AW_APP_AW_SHELL_STACK
+    bool "AWorks Shell supports stack commands"
+    libsafe 
+    select AW_APP_SHELL
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:AWorks task stack display function; User can input 'stack' to shell for show task information.

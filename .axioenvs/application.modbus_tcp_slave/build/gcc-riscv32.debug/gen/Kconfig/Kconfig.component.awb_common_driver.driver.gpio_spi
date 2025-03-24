@@ -1,0 +1,45 @@
+
+menuconfig DRV_GPIO_SPI
+    bool "gpio_spi ['general,gpio_spi']"
+    select AW_SUBSYS_DRIVER_SPI
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n
+    help
+        Example of adding device to board.dts:
+
+        / {
+            gpiospi0:gpiospi_0 { 
+            compatible = "general,gpio_spi";
+            label = "gpiospi0";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            bus_speed = <400000>;
+            status = "disabled";
+            sclk-pins = <&pin1 PIN_PZ03 IOC_PZ03_FUNC_CTL_GPIO_Z_03 IOC_PZ03_FUNC_CTL_GPIO_Z_03 IOC_PZ03_FUNC_CTL_GPIO_Z_03>;
+            mosi-pins = <&pin1 PIN_PZ04 IOC_PZ04_FUNC_CTL_GPIO_Z_04 IOC_PZ04_FUNC_CTL_GPIO_Z_04 IOC_PZ04_FUNC_CTL_GPIO_Z_04>;
+            miso-pins = <&pin1 PIN_PZ05 IOC_PZ05_FUNC_CTL_GPIO_Z_05 IOC_PZ05_FUNC_CTL_GPIO_Z_05 IOC_PZ05_FUNC_CTL_GPIO_Z_05>;
+            cs-pins   = <&pin1 PIN_PZ02 IOC_PZ02_FUNC_CTL_GPIO_Z_02 IOC_PZ02_FUNC_CTL_GPIO_Z_02 IOC_PZ02_FUNC_CTL_GPIO_Z_02>;
+            /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+            chipselects = <PIN_PZ02  0  0  0    /* 片选索引 0 */
+                      >;
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &gpiospi0{
+            sclk-pins = <&pin1 PIN_PZ03 IOC_PZ03_FUNC_CTL_GPIO_Z_03 IOC_PZ03_FUNC_CTL_GPIO_Z_03 IOC_PZ03_FUNC_CTL_GPIO_Z_03>;
+            mosi-pins = <&pin1 PIN_PZ04 IOC_PZ04_FUNC_CTL_GPIO_Z_04 IOC_PZ04_FUNC_CTL_GPIO_Z_04 IOC_PZ04_FUNC_CTL_GPIO_Z_04>;
+            miso-pins = <&pin1 PIN_PZ05 IOC_PZ05_FUNC_CTL_GPIO_Z_05 IOC_PZ05_FUNC_CTL_GPIO_Z_05 IOC_PZ05_FUNC_CTL_GPIO_Z_05>;
+            cs-pins   = <&pin1 PIN_PZ02 IOC_PZ02_FUNC_CTL_GPIO_Z_02 IOC_PZ02_FUNC_CTL_GPIO_Z_02 IOC_PZ02_FUNC_CTL_GPIO_Z_02>;
+            /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+            chipselects = <PIN_PZ02  0  0  0    /* 片选索引 0 */
+                      >;
+        };
+
+if DRV_GPIO_SPI
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/gpio_spi/general,gpio_spi.Kconfig.opts"
+
+endif #DRV_GPIO_SPI

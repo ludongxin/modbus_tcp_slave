@@ -1,0 +1,37 @@
+
+menuconfig DRV_GPIO_KEY
+    bool "gpio_key ['general,gpio_key']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_OS_DELAYED_WORK
+    default n
+    help
+        Example of adding device to board.dts:
+
+        / {
+          gpio_key{
+             compatible = "general,gpio_key";
+             label = "gpio_keys";
+             status = "disabled";
+             key1{
+                 pins = <&pin1 GPIO1_8 (GPIO1_8_GPIO|AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                       (GPIO1_8_GPIO|AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                       (GPIO1_8_GPIO|AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP)>;
+                 active_high = "false";
+                 label = "key1";
+                 status = "disabled";
+             };
+             key2{
+                 pins = <&pin1 GPIO1_9 (GPIO1_9_GPIO|AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                       (GPIO1_9_GPIO|AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP)
+                                       (GPIO1_9_GPIO|AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP)>;
+                 active_high = "false";
+                 label = "key2";
+                 status = "disabled";
+              };
+          };
+        };
+
+        Subnode parameters:
+
+           active_high:  if high level when key be pressed
+

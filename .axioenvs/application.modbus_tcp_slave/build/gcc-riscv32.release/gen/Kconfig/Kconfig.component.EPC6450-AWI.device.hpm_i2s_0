@@ -1,0 +1,23 @@
+
+menuconfig DEV_I2S1
+    bool "i2s1"
+    default n
+    visible if y
+    select DRV_HPM_I2S
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_92
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/i2s1"
+
+      dts_dev_prop:
+          name(unit): "hpm_i2s" (0)
+          compatible: ['riscv,hpm-i2s']
+          dts_path: /soc/i2s@0xF0104000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\i2s\riscv,hpm-i2s.yaml
+
+
+
+
+

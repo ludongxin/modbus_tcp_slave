@@ -1,0 +1,19 @@
+
+menuconfig AWTK
+    bool "awtk framework"
+    libsafe 
+    select TKC
+    select AW_IO_BASE
+    select AW_API_TIME
+    select AW_IO_DIR
+    default n
+    help
+        Version: 0.1.12
+
+        
+if AWTK
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/awtk/Kconfig.opts"
+
+endif #AWTK
+

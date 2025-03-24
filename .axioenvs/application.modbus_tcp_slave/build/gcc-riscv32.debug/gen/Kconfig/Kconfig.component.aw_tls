@@ -1,0 +1,10 @@
+
+menuconfig AW_TLS
+    bool "AWorks thread local storage functions"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

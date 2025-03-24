@@ -1,0 +1,13 @@
+
+menuconfig AWB_INET_NETDB
+    bool "AWorks implementation for internet netdb"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AW_CTYPE
+    select AW_STDLIB
+    select AWB_INET_LWIP_TOP
+    default n
+    help
+        Version: 0.0.0
+
+        

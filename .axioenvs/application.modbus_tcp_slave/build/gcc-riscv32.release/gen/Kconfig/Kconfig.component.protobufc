@@ -1,0 +1,9 @@
+
+menuconfig PROTOBUFC
+    bool "a C implementation of the Google Protocol Buffers"
+    libsafe 
+    default n
+    help
+        Version: 0.1.0
+
+        

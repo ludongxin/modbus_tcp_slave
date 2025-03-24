@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_OTP
+    bool "hpm_otp ['riscv,hpm-otp']"
+    select AWB_FS_DEVFS
+    default n

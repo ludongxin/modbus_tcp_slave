@@ -1,0 +1,10 @@
+
+menuconfig AW_NOTIFIER
+    bool "AWorks Notifier"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

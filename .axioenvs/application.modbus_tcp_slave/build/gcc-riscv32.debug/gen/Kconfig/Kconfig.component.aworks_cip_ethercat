@@ -1,0 +1,10 @@
+
+menuconfig AWORKS_CIP_ETHERCAT
+    bool "EtherCAT Slave Stack Component"
+    libsafe 
+    select AW_DEV_API
+    default n
+    help
+        Version: 0.3.1
+
+        

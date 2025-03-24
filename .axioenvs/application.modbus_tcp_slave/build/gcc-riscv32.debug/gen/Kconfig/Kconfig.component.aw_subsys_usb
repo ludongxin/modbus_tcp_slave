@@ -1,0 +1,22 @@
+
+menuconfig AW_SUBSYS_USB
+    bool "Subsys for usb"
+    libsafe 
+    select AW_STDIO
+    select AWBUS
+    select AW_INTERFACE
+    select AW_MEM_MANAGER_MEM_HEAP
+    select AW_DEV_API
+    select AW_OS_DELAYED_WORK
+    select AWB_FS_DEVFS
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_SUBSYS_USB
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_driver_usb/Kconfig.opts"
+
+endif #AW_SUBSYS_USB
+

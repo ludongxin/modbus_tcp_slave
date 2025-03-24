@@ -1,0 +1,28 @@
+
+menuconfig DRV_LIS3MDL
+    bool "lis3mdl ['ST,lis3mdl']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            lis3mdl:lis3mdl@1c {
+                compatible = "ST,lis3mdl";
+                label = "LIS3MDL";
+                status = "disabled";
+                reg = <0x1c>;
+                event-pins = <&pin1 GPIO1_28 GPIO1_28_GPIO (GPIO1_28_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_28_GPIO>;
+                data-pins  = <&pin1 GPIO1_30 GPIO1_30_GPIO (GPIO1_30_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_30_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &lis3mdl{
+            event-pins = <&pin1 GPIO1_28 GPIO1_28_GPIO (GPIO1_28_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_28_GPIO>;
+            data-pins  = <&pin1 GPIO1_30 GPIO1_30_GPIO (GPIO1_30_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_30_GPIO>;
+        };

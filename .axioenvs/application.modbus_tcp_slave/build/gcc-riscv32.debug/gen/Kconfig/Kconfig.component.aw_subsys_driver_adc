@@ -1,0 +1,13 @@
+
+menuconfig AW_SUBSYS_DRIVER_ADC
+    bool "Subsys for adc device"
+    libsafe 
+    select AW_MEM_MANAGER_RINGBUFFER
+    select AWBUS
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    default n
+    help
+        Version: 0.0.0
+
+        

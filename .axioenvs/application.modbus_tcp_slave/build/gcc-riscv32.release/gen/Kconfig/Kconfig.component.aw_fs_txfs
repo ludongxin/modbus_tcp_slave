@@ -1,0 +1,23 @@
+
+menuconfig AW_FS_TXFS
+    bool "TXFS"
+    libsafe 
+    select AW_API_TIME
+    select AWORKS_BASE
+    select AW_IO_BASE
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_OS_DEFER
+    select AWB_PM_NOTIFY
+    select AW_SUBSYS_STORAGE_BLOCKDEV
+    select AWB_VFS_MOUNT_EN
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This file system may have some lock usage errors,don's use it if no necessary.
+if AW_FS_TXFS
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/aw_fs_txfs/Kconfig.opts"
+
+endif #AW_FS_TXFS
+

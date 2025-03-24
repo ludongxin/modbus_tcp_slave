@@ -1,0 +1,21 @@
+
+menuconfig LIBCURL
+    bool "libcurl"
+    libsafe 
+    select MBEDTLS
+    default n
+    help
+        Version: 7.86.1
+
+        Detail:help
+
+        libcurl is a free client-side URL transfer library,it supports about 26
+
+        protocols. In AWorks,we only open a part of it for use.
+if LIBCURL
+
+
+osource  "$(ax_imp_paths,libcurl_adapter_interface,,False)"
+
+endif #LIBCURL
+

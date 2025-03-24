@@ -1,0 +1,15 @@
+
+menuconfig DRV_SPI_FLASH
+    bool "spi_flash ['spi,flash']"
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &lpspi3 {
+            spi_flash@0{
+                compatible = "spi,flash";
+                label = "spiflash";
+                reg = <0>; /* cs index, chipselects from the spi host */
+                status = "disabled";
+            };
+        };

@@ -1,0 +1,36 @@
+
+menuconfig DRV_GENERAL_ZLG7291
+    bool "general,zlg7291 ['zlg,zlg7291']"
+    select AW_OS_DEFER
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c0{
+            zlg7291:zlg7291@0x30{
+                compatible = "zlg,zlg7291";
+                status = "zlg7291";
+                label = "zlg7291";
+                reg = <0x30>;
+                int-pins = <&pin1 PIN_PE24 (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE24_FUNC_CTL_GPIO_E_24)
+                                           (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE24_FUNC_CTL_GPIO_E_24)
+                                           (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE24_FUNC_CTL_GPIO_E_24)>;
+                reset-pins = <&pin1 PIN_PF00 (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP| IOC_PF00_FUNC_CTL_GPIO_F_00)
+                                             (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP| IOC_PF00_FUNC_CTL_GPIO_F_00)
+                                             (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP| IOC_PF00_FUNC_CTL_GPIO_F_00)>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &zlg7291{
+            int-pins = <&pin1 PIN_PE24 (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE24_FUNC_CTL_GPIO_E_24)
+                                       (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE24_FUNC_CTL_GPIO_E_24)
+                                       (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE24_FUNC_CTL_GPIO_E_24)>;
+            reset-pins = <&pin1 PIN_PF00 (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP| IOC_PF00_FUNC_CTL_GPIO_F_00)
+                                         (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP| IOC_PF00_FUNC_CTL_GPIO_F_00)
+                                         (AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP| IOC_PF00_FUNC_CTL_GPIO_F_00)>;
+        };

@@ -1,0 +1,11 @@
+
+menuconfig AW_API_TIMETRANS_LOCAL
+    bool "AWorks API of local time trans"
+    libsafe 
+    select AW_API_TIMETRANS
+    select AW_API_TIMEZONE
+    default n
+    help
+        Version: 0.0.0
+
+        

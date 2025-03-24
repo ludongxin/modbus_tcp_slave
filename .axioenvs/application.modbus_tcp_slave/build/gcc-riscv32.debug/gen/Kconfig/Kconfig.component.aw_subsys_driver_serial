@@ -1,0 +1,19 @@
+
+menuconfig AW_SUBSYS_DRIVER_SERIAL
+    bool "Subsys for serial device"
+    libsafe 
+    select AW_MEM_MANAGER_RINGBUFFER
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AWB_PM_NOTIFY
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_SUBSYS_DRIVER_SERIAL
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_driver_serial/Kconfig.opts"
+
+endif #AW_SUBSYS_DRIVER_SERIAL
+

@@ -1,0 +1,18 @@
+
+menuconfig COMPILER_ARM_NONE_EABI_GCC
+    bool "Compiler arm-none-eabi-gcc support(libc and posix)"
+    libsafe 
+    select AW_ERR_TO_ERRNO
+    select AW_COMPILER_POSIX_COMMON_BASE
+    select AW_SYS_DEFINE_SOCKET
+    default n
+    help
+        Version: 0.0.0
+
+        
+if COMPILER_ARM_NONE_EABI_GCC
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/app/applications/compiler_arm-none-eabi-gcc/Kconfig.opts"
+
+endif #COMPILER_ARM_NONE_EABI_GCC
+

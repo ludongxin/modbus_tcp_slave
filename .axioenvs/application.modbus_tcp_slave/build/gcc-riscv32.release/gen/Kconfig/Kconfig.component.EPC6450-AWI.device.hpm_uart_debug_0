@@ -1,0 +1,43 @@
+
+menuconfig DEV_UART0
+    bool "uart0"
+    default y
+    visible if y
+    select DRV_HPM_UART_DEBUG
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_31
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_190
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_189
+
+    help
+      Filename: "/dev/uart0"
+
+      dts_dev_prop:
+          name(unit): "hpm_uart_debug" (0)
+          compatible: ['riscv,hpm_uart_dbg']
+          dts_path: /soc/uart@F0040000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\uart\riscv,hpm_uart_dbg.yaml
+
+
+if DEV_UART0
+
+config DEV_UART0_DEFAULT_BAUDRATE
+    int "the default Baudrate for uart"
+    default 115200
+
+
+config DEV_UART0_RX_BUF_SIZE
+    int "Size of receive buffer"
+    default 128
+
+
+config DEV_UART0_TX_BUF_SIZE
+    int "Size of transmit buffer"
+    default 128
+
+endif #DEV_UART0
+
+

@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_PTMR_WKUPTMR
+    bool "hpm_ptmr_wkuptmr ['riscv,hpm_ptmr_wkuptmr']"
+    select AWBUS
+    select AW_API_PM
+    default n

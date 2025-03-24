@@ -1,0 +1,13 @@
+
+menuconfig AW_SUBSYS_STORAGE_BLOCKDEV
+    bool "component aw_subsys_storage_blockdev"
+    libsafe 
+    select AWORKS_BASE
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AW_STDIO
+    default n
+    help
+        Version: 0.0.0
+
+        

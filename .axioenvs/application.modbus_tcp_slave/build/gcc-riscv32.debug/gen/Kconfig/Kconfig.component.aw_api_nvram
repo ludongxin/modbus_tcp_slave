@@ -1,0 +1,10 @@
+
+menuconfig AW_API_NVRAM
+    bool "AWorks API of nvram"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

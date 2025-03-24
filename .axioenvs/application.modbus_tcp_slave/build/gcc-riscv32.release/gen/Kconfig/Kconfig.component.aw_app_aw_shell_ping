@@ -1,0 +1,11 @@
+
+menuconfig AW_APP_AW_SHELL_PING
+    bool "AWorks Shell supports ping commands"
+    libsafe 
+    select AW_APP_SHELL
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    default n
+    help
+        Version: 0.0.0
+
+        

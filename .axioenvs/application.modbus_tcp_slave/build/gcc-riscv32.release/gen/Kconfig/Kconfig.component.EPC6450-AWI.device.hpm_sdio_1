@@ -1,0 +1,104 @@
+
+menuconfig DEV_SDIO1
+    bool "sdio1"
+    default n
+    visible if y
+    select DRV_HPM_SDIO
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_111
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_124
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_117
+    select DEV_PIN_1_PIN_RES_118
+    select DEV_PIN_1_PIN_RES_114
+    select DEV_PIN_1_PIN_RES_113
+    select DEV_PIN_1_PIN_RES_123
+    select DEV_PIN_1_PIN_RES_122
+
+    select DRV_SDIO_MEM_CARD
+    help
+      DTS_device_prop:
+          name(unit): "hpm_sdio" (1)
+          compatible: ['riscv,hpm-sdio']
+          dts_path: /soc/sdio@0xF2034000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\sdio\riscv,hpm-sdio.yaml
+
+
+if DEV_SDIO1
+
+config DEV_SDIO1_WORKING_MODE
+    string "use which working mode to transmit"
+    default "AWB_SDIO_SD_4B_M"
+    enum
+        "AWB_SDIO_SD_1B_M"
+        "AWB_SDIO_SD_4B_M"
+        "AWB_SDIO_SD_8B_M"
+
+
+config DEV_SDIO1_DMA_BUFF_SIZE
+    int "dma buffer size"
+    default 4096
+
+
+config DEV_SDIO1_1V8_OPERATION_MODE_ENABLE
+    bool "board hardware circuit support 1v8 sdcard operation mode"
+    default n
+
+
+config DEV_SDIO1_MMC_HIGHSPEEDE
+    bool "MMC high-speed timing is supported"
+    default n
+
+
+config DEV_SDIO1_MMC_DDR_1_8V
+    bool "eMMC high-speed DDR mode(1.8V I/O) is supported"
+    default n
+
+
+config DEV_SDIO1_MMC_DDR_1_2V
+    bool "eMMC high-speed DDR mode(1.2V I/O) is supported"
+    default n
+
+
+config DEV_SDIO1_MMC_HS200_1_8V
+    bool "eMMC HS200 mode(1.8V I/O) is supported"
+    default n
+
+
+config DEV_SDIO1_MMC_HS200_1_2V
+    bool "eMMC HS200 mode(1.2V I/O) is supported"
+    default n
+
+
+config DEV_SDIO1_MMC_HS400_1_8V
+    bool "eMMC HS400 mode(1.8V I/O) is supported"
+    default n
+
+
+config DEV_SDIO1_MMC_HS400_1_2V
+    bool "eMMC HS400 mode(1.2V I/O) is supported"
+    default n
+
+
+config DEV_SDIO1_BOARD_VCCQ_VOLTAGE
+    string "emmc card vccq voltage"
+    default "SD_OPERATION_VOLTAGE_3V3"
+    enum
+        "SD_OPERATION_VOLTAGE_3V3"
+        "SD_OPERATION_VOLTAGE_1V8"
+        "SD_OPERATION_VOLTAGE_1V2"
+
+
+config DEV_SDIO1_BOARD_VCC_VOLTAGE
+    string "emmc card vcc voltage"
+    default "SD_OPERATION_VOLTAGE_3V3"
+    enum
+        "SD_OPERATION_VOLTAGE_3V3"
+        "SD_OPERATION_VOLTAGE_1V8"
+        "SD_OPERATION_VOLTAGE_1V2"
+
+endif #DEV_SDIO1
+
+

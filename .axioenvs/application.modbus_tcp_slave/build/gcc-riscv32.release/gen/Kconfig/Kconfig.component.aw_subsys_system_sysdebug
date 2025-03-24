@@ -1,0 +1,16 @@
+
+menuconfig AW_SUBSYS_SYSTEM_SYSDEBUG
+    bool "support for aw_kprintf"
+    libsafe 
+    select AW_STDIO
+    default y
+    help
+        Version: 0.0.0
+
+        Detail:AWorks enable aw_kprintf interface support.
+if AW_SUBSYS_SYSTEM_SYSDEBUG
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_system_sysdebug/Kconfig.opts"
+
+endif #AW_SUBSYS_SYSTEM_SYSDEBUG
+

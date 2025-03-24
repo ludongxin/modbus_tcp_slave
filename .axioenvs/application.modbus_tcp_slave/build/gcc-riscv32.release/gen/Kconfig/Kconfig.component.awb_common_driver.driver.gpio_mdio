@@ -1,0 +1,39 @@
+
+menuconfig DRV_GPIO_MDIO
+    bool "gpio_mdio ['general,gpio_mdio']"
+    select AW_SUBSYS_DRIVER_MII
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n
+    help
+        Example of adding device to board.dts:
+
+        Step 1 add the following fragment to "board.dts"
+        / {
+            gpio_mdio_0:gpio_mdio {
+                compatible = "general,gpio_mdio";
+                label = "gpio_mdio0";
+                status = "disabled";
+                #address-cells = <1>;
+                #size-cells = <0>;
+                yt8512h_0:yt8512h_phy@0x02{
+                    compatible = "motorcomm,yt8512h";
+                    status = "disabled";
+                    dev_clk = <HPM_CLK_TOP_AHB0>;
+                    label = "yt8512h_0";
+                    reg = <0x02>;
+                };
+            };
+        };
+        
+
+        Step 2 add the following fragment to "pins.dts"
+        
+
+        &gpio_mdio_0{
+            mdc-pins  = <&pin1 PIN_PD11   (IOC_PD11_FUNC_CTL_GPIO_D_11  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                          (IOC_PD11_FUNC_CTL_GPIO_D_11  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                          (IOC_PD11_FUNC_CTL_GPIO_D_11  | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+            mdio-pins  = <&pin1 PIN_PD14  (IOC_PD14_FUNC_CTL_GPIO_D_14  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)
+                                          (IOC_PD14_FUNC_CTL_GPIO_D_14  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)
+                                          (IOC_PD14_FUNC_CTL_GPIO_D_14  | AW_PIN_CFG_GPIO_OUTPUT_HIGH | AW_PIN_CFG_PULL_UP)>;
+        };

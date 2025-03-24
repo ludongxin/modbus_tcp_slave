@@ -1,0 +1,7 @@
+
+menuconfig DRV_ARMCM_NVIC
+    bool "armcm_nvic ['arm,v7m-nvic']"
+    select AWBL_INTCTLR_SERVICE
+    select AW_SUBSYS_SYSTEM_INTCTLR
+    select AWBUS
+    default n

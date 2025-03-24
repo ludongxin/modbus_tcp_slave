@@ -1,0 +1,25 @@
+
+menuconfig DEV_ZLG_480_272
+    bool "zlg_480_272 @ lcdc0"
+    default n
+    visible if y
+    select DRV_ZLG_TFT_MONITOR_GPIO
+    select DEV_LCDC0
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_166
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_131
+
+    help
+      Filename: "/dev/zlg_480_272"
+
+      dts_dev_prop:
+          name(unit): "zlg_tft_monitor_gpio" (0)
+          compatible: ['zlg_tft,monitor-gpio']
+          dts_path: /soc/lcdc@0xF1000000/monitor_zlg_480_272
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\monitor\zlg_tft,monitor-gpio.yaml
+
+
+
+
+

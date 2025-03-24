@@ -1,0 +1,41 @@
+
+menuconfig DEV_PWM0
+    bool "pwm0"
+    default n
+    visible if y
+    select DRV_HPM_PWM_TIMER
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_72
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/pwm0"
+
+      dts_dev_prop:
+          name(unit): "hpm_pwm_timer" (0)
+          compatible: ['riscv,hpm-pwm-ctrl']
+          dts_path: /soc/pwm@0xF0200000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\pwm\riscv,hpm-pwm-ctrl.yaml
+
+
+
+
+if DEV_PWM0
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_0"
+if !DEV_PWM0_CHAN0_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_1"
+endif #DEV_PWM0_CHAN0_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_2"
+if !DEV_PWM0_CHAN2_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_3"
+endif #DEV_PWM0_CHAN2_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_4"
+if !DEV_PWM0_CHAN4_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_5"
+endif #DEV_PWM0_CHAN4_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_6"
+if !DEV_PWM0_CHAN6_PWM_PAIR_ENABLE
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_pwm_7"
+endif #DEV_PWM0_CHAN6_PWM_PAIR_ENABLE
+
+endif #DEV_PWM0

@@ -1,0 +1,18 @@
+
+menuconfig AW_API_PM
+    bool "AWorks API of suspend,power down,and reboot"
+    libsafe 
+    select AW_SUBSYS_PM_WAKEUP_TIMER
+    select AW_SUBSYS_SYSTEM_SYSDEBUG
+    select AWB_PM_NOTIFY
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_API_PM
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/aw_api_pm/Kconfig.opts"
+
+endif #AW_API_PM
+

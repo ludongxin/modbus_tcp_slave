@@ -1,0 +1,18 @@
+
+menuconfig AW_IO_BASE
+    bool "AWorks IO base"
+    libsafe 
+    select AW_INTERFACE
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_COMMON_IOCTL_CODE
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provide base IO-APIs(such as,aw_open,aw_close,aw_lseek,etc..) in AWorks
+if AW_IO_BASE
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/aw_io_base/Kconfig.opts"
+
+endif #AW_IO_BASE
+

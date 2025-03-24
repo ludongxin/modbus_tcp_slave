@@ -1,0 +1,130 @@
+
+menuconfig DEV_ADC3
+    bool "adc3"
+    default n
+    visible if y
+    select DRV_HPM_ADC16
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_22
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/adc3"
+
+      dts_dev_prop:
+          name(unit): "hpm_adc16" (0)
+          compatible: ['riscv,hpm-adc16']
+          dts_path: /soc/adc16@0xF001C000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\adc16\riscv,hpm_adc16.yaml
+
+
+if DEV_ADC3
+
+config DEV_ADC3_CONV_MODE
+    string "Set adc16 conversion modes"
+    default "ADC16_CONV_MODE_SEQUENCE"
+    enum
+        "ADC16_CONV_MODE_ONESHOT"
+        "ADC16_CONV_MODE_PERIOD"
+        "ADC16_CONV_MODE_SEQUENCE"
+
+
+config DEV_ADC3_PERIOD_US
+    int "the period conversion time (unit:us)"
+    default 100
+
+
+config DEV_ADC3_VREFH
+    int "high lever of reference voltage"
+    default 3300
+
+
+config DEV_ADC3_AWB_ADC_SERVICE
+    def_bool y
+
+if DEV_ADC3_AWB_ADC_SERVICE
+config DEV_ADC3_ADC_RES_0
+    bool "adc3_ch0 (57)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_147
+
+if DEV_ADC3_ADC_RES_0
+
+endif #DEV_ADC3_ADC_RES_0
+config DEV_ADC3_ADC_RES_1
+    bool "adc3_ch1 (58)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_155
+
+if DEV_ADC3_ADC_RES_1
+
+endif #DEV_ADC3_ADC_RES_1
+config DEV_ADC3_ADC_RES_2
+    bool "adc3_ch2 (59)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_157
+
+if DEV_ADC3_ADC_RES_2
+
+endif #DEV_ADC3_ADC_RES_2
+config DEV_ADC3_ADC_RES_3
+    bool "adc3_ch3 (60)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_163
+
+if DEV_ADC3_ADC_RES_3
+
+endif #DEV_ADC3_ADC_RES_3
+config DEV_ADC3_ADC_RES_4
+    bool "adc3_ch4 (61)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_165
+
+if DEV_ADC3_ADC_RES_4
+
+endif #DEV_ADC3_ADC_RES_4
+config DEV_ADC3_ADC_RES_5
+    bool "adc3_ch5 (62)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_167
+
+if DEV_ADC3_ADC_RES_5
+
+endif #DEV_ADC3_ADC_RES_5
+config DEV_ADC3_ADC_RES_6
+    bool "adc3_ch6 (63)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_169
+
+if DEV_ADC3_ADC_RES_6
+
+endif #DEV_ADC3_ADC_RES_6
+config DEV_ADC3_ADC_RES_7
+    bool "adc3_ch7 (64)"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_170
+
+if DEV_ADC3_ADC_RES_7
+
+endif #DEV_ADC3_ADC_RES_7
+endif # DEV_ADC3_AWB_ADC_SERVICE
+
+endif #DEV_ADC3
+
+

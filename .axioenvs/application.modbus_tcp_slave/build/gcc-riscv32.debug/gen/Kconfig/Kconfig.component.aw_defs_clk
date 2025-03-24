@@ -1,0 +1,10 @@
+
+menuconfig AW_DEFS_CLK
+    bool "AWorks Clock Base"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

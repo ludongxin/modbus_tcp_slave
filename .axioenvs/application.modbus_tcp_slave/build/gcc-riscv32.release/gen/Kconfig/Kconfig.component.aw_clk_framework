@@ -1,0 +1,17 @@
+
+menuconfig AW_CLK_FRAMEWORK
+    bool "AWorks Clock Framework"
+    libsafe 
+    select AW_MATH
+    select AW_DEFS_CLK
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_CLK_FRAMEWORK
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel/clock/Kconfig.opts"
+
+endif #AW_CLK_FRAMEWORK
+

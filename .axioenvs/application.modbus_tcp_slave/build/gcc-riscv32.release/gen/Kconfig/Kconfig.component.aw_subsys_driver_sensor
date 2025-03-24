@@ -1,0 +1,12 @@
+
+menuconfig AW_SUBSYS_DRIVER_SENSOR
+    bool "Subsys for sensor"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

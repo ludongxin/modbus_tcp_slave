@@ -1,0 +1,11 @@
+
+menuconfig AW_API_TIME
+    bool "AWorks API of time"
+    libsafe 
+    select AW_API_TIME_SYS
+    select AW_API_TIMETRANS_LOCAL
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,10 @@
+
+menuconfig AW_API_CLK
+    bool "AWorks API of clock"
+    libsafe 
+    select AW_CLK_FRAMEWORK
+    default n
+    help
+        Version: 0.0.0
+
+        

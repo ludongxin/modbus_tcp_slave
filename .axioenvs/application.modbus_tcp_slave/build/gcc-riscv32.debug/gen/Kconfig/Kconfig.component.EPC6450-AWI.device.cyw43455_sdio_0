@@ -1,0 +1,100 @@
+
+menuconfig DEV_CYW43455
+    bool "cyw43455 @ sdio0"
+    default n
+    visible if y
+    select DRV_CYW43455_SDIO
+    select DEV_SDIO0
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_121
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_111
+
+    help
+      Filename: "/dev/cyw43455"
+
+      dts_dev_prop:
+          name(unit): "cyw43455_sdio" (0)
+          compatible: ['cypress,cyw43455_sdio']
+          dts_path: /soc/sdio@0xF2030000/cyw43455_sdio
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\cyw43xxx\cypress,cyw43455_sdio.yaml
+
+
+if DEV_CYW43455
+
+config DEV_CYW43455_SDIO_BUS_CLOCK_FREQUENCY
+    int "Bus clock frequency"
+    default 40000000
+    range 100000 200000000
+
+
+config DEV_CYW43455_WIFI_COUNTRY
+    string "Country"
+    default "AW_WIFI_COUNTRY_CHINA"
+    enum
+        "AW_WIFI_COUNTRY_CHINA"
+        "AW_WIFI_COUNTRY_HONG_KONG"
+
+
+config DEV_CYW43455_STA_NETIF_ENABLE
+    bool "Enable STA network interface card"
+    default y
+
+
+config DEV_CYW43455_STA_SUPPORT_802_11_N
+    bool "STA Interface supports 802.11n"
+    default y
+
+
+config DEV_CYW43455_STA_DHCP_EN
+    bool "STA Enable DHCP"
+    default n
+
+
+config DEV_CYW43455_STA_IPADDR
+    string "STA IP address"
+    default "192.168.137.252"
+
+
+config DEV_CYW43455_STA_NETMASK
+    string "STA Netmask"
+    default "255.255.255.0"
+
+
+config DEV_CYW43455_STA_GATEWAY
+    string "STA Gateway"
+    default "192.168.137.1"
+
+
+config DEV_CYW43455_AP_NETIF_ENABLE
+    bool "Enable AP network interface card"
+    default y
+
+
+config DEV_CYW43455_AP_SUPPORT_802_11_N
+    bool "AP Interface supports 802.11n"
+    default y
+
+
+config DEV_CYW43455_AP_DHCP_EN
+    bool "AP Enable DHCP"
+    default n
+
+
+config DEV_CYW43455_AP_IPADDR
+    string "AP IP address"
+    default "192.168.138.1"
+
+
+config DEV_CYW43455_AP_NETMASK
+    string "AP Netmask"
+    default "255.255.255.0"
+
+
+config DEV_CYW43455_AP_GATEWAY
+    string "AP Gateway"
+    default "192.168.138.1"
+
+endif #DEV_CYW43455
+
+

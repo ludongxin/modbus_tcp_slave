@@ -1,0 +1,29 @@
+
+menuconfig DRV_RX8025T
+    bool "rx8025t ['epson,rx8025t']"
+    select AW_SUBSYS_TIME
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c0{
+            rx8025t:rx8025t@0x32{
+                compatible = "epson,rx8025t";
+                status = "disabled";
+                label = "rx8025t";
+                reg = <0x32>;
+                int-pins = <&pin1 PIN_PZ08 (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                           (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                           (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP)>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &rx8025t{
+                int-pins = <&pin1 PIN_PZ08 (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                           (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP) 
+                                           (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP)>;
+        };

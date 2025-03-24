@@ -1,0 +1,23 @@
+
+menuconfig DEV_RTC
+    bool "rtc"
+    default n
+    visible if y
+    select DRV_HPM_RTC
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_120
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/rtc"
+
+      dts_dev_prop:
+          name(unit): "hpm_rtc" (0)
+          compatible: ['riscv,hpm-rtc']
+          dts_path: /soc/rtc@0xF5044000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\rtc\riscv,hpm-rtc.yaml
+
+
+
+
+

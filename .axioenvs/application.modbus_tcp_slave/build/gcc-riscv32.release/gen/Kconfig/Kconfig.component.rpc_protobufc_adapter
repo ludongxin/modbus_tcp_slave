@@ -1,0 +1,17 @@
+
+menuconfig RPC_PROTOBUFC_ADAPTER
+    bool "AWorks RPC-PROTOBUFC adapter"
+    libsafe 
+    select RPC_PROTOBUFC
+    select OPENAMP
+    default n
+    help
+        Version: 0.0.0
+
+        
+if RPC_PROTOBUFC_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel_user_common/rpc_protobufc_adapter/Kconfig.opts"
+
+endif #RPC_PROTOBUFC_ADAPTER
+

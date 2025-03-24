@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_CAM
+    bool "hpm_cam ['riscv,hpm-cam']"
+    select AW_SUBSYS_DRIVER_DISPLAY
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_CAM
+    default n

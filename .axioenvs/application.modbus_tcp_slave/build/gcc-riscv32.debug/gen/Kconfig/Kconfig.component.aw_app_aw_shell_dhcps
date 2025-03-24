@@ -1,0 +1,12 @@
+
+menuconfig AW_APP_AW_SHELL_DHCPS
+    bool "AWorks Shell supports DHCP server commands"
+    libsafe 
+    select AW_API_INET_LOCAL
+    select AW_APP_SHELL
+    select DHCP_SERVER
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,10 @@
+
+menuconfig AW_SOCKET_IODEV
+    bool "AWorks socket iodev"
+    libsafe 
+    select AW_IO_BASE
+    default n
+    help
+        Version: 0.0.0
+
+        

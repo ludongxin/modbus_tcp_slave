@@ -1,0 +1,300 @@
+
+menuconfig DEV_USB1
+    bool "usb1"
+    default n
+    visible if y
+    select DRV_HPM_USB
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_107
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_167
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_163
+
+    help
+      Filename: "/dev/usb1"
+
+      dts_dev_prop:
+          name(unit): "hpm_usb" (1)
+          compatible: ['riscv,hpm-usb']
+          dts_path: /soc/usb@0xF2024000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\usb\riscv,hpm-usb.yaml
+
+
+if DEV_USB1
+
+config DEV_USB1_HIGH_DEV_SUPPORT
+    bool "High speed  device support"
+    default n
+
+
+config DEV_USB1_ITC
+    string "Interrupt Threshold Control"
+    default "USB_ITC_8_MICRO_FRAME"
+    enum
+        "USB_ITC_IMMEDIATE"
+        "USB_ITC_1_MICRO_FRAME"
+        "USB_ITC_2_MICRO_FRAME"
+        "USB_ITC_4_MICRO_FRAME"
+        "USB_ITC_8_MICRO_FRAME"
+        "USB_ITC_16_MICRO_FRAME"
+        "USB_ITC_32_MICRO_FRAME"
+        "USB_ITC_64_MICRO_FRAME"
+choice
+    prompt "USB controler role"
+    default DEV_USB1_HOST
+
+    config DEV_USB1_HOST
+        bool "Host"
+        select AW_USB_HOST
+        select AW_USB_CONTROLLER_EHCI
+        select AW_USB_DEVICE
+    config DEV_USB1_DEVICE
+        bool "Device"
+        select AW_USB_HOST
+        select AW_USB_CONTROLLER_EHCI
+        select AW_USB_DEVICE
+    config DEV_USB1_OTG
+        bool "OTG"
+        select AW_USB_HOST
+        select AW_USB_OTG_ENABLE
+        select AW_USB_CONTROLLER_EHCI
+        select AW_USB_DEVICE
+endchoice
+
+config DEV_USB1_HOST_TASK_PRIO
+    int "host task priority"
+    depends on  DEV_USB1_HOST || DEV_USB1_OTG
+    default 1
+
+
+config DEV_USB1_HOST_EHCI_NQHS
+    int "host ehci nqhs"
+    depends on  DEV_USB1_HOST || DEV_USB1_OTG
+    default 16
+
+config DEV_USB1_HOST_EHCI_NQTDS
+    int "host ehci nqtds"
+    depends on  DEV_USB1_HOST || DEV_USB1_OTG
+    default 32
+
+
+config DEV_USB1_HOST_EHCI_NITDS
+    int "host ehci nitds"
+    depends on  DEV_USB1_HOST || DEV_USB1_OTG
+    default 32
+
+
+config DEV_USB1_HOST_EHCI_NSITDS
+    int "host ehci nsitds"
+    depends on  DEV_USB1_HOST || DEV_USB1_OTG
+    default 0
+
+config DEV_USB1_COMPOSITE_SUPPORT
+    bool "Composite device"
+    depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+    select AW_USB_DEVICE_COMPOSITE
+    default n
+
+if DEV_USB1_COMPOSITE_SUPPORT
+    config DEV_USB1_DEVICE_CLASS_COMPOSITE_CDC
+        bool "CDC serial device"
+        depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+        select AW_USB_DEVICE_CDC_SERIAL
+        default n
+
+        if DEV_USB1_DEVICE_CLASS_COMPOSITE_CDC
+            config DEV_USB1_SERIAL_NUM
+                int "The Number of Serial Device"
+                default 1
+                range 1 3
+            config DEV_USB1_SERIAL_TX_TIMEOUT
+                int "Serial TX timeout(ms)"
+                default 1000
+            config DEV_USB1_SERIAL_RX_BUFFER
+                int "Serial RX Buffer Size(byte)"
+                default 1024
+            config DEV_USB1_SERIAL_TX_BUFFER
+                int "Serial TX Buffer Size(byte)"
+                default 1024
+            config DEV_USB1_SERIAL_NAME
+                string "Serial Device Name"
+                default "vcom"
+                help
+                    when the number of serial bigger than 1,device-name always have numeric suffix.
+                    If more one controller are used as cdc device,these name must be different.
+        endif
+
+    config DEV_USB1_DEVICE_CLASS_COMPOSITE_MS
+        bool "Mass Storage device"
+        depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+        select AW_USB_DEVICE_MSTORAGE
+        default n
+
+        if DEV_USB1_DEVICE_CLASS_COMPOSITE_MS
+            config DEV_USB1_MSTORAGE_UBUF_SIZE_K
+                int "Buffer and block buffer size(KB)"
+                default 16
+
+            # 使用枚举方式，枚举出所有的静态块设备
+#           config DEV_USB1_MSTORAGE_DISK_NAME
+#               string "msc class disk name"
+#               libsafe
+#               default "$(user_dev_name,block_device,0)"
+#               enum
+#                   $(user_dev_name,block_device)
+
+            # 采用直接输入相应的块设备名的方式
+            config DEV_USB1_MSTORAGE_DISK_NAME
+                string "Mass Storage Disk Device Name"
+                libsafe
+                default "/dev/sdcardA"
+        endif
+
+
+    config DEV_USB1_DEVICE_SAMPLE_COMPOSITE_MOUSE
+        bool "HID mouse device"
+        depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+        select AW_USB_DEVICE_MOUSE
+        default n
+
+        if DEV_USB1_DEVICE_SAMPLE_COMPOSITE_MOUSE
+            config DEV_USB1_MOUSE_NAME
+                string "Mouse Device Name"
+                default "mouse"
+                help
+                    If more one controller are used as mouse device,these name must be different.
+        endif
+
+    config DEV_USB1_DEVICE_SAMPLE_COMPOSITE_CUSTOMIZE
+        bool "Customize class device"
+        depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+        default n
+
+
+    config DEV_USB1_DEVICE_SAMPLE_COMPOSITE_CUSTOMIZE_NAME
+        string "Customize class name"
+        depends on DEV_USB1_DEVICE_SAMPLE_COMPOSITE_CUSTOMIZE
+        default "AWorksLP customize class"
+
+endif
+
+if !DEV_USB1_COMPOSITE_SUPPORT
+    choice
+        prompt "USB device class"
+        visible if !DEV_USB1_COMPOSITE_SUPPORT && (DEV_USB1_DEVICE || DEV_USB1_OTG)
+
+        config DEV_USB1_DEVICE_CLASS_CDC
+            bool "CDC serial device"
+            select AW_USB_DEVICE_CDC_SERIAL
+            depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+            default n
+
+            if DEV_USB1_DEVICE_CLASS_CDC
+                config DEV_USB1_SERIAL_NUM
+                    int "The Number of Serial Device"
+                    default 1
+                    range 1 3
+                config DEV_USB1_SERIAL_TX_TIMEOUT
+                    int "Serial TX timeout(ms)"
+                    default 1000
+                config DEV_USB1_SERIAL_RX_BUFFER
+                    int "Serial RX Buffer Size(byte)"
+                    default 1024
+                config DEV_USB1_SERIAL_TX_BUFFER
+                    int "Serial TX Buffer Size(byte)"
+                    default 1024
+                config DEV_USB1_SERIAL_NAME
+                    string "Serial Device Name"
+                    default "vcom"
+                    help
+                        when the number of serial bigger than 1,device-name always have numeric suffix.
+                        If more one controller are used as cdc device,these name must be different.
+            endif
+
+        config DEV_USB1_DEVICE_CLASS_MS
+            bool "Mass Storage device"
+            depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+            select AW_USB_DEVICE_MSTORAGE
+            default n
+
+            if DEV_USB1_DEVICE_CLASS_MS
+                config DEV_USB1_MSTORAGE_UBUF_SIZE_K
+                    int "Buffer and block buffer size(KB)"
+                    default 16
+
+                # 使用枚举方式，枚举出所有的静态块设备
+#               config DEV_USB1_MSTORAGE_DISK_NAME
+#                   string "msc class disk name"
+#                   libsafe
+#                   default "$(user_dev_name,block_device,0)"
+#                   enum
+#                       $(user_dev_name,block_device)
+
+                # 采用直接输入相应的块设备名的方式
+                config DEV_USB1_MSTORAGE_DISK_NAME
+                    string "Mass Storage Disk Device Name"
+                    libsafe
+                    default "/dev/sdcardA"
+            endif
+
+        config DEV_USB1_DEVICE_SAMPLE_MOUSE
+            bool "HID mouse device"
+            depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+            select AW_USB_DEVICE_MOUSE
+            default n
+
+            if DEV_USB1_DEVICE_SAMPLE_MOUSE
+                config DEV_USB1_MOUSE_NAME
+                    string "Mouse Device Name"
+                    default "mouse"
+                    help
+                        If more one controller are used as mouse device,these name must be different.
+            endif
+
+        config DEV_USB1_DEVICE_SAMPLE_CUSTOMIZE
+            bool "Customize class device"
+            depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+            default n
+
+        config DEV_USB1_DEVICE_SAMPLE_CUSTOMIZE_NAME
+            string "Customize class name"
+            depends on DEV_USB1_DEVICE_SAMPLE_CUSTOMIZE
+            default "AWorksLP customize class"
+
+        config DEV_USB1_DEVICE_WCID
+            bool "WCID support"
+            depends on  DEV_USB1_DEVICE || DEV_USB1_OTG
+            select AW_USB_DEVICE_WCID_SUPPORT
+            select AW_USB_DEVICE_WCID_RAW
+            default n
+            help
+                You can self-implement WCID drivers without using the supported provided by AWorks.
+
+            if DEV_USB1_DEVICE_WCID
+                config DEV_USB1_WCID_GUID
+                    string "WCID GUID"
+                    default "12345678-9012-3456-7890-123456789012"
+
+                config DEV_USB1_WCID_NAME
+                    string "WCID Device Name"
+                    default "wcid"
+                    help
+                        If more one controller are used as wcid device,these name must be different.
+
+                config DEV_USB1_WCID_ENDPOINT_IN_NUM
+                    int "WCID in endpoint number"
+                    default 1
+                    range 0 4
+                
+                config DEV_USB1_WCID_ENDPOINT_OUT_NUM
+                    int "WCID out endpoint number"
+                    default 1
+                    range 0 4
+            endif
+    endchoice
+endif
+endif #DEV_USB1
+
+

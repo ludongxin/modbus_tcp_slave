@@ -1,0 +1,16 @@
+
+menuconfig AW_ALIYUN_ADAPTER
+    bool "component aw_aliyun_adapter"
+    libsafe 
+    select AW_IOT_COMMON
+    default n
+    help
+        Version: 0.1.0
+
+        
+if AW_ALIYUN_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_aliyun_adapter/Kconfig.opts"
+
+endif #AW_ALIYUN_ADAPTER
+

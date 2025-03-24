@@ -1,0 +1,10 @@
+
+menuconfig AW_PTP
+    bool "PTP"
+    libsafe 
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    default n
+    help
+        Version: 0.1.1+lp
+
+        

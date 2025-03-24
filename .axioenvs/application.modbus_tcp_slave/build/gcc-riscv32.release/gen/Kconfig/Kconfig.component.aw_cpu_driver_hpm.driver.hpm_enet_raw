@@ -1,0 +1,13 @@
+
+menuconfig DRV_HPM_ENET_RAW
+    bool "hpm_enet_raw ['riscv,hpm_ethernet_raw']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_MII
+    select AWB_SUBSYS_NETIF
+    default n
+
+if DRV_HPM_ENET_RAW
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_cpu_driver_hpm/dts/bindings/enet/riscv,hpm_ethernet_raw.Kconfig.opts"
+
+endif #DRV_HPM_ENET_RAW

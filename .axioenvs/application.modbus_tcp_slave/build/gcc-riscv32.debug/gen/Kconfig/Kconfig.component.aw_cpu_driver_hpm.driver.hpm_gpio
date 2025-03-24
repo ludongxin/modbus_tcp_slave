@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_GPIO
+    bool "hpm_gpio ['riscv,hpm-gpio']"
+    select AWB_PIN_SERVICE
+    select AW_SUBSYS_SYSTEM_PIN
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

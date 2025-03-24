@@ -1,0 +1,10 @@
+
+menuconfig AW_CTYPE
+    bool "component aw_ctype"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

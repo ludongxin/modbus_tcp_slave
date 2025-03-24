@@ -1,0 +1,12 @@
+
+menuconfig AW_APP_AW_SHELL_DNS_LOOKUP
+    bool "AWorks Shell supports dns lookup"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_STDLIB
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    default n
+    help
+        Version: 0.0.0
+
+        

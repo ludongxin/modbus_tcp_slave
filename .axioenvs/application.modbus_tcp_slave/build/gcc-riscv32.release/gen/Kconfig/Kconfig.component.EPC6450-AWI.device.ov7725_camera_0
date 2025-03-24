@@ -1,0 +1,32 @@
+
+menuconfig DEV_OV7725
+    bool "ov7725 @ cam0"
+    default n
+    visible if y
+    select DRV_OV7725_CAMERA
+    select DEV_CAM0
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_158
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_116
+
+    help
+      Filename: "/dev/ov7725"
+
+      dts_dev_prop:
+          name(unit): "ov7725,camera" (0)
+          compatible: ['OV,7725']
+          dts_path: /soc/camera@0xF1008000/ov7725@0x21
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\cam\OV,7725.yaml
+
+
+if DEV_OV7725
+if DEV_OV7725
+   config __I2C_PHANDLE
+       def_bool y
+       select DEV_I2C3
+endif
+
+endif #DEV_OV7725
+
+

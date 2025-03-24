@@ -1,0 +1,26 @@
+
+menuconfig DEV_OTP
+    bool "otp"
+    default y
+    visible if y
+    select DRV_HPM_OTP
+
+    help
+      Filename: "/dev/otp"
+
+      dts_dev_prop:
+          name(unit): "hpm_otp" (0)
+          compatible: ['riscv,hpm-otp']
+          dts_path: /soc/otp@0xF40C8000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\otp\riscv,hpm-otp.yaml
+
+
+if DEV_OTP
+
+config DEV_OTP_WRITE_ENABLE
+    bool "allow to write Fuse"
+    default n
+
+endif #DEV_OTP
+
+

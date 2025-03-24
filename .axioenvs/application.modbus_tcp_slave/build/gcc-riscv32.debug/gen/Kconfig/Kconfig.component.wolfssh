@@ -1,0 +1,25 @@
+
+menuconfig WOLFSSH
+    bool "wolfssh"
+    libsafe 
+    select WOLFSSL
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_STDIO
+    select AW_IO_DIR
+    default n
+    help
+        Version: 1.4.12
+
+        Detail:help
+
+          The wolfSSH library is a lightweight SSHv2 client and server library written
+
+        in ANSI C and targeted for embedded, RTOS, and resource-constrained environments
+
+        - primarily because of its small size, speed, and feature set.
+
+        
+
+        Source Code Version: wolfSSH v1.4.12

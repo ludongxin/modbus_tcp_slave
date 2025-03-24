@@ -1,0 +1,72 @@
+
+menuconfig DRV_GT911
+    bool "gt911 ['goodix,gt911']"
+    select AW_SUBSYS_DRIVER_I2C
+    select AW_SUBSYS_DRIVER_INPUT
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1 {
+            gt911:gt911@5d{
+                compatible = "goodix,gt911";
+                label = "gt911";
+                reg = <0x5d>;
+                status = "disabled";
+                cfg_group        = [         
+                32 20 03 e0 01 05 3D 00 02 08
+                28 08 5A 46 03 05 00 00 00 00
+                00 00 04 04 04 04 03 88 29 0A
+                4B 4D 0C 08 00 00 00 21 02 1D
+                00 01 00 00 00 00 00 00 00 00
+                00 46 64 94 D5 02 07 00 00 04
+                83 48 00 77 4D 00 6D 53 00 64
+                59 00 5A 60 00 5A 00 00 00 00
+                00 00 00 00 00 00 00 00 00 00
+                00 00 00 00 00 00 00 00 00 00
+                00 00 00 00 00 00 00 00 00 00
+                00 00 02 04 06 08 0A 0C 0E 10
+                12 14 FF FF FF FF 00 00 00 00
+                00 00 00 00 00 00 00 00 00 00
+                00 00 00 02 04 06 08 0F 10 12
+                16 18 1C 1D 1E 1F 20 21 22 FF
+                FF FF FF FF FF FF FF FF 00 00
+                00 00 00 00 00 00 00 00 00 00
+                00 00 00 00 ba 01];
+                /* rst-pins is optional */
+                rst-pins = <&pin1 GPIO1_31 GPIO1_31_GPIO
+                                           GPIO1_31_GPIO
+                                           GPIO1_31_GPIO>;
+                int-pins = <&pin1 GPIO1_30 GPIO1_30_GPIO
+                                           GPIO1_30_GPIO
+                                           GPIO1_30_GPIO>;
+            };
+        };
+        
+
+        The cfg_group needs to be provided by the touch screen manufacturer
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &gt911 {  
+                /* rst-pins is optional */
+                rst-pins = <&pin1 GPIO1_31 GPIO1_31_GPIO
+                                           GPIO1_31_GPIO
+                                           GPIO1_31_GPIO>;
+                int-pins = <&pin1 GPIO1_30 GPIO1_31_GPIO
+                                           GPIO1_31_GPIO
+                                           GPIO1_31_GPIO>;
+        };
+
+        Parameters:
+
+           cfg_group:  gt911 config group
+
+
+if DRV_GT911
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/touchscreen/gt911/goodix,gt911_ts.Kconfig.opts"
+
+endif #DRV_GT911

@@ -1,0 +1,16 @@
+
+menuconfig AWB_INET_LWIP_TOP
+    bool "AWorks common abstract for lwip"
+    libsafe 
+    select LWIP2_X_ADAPTER
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AWB_INET_LWIP_TOP
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/net/awb_inet_lwip_top/Kconfig.opts"
+
+endif #AWB_INET_LWIP_TOP
+

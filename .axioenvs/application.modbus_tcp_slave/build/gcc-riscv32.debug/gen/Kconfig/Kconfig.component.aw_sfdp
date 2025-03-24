@@ -1,0 +1,11 @@
+
+menuconfig AW_SFDP
+    bool "SFDP"
+    libsafe 
+    select AW_SUBSYS_DRIVER_SPIEX
+    select AW_SUBSYS_DRIVER_SPI
+    default n
+    help
+        Version: 0.0.0
+
+        

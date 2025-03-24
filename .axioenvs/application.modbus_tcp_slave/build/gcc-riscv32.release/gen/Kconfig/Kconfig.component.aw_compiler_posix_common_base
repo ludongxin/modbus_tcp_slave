@@ -1,0 +1,10 @@
+
+menuconfig AW_COMPILER_POSIX_COMMON_BASE
+    bool "AWorks Posix Base"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:Common posix base implement for all compilers.

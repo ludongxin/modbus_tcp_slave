@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_ENET_VIRTUAL
+    bool "hpm_enet_virtual ['riscv,hpm_virtual_ethernet']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_MII
+    select AWB_SUBSYS_NETIF
+    default n

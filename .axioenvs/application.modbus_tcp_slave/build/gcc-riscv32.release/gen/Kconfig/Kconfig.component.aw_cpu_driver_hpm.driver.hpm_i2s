@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_I2S
+    bool "hpm_i2s ['riscv,hpm-i2s']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AWSA_FRAMEWORK
+    default n

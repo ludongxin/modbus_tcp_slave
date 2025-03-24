@@ -1,0 +1,13 @@
+
+menuconfig DRV_HPM_UART
+    bool "hpm_uart ['riscv,hpm_uart']"
+    select AW_SUBSYS_DRIVER_SERIAL
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_OS_DELAYED_WORK
+    default n
+
+if DRV_HPM_UART
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_cpu_driver_hpm/dts/bindings/uart/riscv,hpm_uart.Kconfig.opts"
+
+endif #DRV_HPM_UART

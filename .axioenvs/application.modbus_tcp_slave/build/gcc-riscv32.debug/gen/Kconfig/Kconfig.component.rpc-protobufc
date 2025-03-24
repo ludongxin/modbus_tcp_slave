@@ -1,0 +1,10 @@
+
+menuconfig RPC_PROTOBUFC
+    bool "an implementation of rpc based on protobuf"
+    libsafe 
+    select PROTOBUFC
+    default n
+    help
+        Version: 0.1.1
+
+        

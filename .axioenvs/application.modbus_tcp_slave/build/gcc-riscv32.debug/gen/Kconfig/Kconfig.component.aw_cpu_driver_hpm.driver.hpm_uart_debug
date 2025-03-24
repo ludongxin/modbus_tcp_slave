@@ -1,0 +1,9 @@
+
+menuconfig DRV_HPM_UART_DEBUG
+    bool "hpm_uart_debug ['riscv,hpm_uart_dbg']"
+    select AW_SUBSYS_SYSTEM_SYSDEBUG
+    select AW_SUBSYS_DRIVER_SERIAL
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_OS_DELAYED_WORK
+    select AW_SUBSYS_SYSTEM_SYSDEBUG
+    default n

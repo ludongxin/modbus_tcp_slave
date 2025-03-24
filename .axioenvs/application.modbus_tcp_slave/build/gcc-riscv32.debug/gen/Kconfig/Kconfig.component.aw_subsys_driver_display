@@ -1,0 +1,13 @@
+
+menuconfig AW_SUBSYS_DRIVER_DISPLAY
+    bool "Subsys for display"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AW_INTERFACE
+    select AW_BITMAP_ALLOCATOR
+    default n
+    help
+        Version: 0.0.0
+
+        

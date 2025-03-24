@@ -1,0 +1,10 @@
+
+menuconfig STACK_PROTECTOR_BY_GCC
+    bool "Stack protection supported for GCC"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_RTC
+    bool "hpm_rtc ['riscv,hpm-rtc']"
+    select AW_SUBSYS_TIME
+    select AW_SUBSYS_PM_WAKEUP_TIMER
+    select AW_DEV_API
+    default n

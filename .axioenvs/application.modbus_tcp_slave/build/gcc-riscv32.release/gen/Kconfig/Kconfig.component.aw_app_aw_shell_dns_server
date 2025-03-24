@@ -1,0 +1,13 @@
+
+menuconfig AW_APP_AW_SHELL_DNS_SERVER
+    bool "AWorks Shell supports dns server set/get commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_STDLIB
+    select AW_API_NETDB
+    select AW_API_INET_HEADER
+    default n
+    help
+        Version: 0.0.0
+
+        

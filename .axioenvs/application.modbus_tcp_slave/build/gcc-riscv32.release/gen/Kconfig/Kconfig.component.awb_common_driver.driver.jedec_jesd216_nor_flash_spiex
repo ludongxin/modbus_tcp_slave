@@ -1,0 +1,35 @@
+
+menuconfig DRV_JEDEC_JESD216_NOR_FLASH_SPIEX
+    bool "jedec_jesd216_nor_flash_spiex ['jedec,jesd216_nor_flash_spiex']"
+    select AW_SUBSYS_DRIVER_MTD
+    select AW_SFDP
+    default n
+    help
+        Example of adding device to board.dts:
+
+        / {
+           &spiex { 
+             w25q64fw:w25q64fw@0 { 
+             compatible = "jedec,jesd216_nor_flash_spi"; 
+             label = "w25q64fw"; 
+             reg = <0>; /* cs index, chipselects from the spi host */
+             status = "disabled"; 
+             partition_0 { 
+                 label   = "w25_nor0"; 
+                 address = <0 (4*1024*1024)>; 
+             };
+             partition_1 { 
+                 label   = "w25_nor1"; 
+                 address = <(4*1024*1024) (2*1024*1024)>; 
+             }; 
+             partition_2 { 
+                 label   = "w25_nor2"; 
+                 address = <(6*1024*1024) (2*1024*1024)>; 
+             }; 
+           }; 
+         }; 
+
+        Subnode parameters:
+
+           address:  The offset in the flash device Memory size
+

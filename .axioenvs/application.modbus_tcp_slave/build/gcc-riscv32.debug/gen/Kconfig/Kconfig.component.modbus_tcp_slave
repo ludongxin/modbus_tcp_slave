@@ -1,0 +1,21 @@
+
+menuconfig MODBUS_TCP_SLAVE
+    bool "application modbus_tcp_slave"
+    libsafe 
+    select AW_MODBUS
+    select AW_MODBUS_ADAPTER
+    default n
+    help
+        Version: 0.0.0
+
+        
+if MODBUS_TCP_SLAVE
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/Kconfig.opts"
+
+endif #MODBUS_TCP_SLAVE
+
+if MODBUS_TCP_SLAVE
+    config AW_IMG_PRJ_BUILD
+        def_bool y
+endif#MODBUS_TCP_SLAVE

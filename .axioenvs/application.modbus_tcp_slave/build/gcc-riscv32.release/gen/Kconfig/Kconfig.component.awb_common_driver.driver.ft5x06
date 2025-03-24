@@ -1,0 +1,44 @@
+
+menuconfig DRV_FT5X06
+    bool "ft5x06 ['focaltech,ft5x06']"
+    select AW_SUBSYS_DRIVER_I2C
+    select AW_SUBSYS_DRIVER_INPUT
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1 {
+            ft5x06:ft5x06@38{
+                compatible = "focaltech,ft5x06";
+                label = "ft5x06";
+                status = "disabled";
+                reg = <0x38>;
+                int-pins = <&pin1 PIN_PE02  (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)>;
+                /* rst-pins is optional */
+                rst-pins = <&pin1 PIN_PE01  (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &ft5x06 {  
+                int-pins = <&pin1 PIN_PE02  (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)>;
+                /* rst-pins is optional */
+                rst-pins = <&pin1 PIN_PE01  (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)>;
+        };
+
+if DRV_FT5X06
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/touchscreen/ft5x06/focaltech,ft5x06.Kconfig.opts"
+
+endif #DRV_FT5X06

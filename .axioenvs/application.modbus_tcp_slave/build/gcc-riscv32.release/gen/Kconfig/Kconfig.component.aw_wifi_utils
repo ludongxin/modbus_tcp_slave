@@ -1,0 +1,12 @@
+
+menuconfig AW_WIFI_UTILS
+    bool "AWorks WiFi Utils"
+    libsafe 
+    select AW_INTERFACE
+    select AW_DEV_API
+    select AW_STDIO
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provide base api(such as country convert,MAC convert,etc..) for WiFi operation. it always be enabled by other components.

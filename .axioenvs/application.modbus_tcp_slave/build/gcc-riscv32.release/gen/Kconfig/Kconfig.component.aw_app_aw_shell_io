@@ -1,0 +1,11 @@
+
+menuconfig AW_APP_AW_SHELL_IO
+    bool "AWorks Shell support io commands (ls ll)"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_API_TIMETRANS_LOCAL
+    default y
+    help
+        Version: 0.0.0
+
+        

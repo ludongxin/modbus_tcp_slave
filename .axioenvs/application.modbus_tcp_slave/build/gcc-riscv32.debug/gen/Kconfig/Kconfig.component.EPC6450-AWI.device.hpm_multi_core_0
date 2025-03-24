@@ -1,0 +1,20 @@
+
+menuconfig DEV_MULTI_CORE
+    bool "multi_core"
+    default n
+    visible if y
+    select DRV_HPM_MULTI_CORE
+
+    help
+      Filename: "/dev/multi_core"
+
+      dts_dev_prop:
+          name(unit): "hpm_multi_core" (0)
+          compatible: ['riscv,hpm_multi_core']
+          dts_path: /soc/multi_core
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\multi_core\riscv,hpm_multi_core.yaml
+
+
+
+
+

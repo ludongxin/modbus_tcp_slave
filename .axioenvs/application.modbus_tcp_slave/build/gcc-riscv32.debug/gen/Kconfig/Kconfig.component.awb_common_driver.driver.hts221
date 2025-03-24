@@ -1,0 +1,27 @@
+
+menuconfig DRV_HTS221
+    bool "hts221 ['ST,hts221']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1 {
+            hts221:hts221@5f {
+                compatible = "ST,hts221";
+                timeout = <3000>;
+                label = "HTS221";
+                status = "disabled";
+                reg = <0x5f>;
+                data-pins = <&pin1 GPIO1_27 GPIO1_27_GPIO (GPIO1_27_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_27_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &hts221{
+            data-pins = <&pin1 GPIO1_27 GPIO1_27_GPIO (GPIO1_27_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_27_GPIO>;
+        };

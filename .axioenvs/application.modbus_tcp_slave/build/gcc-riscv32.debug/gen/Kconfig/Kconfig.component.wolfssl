@@ -1,0 +1,42 @@
+
+menuconfig WOLFSSL
+    bool "wolfssl"
+    libsafe 
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_STDIO
+    select AW_IO_DIR
+    default n
+    help
+        Version: 5.7.0
+
+        Detail:help
+
+          The wolfSSL embedded SSL library (formerly CyaSSL) is a lightweight SSL/TLS 
+
+        library written in ANSI C and targeted for embedded, RTOS, and resource-
+
+        constrained environments - primarily because of its small size, speed, and 
+
+        feature set. It is commonly used in standard operating environments as well 
+
+        because of its royalty-free pricing and excellent cross platform support. 
+
+        wolfSSL supports industry standards up to the current TLS 1.3 and DTLS 1.2, 
+
+        is up to 20 times smaller than OpenSSL, and offers progressive ciphers such 
+
+        as ChaCha20, Curve25519, Blake2b and Post-Quantum TLS 1.3 groups. User bench-
+
+        marking and feedback reports dramatically better performance when using wolf-
+
+        SSL over OpenSSL.
+
+        Source Code Version: wolfSSL V5.6.0
+if WOLFSSL
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/wolfssl/Kconfig.opts"
+
+endif #WOLFSSL
+

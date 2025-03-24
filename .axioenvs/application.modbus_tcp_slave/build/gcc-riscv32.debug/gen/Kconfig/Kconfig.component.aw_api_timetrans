@@ -1,0 +1,10 @@
+
+menuconfig AW_API_TIMETRANS
+    bool "AWorks API of time trans"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

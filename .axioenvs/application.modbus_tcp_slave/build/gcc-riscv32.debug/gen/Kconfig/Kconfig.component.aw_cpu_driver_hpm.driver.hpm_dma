@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_DMA
+    bool "hpm_dma ['riscv,hpm-dma']"
+    select AW_SUBSYS_DRIVER_DMA
+    default n

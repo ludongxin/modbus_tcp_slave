@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_PWM
+    bool "hpm_pwm ['riscv,hpm-pwm']"
+    select AW_MATH
+    select AW_SUBSYS_DRIVER_PWM
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

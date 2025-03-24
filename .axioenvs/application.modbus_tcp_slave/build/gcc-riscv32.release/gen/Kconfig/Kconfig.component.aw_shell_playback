@@ -1,0 +1,12 @@
+
+menuconfig AW_SHELL_PLAYBACK
+    bool "AWorks Shell supports playback commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_STDIO
+    select AW_DEV_API
+    default n
+    help
+        Version: 0.0.0
+
+        

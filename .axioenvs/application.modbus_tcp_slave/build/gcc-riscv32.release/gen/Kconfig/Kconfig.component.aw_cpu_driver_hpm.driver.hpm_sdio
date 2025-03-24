@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_SDIO
+    bool "hpm_sdio ['riscv,hpm-sdio']"
+    select AW_SUBSYS_DRIVER_SDIO
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

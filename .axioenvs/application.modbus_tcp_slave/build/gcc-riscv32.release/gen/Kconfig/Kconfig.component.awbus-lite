@@ -1,0 +1,9 @@
+
+menuconfig AWBUS_LITE
+    bool "AWbus-Lite"
+    libsafe 
+    default n
+    help
+        Version: 1.0.0
+
+        

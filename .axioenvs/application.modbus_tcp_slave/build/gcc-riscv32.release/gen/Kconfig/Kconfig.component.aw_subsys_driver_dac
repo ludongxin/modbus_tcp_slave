@@ -1,0 +1,12 @@
+
+menuconfig AW_SUBSYS_DRIVER_DAC
+    bool "Subsys for dac device"
+    libsafe 
+    select AWBUS
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    default n
+    help
+        Version: 0.0.0
+
+        

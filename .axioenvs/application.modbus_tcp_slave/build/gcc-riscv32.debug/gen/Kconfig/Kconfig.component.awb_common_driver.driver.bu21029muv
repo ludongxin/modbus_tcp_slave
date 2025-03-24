@@ -1,0 +1,52 @@
+
+menuconfig DRV_BU21029MUV
+    bool "bu21029muv ['rohm,bu21029muv']"
+    select AW_SUBSYS_DRIVER_I2C
+    select AW_SUBSYS_DRIVER_INPUT
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1 {
+            bu21029muv:bu21029muv@40{
+                compatible = "rohm,bu21029muv";
+                label = "bu21029muv";
+                x_plate_ohms = <760>;
+                status = "disabled"
+                reg = <0x40>;
+                int-pins = <&pin1 PIN_PE02  (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)>;
+                /* rst-pins is optional */
+                rst-pins = <&pin1 PIN_PE01  (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)>;
+            };
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &bu21029muv{  
+                int-pins = <&pin1 PIN_PE02  (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)
+                                            (AW_PIN_CFG_GPIO_INPUT|AW_PIN_CFG_PULL_UP|IOC_PE02_FUNC_CTL_GPIO_E_02)>;
+                /* rst-pins is optional */
+                rst-pins = <&pin1 PIN_PE01  (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)
+                                            (AW_PIN_CFG_GPIO_OUTPUT|AW_PIN_CFG_PULL_UP|IOC_PE01_FUNC_CTL_GPIO_E_01)>;
+            };
+        };
+
+        Parameters:
+
+           x_plate_ohms:  x-plate resistance
+
+
+if DRV_BU21029MUV
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/touchscreen/bu21029muv/rohm,bu21029muv.Kconfig.opts"
+
+endif #DRV_BU21029MUV

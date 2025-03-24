@@ -1,0 +1,17 @@
+
+menuconfig AW_COMPILER_COMMON_POSIX_SOCKET
+    bool "AWorks Common Socket"
+    libsafe 
+    select AW_API_SOCKET
+    select AW_API_INET_HEADER
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provide common socket APIs for compilers such as arm-non-eabi-gcc and armcc.
+if AW_COMPILER_COMMON_POSIX_SOCKET
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel_user_common/aw_compiler_common_posix_socket/Kconfig.opts"
+
+endif #AW_COMPILER_COMMON_POSIX_SOCKET
+

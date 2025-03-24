@@ -1,0 +1,4 @@
+
+menuconfig DRV_SIMPLE_BUS
+    bool "simple-bus ['simple-bus']"
+    default n

@@ -1,0 +1,10 @@
+
+menuconfig AW_COMMON_IOCTL_CODE
+    bool "AWorks Common ioctrl Code"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provide common device IO ctrl code in AWorks.

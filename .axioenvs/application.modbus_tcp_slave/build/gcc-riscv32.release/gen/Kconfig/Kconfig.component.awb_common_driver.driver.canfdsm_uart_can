@@ -1,0 +1,42 @@
+
+menuconfig DRV_CANFDSM_UART_CAN
+    bool "canfdsm_uart_can ['zlg,canfdsm-uart-can']"
+    select AWBUS
+    select AW_SUBSYS_DRIVER_CAN
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n
+    help
+        zlg,canfdsm-uart-can" is used to realize UART to CAN.
+
+        Example of adding device to board.dts:
+
+        / {
+            canfdsm_uart_can:canfdsm_uart_can{
+                compatible = "zlg,canfdsm-uart-can";
+                label = "canfdsm_uart_can";
+                uart_id = <&uart2>;
+                status = "disabled";
+                /**
+                  * cfg pin
+                  * If the CFG pin is controlled by hardware,you can omit this pin configuration.
+                  */
+                cfg-pins  = <&pin1 GPIO1_8   (GPIO1_8_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &canfdsm_uart_can{  
+                cfg-pins  = <&pin1 GPIO1_8   (GPIO1_8_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)
+                                             (GPIO1_8_GPIO | AW_PIN_CFG_GPIO_OUTPUT_LOW  | AW_PIN_CFG_PULL_UP)>;
+        };
+
+        Parameters:
+
+           uart_id:  Must be bound to the uart port, otherwise, device operate will fail.
+

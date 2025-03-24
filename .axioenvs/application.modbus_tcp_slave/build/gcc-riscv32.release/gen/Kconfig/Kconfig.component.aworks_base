@@ -1,0 +1,15 @@
+
+menuconfig AWORKS_BASE
+    bool "AWorks base"
+    libsafe 
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provide base defines and base-interface in AWorks.
+if AWORKS_BASE
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel_user_common/aworks_base/Kconfig.opts"
+
+endif #AWORKS_BASE
+

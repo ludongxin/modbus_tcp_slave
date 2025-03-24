@@ -1,0 +1,34 @@
+
+menuconfig DEV_PWM0_CHAN5
+    bool "pwm0_chan5 @ pwm0"
+    default n
+    visible if y
+    select DRV_HPM_PWM
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_58
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+    help
+      Filename: "/dev/pwm0_chan5"
+
+      dts_dev_prop:
+          name(unit): "hpm_pwm" (5)
+          compatible: ['riscv,hpm-pwm']
+          dts_path: /soc/pwm@0xF0200000/pwm0_chan5@5
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\pwm\riscv,hpm-pwm.yaml
+
+
+if DEV_PWM0_CHAN5
+
+config DEV_PWM0_CHAN5_PWM_DEFAULT_PERIOD_NS
+    int "Default PWM period (ns)"
+    default 2000000
+
+
+config DEV_PWM0_CHAN5_PWM_DEFAULT_DUTY_NS
+    int "Default PWM duty (ns)"
+    default 1000000
+
+endif #DEV_PWM0_CHAN5
+
+

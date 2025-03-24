@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_TIMER
+    bool "hpm_timer ['riscv,hpm-timer']"
+    select AW_SUBSYS_DRIVER_HWTIMER
+    default n

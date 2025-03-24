@@ -1,0 +1,15 @@
+
+menuconfig AW_API_SOCKET
+    bool "AWorks API of sockets"
+    libsafe 
+    select AW_IO_BASE
+    select AW_COMMON_IOCTL_CODE
+    select AW_API_INET_HEADER
+    select AW_API_INET_LOCAL
+    select AW_SOCKET_IODEV
+    select AW_IO_BASE_SUPPORT_SOCKET
+    default n
+    help
+        Version: 0.0.0
+
+        

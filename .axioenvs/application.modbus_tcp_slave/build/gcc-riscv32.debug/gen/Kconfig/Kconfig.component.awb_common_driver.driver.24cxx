@@ -1,0 +1,15 @@
+
+menuconfig DRV_24CXX
+    bool "24cxx ['atmel,24cxx']"
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c6{
+            atmel_24cxx@50 {
+                compatible = "atmel,24cxx";
+                label = "24cxx";
+                reg = <0x50>;
+                status = "disabled";
+            };
+        };

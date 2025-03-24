@@ -1,0 +1,10 @@
+
+menuconfig AW_APP_AW_SHELL_MNT
+    bool "AWorks Shell supports mount/umount/mkfs commands"
+    libsafe 
+    select AW_APP_SHELL
+    default n
+    help
+        Version: 0.0.0
+
+        

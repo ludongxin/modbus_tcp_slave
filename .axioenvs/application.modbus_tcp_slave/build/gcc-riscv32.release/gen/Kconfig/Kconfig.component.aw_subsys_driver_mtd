@@ -1,0 +1,21 @@
+
+menuconfig AW_SUBSYS_DRIVER_MTD
+    bool "Subsys for memory technology device(MTD)"
+    libsafe 
+    select AWB_FS_DEVFS
+    select AW_SUBSYS_DRIVER_SPI
+    select AW_COMMON_IOCTL_CODE
+    select AW_MATH
+    select AWBUS
+    select AW_STDIO_PRINTF_TYPES_LONG_LONG_EN
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AW_SUBSYS_DRIVER_MTD
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_driver_mtd/Kconfig.opts"
+
+endif #AW_SUBSYS_DRIVER_MTD
+

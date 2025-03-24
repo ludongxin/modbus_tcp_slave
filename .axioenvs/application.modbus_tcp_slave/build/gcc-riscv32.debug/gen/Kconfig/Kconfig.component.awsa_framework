@@ -1,0 +1,12 @@
+
+menuconfig AWSA_FRAMEWORK
+    bool "AWorks Audio Framework"
+    libsafe 
+    select AW_STDIO
+    select AW_API_TIME
+    select AW_SUBSYS_AWSA_PCM
+    default n
+    help
+        Version: 0.0.0
+
+        

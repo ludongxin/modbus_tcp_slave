@@ -1,0 +1,16 @@
+
+menuconfig AW_CH_ENCODING_CONVERT
+    bool "AWorks Chinese Converter"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provides mutual conversion between different Chinese encoding formats(such as,GBK,UTF-8,UTF-16,UTF-32,etc..).
+if AW_CH_ENCODING_CONVERT
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/components/kernel_user_common/aw_ch_encoding_convert/Kconfig.opts"
+
+endif #AW_CH_ENCODING_CONVERT
+

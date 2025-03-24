@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_NOR_XPI
+    bool "hpm_nor_xpi ['riscv,hpm-nor-xpi']"
+    select AW_SUBSYS_DRIVER_XIP_FLASH
+    default n

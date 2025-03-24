@@ -1,0 +1,15 @@
+
+menuconfig AW_GNSS
+    bool "AWorks GNSS"
+    libsafe 
+    default n
+    help
+        Version: 0.3.0
+
+        
+if AW_GNSS
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_gnss/Kconfig.opts"
+
+endif #AW_GNSS
+

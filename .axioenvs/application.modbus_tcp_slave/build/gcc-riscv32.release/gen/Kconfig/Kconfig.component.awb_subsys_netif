@@ -1,0 +1,20 @@
+
+menuconfig AWB_SUBSYS_NETIF
+    bool "Subsys for network interface"
+    libsafe 
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_COMMON_IOCTL_CODE
+    select AWB_FS_DEVFS
+    select AW_MEM_MANAGER_RINGBUFFER
+    select AW_API_INET_HEADER
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AWB_SUBSYS_NETIF
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/net/awb_subsys_netif/Kconfig.opts"
+
+endif #AWB_SUBSYS_NETIF
+

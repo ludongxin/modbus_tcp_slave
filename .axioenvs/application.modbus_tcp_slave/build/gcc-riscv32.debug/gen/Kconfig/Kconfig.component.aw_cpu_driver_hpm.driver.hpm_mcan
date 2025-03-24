@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_MCAN
+    bool "hpm_mcan ['riscv,hpm_mcan']"
+    select AW_SUBSYS_DRIVER_CAN
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

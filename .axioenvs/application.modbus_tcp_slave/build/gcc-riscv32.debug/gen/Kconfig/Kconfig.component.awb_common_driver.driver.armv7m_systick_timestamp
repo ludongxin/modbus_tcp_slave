@@ -1,0 +1,5 @@
+
+menuconfig DRV_ARMV7M_SYSTICK_TIMESTAMP
+    bool "armv7m_systick_timestamp ['arm,armv7m-systick_timestamp']"
+    select AWBUS
+    default n

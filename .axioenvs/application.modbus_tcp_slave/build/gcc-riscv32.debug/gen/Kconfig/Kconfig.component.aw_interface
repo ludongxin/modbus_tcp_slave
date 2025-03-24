@@ -1,0 +1,9 @@
+
+menuconfig AW_INTERFACE
+    bool "AWorks Interface"
+    libsafe 
+    default n
+    help
+        Version: 0.0.0
+
+        

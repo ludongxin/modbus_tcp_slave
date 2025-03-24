@@ -1,0 +1,13 @@
+
+menuconfig AW_ZLIB_ADAPTER
+    bool "Zlib AWorks Adapter"
+    libsafe 
+    select AW_APP_SHELL
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_STDIO
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    default n
+    help
+        Version: 1.0.3
+
+        

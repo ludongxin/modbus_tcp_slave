@@ -1,0 +1,10 @@
+
+menuconfig AW_ALIYUN
+    bool "component aw_aliyun"
+    libsafe 
+    select AW_ALIYUN_ADAPTER
+    default n
+    help
+        Version: 0.1.0
+
+        

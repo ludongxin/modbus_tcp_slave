@@ -1,0 +1,15 @@
+{
+  "src_filter": [
+    "+<src>"
+  ],  
+  "include_dirs":[
+    "src/"
+  ],
+  "dependencies": {
+    "aw_modbus":{},
+    "aw_modbus_adapter":{}
+  }, 
+  "build": {
+    "lib_archive": false
+  }
+}

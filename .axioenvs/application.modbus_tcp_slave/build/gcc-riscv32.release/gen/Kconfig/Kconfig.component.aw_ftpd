@@ -1,0 +1,27 @@
+
+menuconfig AW_FTPD
+    bool "FTPD"
+    libsafe 
+    select AW_API_NETDB
+    select AW_API_TIME
+    select AW_STDLIB
+    select AW_DEV_API
+    select AW_IO_DIR
+    select RTK_OBJECT_CREATE_EN
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_STDIO
+    select AW_INFOF_ENABLE
+    select AW_ERRF_ENABLE
+    default n
+    help
+        Version: 1.0.11
+
+        Detail:Mini-ftpd
+if AW_FTPD
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_ftpd/Kconfig.opts"
+
+endif #AW_FTPD
+

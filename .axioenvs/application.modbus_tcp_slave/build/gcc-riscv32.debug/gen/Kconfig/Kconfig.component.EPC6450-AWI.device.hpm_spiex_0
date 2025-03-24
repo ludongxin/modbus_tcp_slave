@@ -1,0 +1,62 @@
+
+menuconfig DEV_SPIEX2
+    bool "spiex2"
+    default n
+    visible if y
+    select DRV_HPM_SPIEX
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_29
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/spiex2"
+
+      dts_dev_prop:
+          name(unit): "hpm_spiex" (0)
+          compatible: ['riscv,hpm-spiex']
+          dts_path: /soc/spiex@0xF0038000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\spiex\riscv,hpm-spiex.yaml
+
+
+if DEV_SPIEX2
+
+config DEV_SPIEX2_CSHT
+    string "The minimum time that cs should stay high"
+    default "spiex_cs2sclk_half_sclk_4"
+    enum
+        "spiex_cs2sclk_half_sclk_1"
+        "spiex_cs2sclk_half_sclk_2"
+        "spiex_cs2sclk_half_sclk_3"
+        "spiex_cs2sclk_half_sclk_4"
+
+
+config DEV_SPIEX2_CS2SCLK
+    string "The time from cs becoming valid to the first sck edge"
+    default "spiex_csht_half_sclk_12"
+    enum
+        "spiex_csht_half_sclk_1"
+        "spiex_csht_half_sclk_2"
+        "spiex_csht_half_sclk_3"
+        "spiex_csht_half_sclk_4"
+        "spiex_csht_half_sclk_5"
+        "spiex_csht_half_sclk_6"
+        "spiex_csht_half_sclk_7"
+        "spiex_csht_half_sclk_8"
+        "spiex_csht_half_sclk_9"
+        "spiex_csht_half_sclk_10"
+        "spiex_csht_half_sclk_11"
+        "spiex_csht_half_sclk_12"
+        "spiex_csht_half_sclk_13"
+        "spiex_csht_half_sclk_14"
+        "spiex_csht_half_sclk_15"
+        "spiex_csht_half_sclk_16"
+
+
+config DEV_SPIEX2_TABLE_SIZE
+    int "Spiex master instruct table size"
+    default 15
+    range 0 30
+
+endif #DEV_SPIEX2
+
+

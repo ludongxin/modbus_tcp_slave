@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_GTMR_TIMESTAMP
+    bool "hpm_gtmr_timestamp ['riscv,hpm_gtmr_timestamp']"
+    select AWBUS
+    default n

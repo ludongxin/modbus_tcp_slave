@@ -1,0 +1,14 @@
+
+menuconfig AW_APP_AW_SHELL_HEXDUMP
+    bool "AWorks Shell supports hexdump commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_INTERFACE
+    select AW_STDLIB
+    select AW_STDIO_PRINTF_FLAGS_MINUS_EN
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    default n
+    help
+        Version: 0.0.0
+
+        

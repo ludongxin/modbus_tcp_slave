@@ -1,0 +1,16 @@
+
+menuconfig ZLIB
+    bool "Zlib"
+    libsafe 
+    default n
+    help
+        Version: 1.2.18
+
+        
+if ZLIB
+
+
+osource  "$(ax_imp_paths,zlib_adapter_interface,,False)"
+
+endif #ZLIB
+

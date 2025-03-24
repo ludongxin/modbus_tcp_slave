@@ -1,0 +1,9 @@
+
+menuconfig NCNN
+    bool "ncnn"
+    libsafe 
+    default n
+    help
+        Version: 0.1.0
+
+        

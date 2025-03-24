@@ -1,0 +1,21 @@
+
+menuconfig DRV_GENERAL_UART_LIN
+    bool "general,uart-lin ['general,uart-lin']"
+    select AWBUS
+    default n
+    help
+        Example of adding device to board.dts:
+
+           / {
+              lin_0:lin0{
+                  compatible = "general,uart-lin";
+                  label = "lin0";
+                  uart_id = <&uart8>;
+                  status = "disabled";
+              };
+          };
+
+        Parameters:
+
+           uart_id:  Must be bound to the serial port, otherwise, device operate will fail.
+

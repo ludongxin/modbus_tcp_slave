@@ -1,0 +1,12 @@
+
+menuconfig AW_API_NETDB
+    bool "AWorks API of netdb"
+    libsafe 
+    select AW_API_INET_HEADER
+    select AW_API_INET_LOCAL
+    select AWB_INET_NETDB
+    default n
+    help
+        Version: 0.0.0
+
+        

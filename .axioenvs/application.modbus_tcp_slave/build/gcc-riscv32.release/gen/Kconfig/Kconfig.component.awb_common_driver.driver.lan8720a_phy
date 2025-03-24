@@ -1,0 +1,34 @@
+
+menuconfig DRV_LAN8720A_PHY
+    bool "lan8720a_phy ['microchip,lan8720a']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_PHY_POLL
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &eth1 {
+           phy-handle = <&lan8720a_0>;
+            lan8720a_0:lan8720a_phy@0x01{
+                compatible = "microchip,lan8720a";
+                status = "disabled";
+                label = "lan8720a_0";
+                reg = <0x01>;
+                rst-pins = <&pin1 PIN_PF09   (IOC_PF07_FUNC_CTL_GPIO_F_07|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                             (IOC_PF07_FUNC_CTL_GPIO_F_07|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                             (IOC_PF07_FUNC_CTL_GPIO_F_07|AW_PIN_CFG_GPIO_OUTPUT_HIGH)>;
+            };
+        };
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &lan8720a_1 {
+             rst-pins = <&pin1 PIN_PF09  (IOC_PF07_FUNC_CTL_GPIO_F_07|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                         (IOC_PF07_FUNC_CTL_GPIO_F_07|AW_PIN_CFG_GPIO_OUTPUT_HIGH)
+                                         (IOC_PF07_FUNC_CTL_GPIO_F_07|AW_PIN_CFG_GPIO_OUTPUT_HIGH)>;
+        };
+
+        Parameters:
+
+           dev_clk:  if use MCU internal clk output for PHY work, must set it correct; otherwise, this item can be omitted.
+

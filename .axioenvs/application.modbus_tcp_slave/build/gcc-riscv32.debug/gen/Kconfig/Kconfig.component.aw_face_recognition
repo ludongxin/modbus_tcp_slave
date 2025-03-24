@@ -1,0 +1,10 @@
+
+menuconfig AW_FACE_RECOGNITION
+    bool "aw_face_recognition"
+    libsafe 
+    select NCNN
+    default n
+    help
+        Version: 0.1.0
+
+        

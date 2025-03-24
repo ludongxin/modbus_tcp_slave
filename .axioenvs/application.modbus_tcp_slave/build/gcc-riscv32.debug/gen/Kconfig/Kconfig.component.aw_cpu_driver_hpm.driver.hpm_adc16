@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_ADC16
+    bool "hpm_adc16 ['riscv,hpm-adc16']"
+    select AWB_ADC_SERVICE
+    select AW_SUBSYS_DRIVER_ADC
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

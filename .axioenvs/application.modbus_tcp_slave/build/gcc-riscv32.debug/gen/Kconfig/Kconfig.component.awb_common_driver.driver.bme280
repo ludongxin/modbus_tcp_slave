@@ -1,0 +1,16 @@
+
+menuconfig DRV_BME280
+    bool "bme280 ['BST,bme280']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            bme280:bme280@76 {
+                compatible = "BST,bme280";
+                label = "BME280";
+                status = "disabled";
+                reg = <0x76>;
+            };
+        };

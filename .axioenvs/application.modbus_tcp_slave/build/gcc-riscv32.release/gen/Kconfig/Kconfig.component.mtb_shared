@@ -1,0 +1,12 @@
+
+menuconfig MTB_SHARED
+    bool "mtb_shared for hpm6450"
+    libsafe 
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select RTK_OBJECT_CREATE_EN
+    default n
+    help
+        Version: 0.1.0
+
+        

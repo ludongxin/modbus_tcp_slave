@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_GTMR_SYSTMR
+    bool "hpm_gtmr_systmr ['riscv,hpm_gtmr_systmr']"
+    select AWBUS
+    default n

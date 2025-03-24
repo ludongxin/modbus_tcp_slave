@@ -1,0 +1,35 @@
+
+menuconfig DEV_CAM1
+    bool "cam1"
+    default n
+    visible if y
+    select DRV_HPM_CAM
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_98
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    select DRV_SDIO_MEM_CARD
+    help
+      DTS_device_prop:
+          name(unit): "hpm_cam" (1)
+          compatible: ['riscv,hpm-cam']
+          dts_path: /soc/camera@0xF100C000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\cam\riscv,hpm-cam.yaml
+
+
+if DEV_CAM1
+
+config DEV_CAM1_HEIGHT
+    int "max resolution height of camera"
+    default 480
+    range 0 1024
+
+
+config DEV_CAM1_WIDTH
+    int "max resolution width of camera"
+    default 640
+    range 0 1024
+
+endif #DEV_CAM1
+
+

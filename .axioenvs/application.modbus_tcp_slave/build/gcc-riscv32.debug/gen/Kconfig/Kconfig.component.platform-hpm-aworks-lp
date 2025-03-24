@@ -1,0 +1,23 @@
+
+menuconfig PLATFORM_HPM_AWORKS_LP
+    bool "HPM Platform"
+    libsafe 
+    select AW_CPU_DRIVER_HPM
+    select RTK_ARCH_RISC_V
+    select RISCV_KERNEL_INTERRUPT_SUPPORT
+    select RISCV_FENCE_INSTRUCTION_SUPPORT
+    default n
+    help
+        Version: 0.1.13
+
+        
+if PLATFORM_HPM_AWORKS_LP
+
+
+osource "$AW_PLATFORM_DEVICES_KCONFIG_MENU"
+
+osource "$(topic_components, System::Platform::Components)"
+
+
+endif #PLATFORM_HPM_AWORKS_LP
+

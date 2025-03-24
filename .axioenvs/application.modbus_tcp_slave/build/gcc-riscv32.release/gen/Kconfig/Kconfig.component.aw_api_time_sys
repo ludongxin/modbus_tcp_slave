@@ -1,0 +1,10 @@
+
+menuconfig AW_API_TIME_SYS
+    bool "AWorks time apis implement in kernel"
+    libsafe 
+    select AW_SUBSYS_TIME
+    default n
+    help
+        Version: 0.0.0
+
+        

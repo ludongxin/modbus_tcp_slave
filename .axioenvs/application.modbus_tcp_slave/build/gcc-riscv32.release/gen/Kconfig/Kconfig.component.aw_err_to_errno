@@ -1,0 +1,10 @@
+
+menuconfig AW_ERR_TO_ERRNO
+    bool "AWorks err to errno convert"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

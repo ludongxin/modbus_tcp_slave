@@ -1,0 +1,21 @@
+
+menuconfig AW_PTHREAD
+    bool "AWorks Pthread adpater"
+    libsafe 
+    select AW_INTERFACE
+    select AW_ERR_TO_ERRNO
+    select PTHREAD_LIKE_TLS_KEY_EN
+    select AWORKS_BASE_PTHREAD_SUPPORT
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:help
+
+        AWorks posix pthread adapter.
+if AW_PTHREAD
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/posix/aw_pthread/Kconfig.opts"
+
+endif #AW_PTHREAD
+

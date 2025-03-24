@@ -1,0 +1,28 @@
+
+menuconfig DRV_LIS2DW12TR
+    bool "lis2dw12tr ['ST,lis2dw12tr']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c2{
+            lis2dw12tr:lis2dw12tr@0x19 {
+                compatible = "ST,lis2dw12tr";
+                status = "disabled";
+                label = "LIS2DW12TR";
+                reg = <0x19>;
+                data-pins  = <&pin1 PIN_PB08 IOC_PB08_FUNC_CTL_GPIO_B_08 (IOC_PB08_FUNC_CTL_GPIO_B_08|AW_PIN_CFG_GPIO_INPUT) IOC_PB08_FUNC_CTL_GPIO_B_08>;
+                event-pins = <&pin1 PIN_PB09 IOC_PB09_FUNC_CTL_GPIO_B_09 (IOC_PB09_FUNC_CTL_GPIO_B_09|AW_PIN_CFG_GPIO_INPUT) IOC_PB09_FUNC_CTL_GPIO_B_09>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &lis2dw12tr{
+            data-pins  = <&pin1 PIN_PB08 IOC_PB08_FUNC_CTL_GPIO_B_08 (IOC_PB08_FUNC_CTL_GPIO_B_08|AW_PIN_CFG_GPIO_INPUT) IOC_PB08_FUNC_CTL_GPIO_B_08>;
+            event-pins = <&pin1 PIN_PB09 IOC_PB09_FUNC_CTL_GPIO_B_09 (IOC_PB09_FUNC_CTL_GPIO_B_09|AW_PIN_CFG_GPIO_INPUT) IOC_PB09_FUNC_CTL_GPIO_B_09>;
+        };

@@ -1,0 +1,21 @@
+
+menuconfig AW_ZWS_ADAPTER
+    bool "ZWS adaptation layer of AWorks"
+    libsafe 
+    select AW_INTERFACE
+    select AW_STDIO
+    select AW_IOT_COMMON
+    default n
+    help
+        Version: 0.3.0
+
+        Detail:help
+
+        Please refer to the demo in demos/application/app_cloud_demos/app_zws_ota_demo/ for quick use of ZWS in AWorks.
+
+if AW_ZWS_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_zws_adapter/Kconfig.opts"
+
+endif #AW_ZWS_ADAPTER
+

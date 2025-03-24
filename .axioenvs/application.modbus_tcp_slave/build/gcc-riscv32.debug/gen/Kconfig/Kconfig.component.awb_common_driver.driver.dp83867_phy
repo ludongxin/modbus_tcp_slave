@@ -1,0 +1,23 @@
+
+menuconfig DRV_DP83867_PHY
+    bool "dp83867_phy ['ti,dp83867']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_SUBSYS_DRIVER_PHY_POLL
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &enet0 {
+            phy-handle = <&dp83867>;
+            dp83867:dp83867_phy@5{
+                compatible = "ti,dp83867";
+                status = "disabled";
+                label = "ti,dp83867";
+                reg = <0x05>;
+            };
+         };
+
+        Parameters:
+
+           dev_clk:  the ref pll clk for dp83867,if dp83867 has osc ,this must be -1
+

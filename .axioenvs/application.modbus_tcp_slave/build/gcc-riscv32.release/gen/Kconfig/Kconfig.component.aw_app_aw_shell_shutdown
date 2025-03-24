@@ -1,0 +1,11 @@
+
+menuconfig AW_APP_AW_SHELL_SHUTDOWN
+    bool "AWorks Shell supports shutdown commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_API_PM
+    default n
+    help
+        Version: 0.0.0
+
+        

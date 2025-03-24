@@ -1,0 +1,105 @@
+
+menuconfig DRV_ZLG_TFT_MONITOR_GPIO
+    bool "zlg_tft_monitor_gpio ['zlg_tft,monitor-gpio']"
+    select AW_SUBSYS_DRIVER_DISPLAY
+    select AW_SUBSYS_DRIVER_PWM
+    default n
+    help
+        "zlg_tft,monitor-gpio" is common LCD driver which drive by LCDif, backlight be controled by GPIO.
+
+        Example of adding device to board.dts:
+
+        &lcdif {
+            monitor_zlg_480_272:monitor_zlg_480_272{
+                compatible = "zlg_tft,monitor-gpio";
+                label      = "zlg_480_272";
+                status     = "disabled";
+           
+                info_manufacturer = "ZLG";
+                info_x_res        = <480>;
+                info_y_res        = <272>;
+                info_bpp          = <16>;
+         
+                cfg_type = "AWB_DISPLAY_MONITOR_CFG_TYPE_DOTCLK";
+                dotclk_dclk_f         = <12000000>;
+                dotclk_h_pulse_width  = <1>;
+                dotclk_h_active       = <480>;
+                dotclk_h_bporch       = <42>;
+                dotclk_h_fporch       = <5>;
+                dotclk_v_pulse_width  = <1>;
+                dotclk_v_active       = <272>;
+                dotclk_v_bporch       = <11>;
+                dotclk_v_fporch       = <8>;
+                dotclk_enable_present = <1>;
+                dotclk_enable_pol     = <1>;
+                dotclk_v_pol          = <1>;
+                dotclk_h_pol          = <0>;
+                dotclk_dotclk_pol     = <1>;
+          
+                /* if exist GPIO to reset LCD, rst pin is optional */
+                reset_delay_ms  = <10>;
+                rst-pins = <&pin1 GPIO1_8 (AW_PIN_CFG_GPIO_OUTPUT_HIGH|GPIO1_8_GPIO)
+                                          (AW_PIN_CFG_GPIO_OUTPUT_HIGH|GPIO1_8_GPIO)
+                                          (AW_PIN_CFG_GPIO_OUTPUT_HIGH|GPIO1_8_GPIO)>;
+                bl-pins = <&pin1 GPIO1_10 (GPIO1_10_GPIO|AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP)
+                                          (GPIO1_10_GPIO|AW_PIN_CFG_GPIO_OUTPUT_HIGH|AW_PIN_CFG_PULL_UP)
+                                          (GPIO1_10_GPIO|AW_PIN_CFG_GPIO_OUTPUT_HIGH|AW_PIN_CFG_PULL_UP)
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &monitor_zlg_480_272{  
+                /* if exist GPIO to reset LCD */
+                rst-pins = <&pin1 GPIO1_8 (AW_PIN_CFG_GPIO_OUTPUT_HIGH|GPIO1_8_GPIO)
+                                          (AW_PIN_CFG_GPIO_OUTPUT_HIGH|GPIO1_8_GPIO)
+                                          (AW_PIN_CFG_GPIO_OUTPUT_HIGH|GPIO1_8_GPIO)>;
+                bl-pins = <&pin1 GPIO1_10 (GPIO1_10_GPIO|AW_PIN_CFG_GPIO_OUTPUT_LOW|AW_PIN_CFG_PULL_UP)
+                                          (GPIO1_10_GPIO|AW_PIN_CFG_GPIO_OUTPUT_HIGH|AW_PIN_CFG_PULL_UP)
+                                          (GPIO1_10_GPIO|AW_PIN_CFG_GPIO_OUTPUT_HIGH|AW_PIN_CFG_PULL_UP)
+        };
+
+        Parameters:
+
+           info_manufacturer:  Equipment manufacturer
+
+           info_x_res:  Screen resolution x
+
+           info_y_res:  Screen resolution y
+
+           info_bpp:  Bits Per Pixel
+
+           reset_delay_ms:  Length of time the Monitor is reset,units ms
+
+           cfg_type:  Interface timing type
+
+           dotclk_dclk_f:  Dotclk clock(unit: Hz).
+
+           dotclk_h_pulse_width:  HSYNC pulse width(unit: pixels).
+
+           dotclk_h_active:  Horizontal valid data count(unit: pixels)
+
+           dotclk_h_bporch:  Horizontal back porch(unit: pixels)
+
+           dotclk_h_fporch:  Horizontal front porch(unit: pixels)
+
+           dotclk_v_pulse_width:  VSYNC pulse width(unit: pixels)
+
+           dotclk_v_active:  Vertical valid data count(unit: row)
+
+           dotclk_v_bporch:  Vertical back porch(unit: row)
+
+           dotclk_v_fporch:  Vertical front porch(unit: row)
+
+           dotclk_enable_present:  Whether output enable-signal
+
+           dotclk_enable_pol:  Transmit data at the high level of the enable-signal
+
+           dotclk_v_pol:  VSYNC pulse is high level
+
+           dotclk_h_pol:  HSYNC pulse is high level
+
+           dotclk_dotclk_pol:  Capture at negative edge
+

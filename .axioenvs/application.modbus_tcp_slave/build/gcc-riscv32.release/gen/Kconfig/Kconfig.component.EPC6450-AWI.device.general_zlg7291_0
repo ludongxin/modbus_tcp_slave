@@ -1,0 +1,31 @@
+
+menuconfig DEV_ZLG7291
+    bool "zlg7291 @ i2c0"
+    default n
+    visible if y
+    select DRV_GENERAL_ZLG7291
+    select DEV_I2C0
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_152
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_160
+
+    help
+      Filename: "/dev/zlg7291"
+
+      dts_dev_prop:
+          name(unit): "general,zlg7291" (0)
+          compatible: ['zlg,zlg7291']
+          dts_path: /soc/i2c@0xF3020000/zlg7291@0x30
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\zlg7291\zlg,zlg7291.yaml
+
+
+if DEV_ZLG7291
+
+config DEV_ZLG7291_IS_INT
+    bool "interrupt pin trigger mode"
+    default y
+
+endif #DEV_ZLG7291
+
+

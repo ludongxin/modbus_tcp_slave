@@ -1,0 +1,7 @@
+
+menuconfig DRV_RISCV_HPM_PLIC
+    bool "riscv_hpm_plic ['riscv,hpm_plic']"
+    select AWBL_INTCTLR_SERVICE
+    select AW_SUBSYS_SYSTEM_INTCTLR
+    select AWBUS
+    default n

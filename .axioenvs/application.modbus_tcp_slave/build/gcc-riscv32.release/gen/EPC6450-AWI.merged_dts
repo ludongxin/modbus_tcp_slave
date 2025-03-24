@@ -1,0 +1,3848 @@
+# 0 ".axioenvs\\application.modbus_tcp_slave\\build\\gcc-riscv32.release\\gen\\empty.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\boards\\EPC6450-AWI\\EPC6450-AWI.dts" 1
+/*******************************************************************************
+*                                 AWorks
+*                       ----------------------------
+*                       innovating embedded platform
+*
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+* ALL rights reserved.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+*
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+* https://opensource.org/licenses/LGPL-2.1
+*
+* Contact information:
+* web site:    http://www.zlg.cn/
+*******************************************************************************/
+
+/dts-v1/;
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm.dtsi" 1
+/*******************************************************************************
+*                                 AWorks
+*                       ----------------------------
+*                       innovating embedded platform
+*
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+* ALL rights reserved.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+*
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+* https://opensource.org/licenses/LGPL-2.1
+*
+* Contact information:
+* web site:    http://www.zlg.cn/
+*******************************************************************************/
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\awbus-lite\\dts/risc-v/riscv32.dtsi" 1
+/* SPDX-License-Identifier: Apache-2.0 */
+
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\dts\\common/skeleton.dtsi" 1
+/* SPDX-License-Identifier: Apache-2.0 */
+
+/*
+ * Skeleton device tree; the bare minimum needed to boot; just include and
+ * add a compatible value.  The bootloader will typically populate the memory
+ * node.
+ */
+
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+};
+# 4 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\awbus-lite\\dts/risc-v/riscv32.dtsi" 2
+
+/ {
+    soc {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "simple-bus";
+        ranges;
+
+    };
+};
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm.dtsi" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_inum.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_inum.h"
+/**
+
+ * \file
+
+ * \brief inum defines for rv32m1.
+
+ *
+
+ * \internal
+
+ * \par modification history:
+
+ * \endinternal
+
+ */
+# 169 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_inum.h"
+/**@} CPU中断号定义*/
+
+
+
+
+
+
+
+/* end of file */
+# 21 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm.dtsi" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_clk_id.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 23 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_clk_id.h"
+// todo 后面再调整
+# 22 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm.dtsi" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_dma.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 23 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_dma.h"
+/** \brief DMA传输类型 */
+# 162 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_dma.h"
+/* end of file */
+# 23 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm.dtsi" 2
+
+/ {
+    cpus {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        cpu@0 {
+            device_type = "cpu";
+            compatible = "arm,cortex-a9";
+            reg = <0>;
+            #address-cells = <1>;
+            #size-cells = <1>;
+        };
+    };
+
+    soc {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "simple-bus";
+        interrupt-parent = <&plic>;
+        ranges;
+
+        mcycle: mcycle@0 {
+            compatible = "riscv,mcycle";
+            reg = <0 0x10>;
+            dev_clk = <11>;
+            label = "mcycle";
+            status = "disabled";
+        };
+        /delete-node/ mcycle@0;
+
+        plic: interrupt-controller@0xE4000000 {
+            compatible = "riscv,hpm_plic";
+            reg = <0xE4000000 0x4000>;
+
+            plic_max_prio = <7>;
+            plic_prio_regs = <0xE4000004>;
+            plic_irq_en_regs = <0xE4002000>;
+            plic_irq_pending_regs = <0xE4001000>;
+            plic_threshold_claim_complete_regs = <0xE4200000>;
+
+            interrupt-controller;
+            #interrupt-cells = <2>;
+            label = "plic0";
+            inum_count = <127>;
+            isr_info_count = <127>;
+        };
+
+        pin1: pin@F0000000 {
+            compatible = "riscv,hpm-gpio";
+            reg = <0xF0000000 0x4000
+                   0xF40DC000 0x4000
+                   0xF5014000 0x4000>;
+            label = "pin_1";
+            pin-controller;
+            #pin-cells = <4>;
+        };
+        systmr: systmr@F3008000 {
+            compatible = "riscv,hpm_gtmr_systmr";
+            reg = <0xF3008000 0x4000>;
+            interrupts = <62 0>;
+            label = "systmr";
+            dev_clk = <114>;
+        };
+
+        wkuptmr: wkuptmr@F40E0000 {
+            compatible = "riscv,hpm_ptmr_wkuptmr";
+            reg = <0xF40E0000 0x4000>;
+            interrupts = <115 0>;
+            label = "wkuptmr";
+            dev_clk = <1>;
+            status = "disabled";
+        };
+
+        uart0: uart@F0040000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0040000 0x400>;
+            interrupts = <31 0>;
+            label = "uart0";
+            dev_clk = <120>;
+            status = "disabled";
+        };
+        uart1: uart@F0044000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0044000 0x400>;
+            interrupts = <32 0>;
+            label = "uart1";
+            dev_clk = <121>;
+            status = "disabled";
+        };
+        uart2: uart@F0048000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0048000 0x400>;
+            interrupts = <33 0>;
+            label = "uart2";
+            dev_clk = <122>;
+            status = "disabled";
+        };
+        uart3: uart@F004C000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF004C000 0x400>;
+            interrupts = <34 0>;
+            label = "uart3";
+            dev_clk = <123>;
+            status = "disabled";
+        };
+        uart4: uart@F0050000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0050000 0x400>;
+            interrupts = <35 0>;
+            label = "uart4";
+            dev_clk = <124>;
+            status = "disabled";
+        };
+        uart5: uart@F0054000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0054000 0x400>;
+            interrupts = <36 0>;
+            label = "uart5";
+            dev_clk = <125>;
+            status = "disabled";
+        };
+        uart6: uart@F0058000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0058000 0x400>;
+            interrupts = <37 0>;
+            label = "uart6";
+            dev_clk = <126>;
+            status = "disabled";
+        };
+        uart7: uart@F005c000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF005c000 0x400>;
+            interrupts = <38 0>;
+            label = "uart7";
+            dev_clk = <127>;
+            status = "disabled";
+        };
+        uart8: uart@F0060000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0060000 0x400>;
+            interrupts = <39 0>;
+            label = "uart8";
+            dev_clk = <128>;
+            status = "disabled";
+        };
+        uart9: uart@F0064000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0064000 0x400>;
+            interrupts = <40 0>;
+            label = "uart9";
+            dev_clk = <129>;
+            status = "disabled";
+        };
+        uart10: uart@F0068000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0068000 0x400>;
+            interrupts = <41 0>;
+            label = "uart10";
+            dev_clk = <130>;
+            status = "disabled";
+        };
+        uart11: uart@F006C000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF006C000 0x400>;
+            interrupts = <42 0>;
+            label = "uart11";
+            dev_clk = <131>;
+            status = "disabled";
+        };
+        uart12: uart@F0070000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0070000 0x400>;
+            interrupts = <43 0>;
+            label = "uart12";
+            dev_clk = <132>;
+            status = "disabled";
+        };
+        uart13: uart@F0074000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0074000 0x400>;
+            interrupts = <44 0>;
+            label = "uart13";
+            dev_clk = <133>;
+            status = "disabled";
+        };
+        uart14: uart@F0078000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF0078000 0x400>;
+            interrupts = <45 0>;
+            label = "uart14";
+            dev_clk = <134>;
+            status = "disabled";
+        };
+        uart15: uart@F007C000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF007C000 0x400>;
+            interrupts = <46 0>;
+            label = "uart15";
+            dev_clk = <135>;
+            status = "disabled";
+        };
+
+        puart: uart@F40E4000{
+            compatible = "riscv,hpm_uart";
+            reg = <0xF40E4000 0x400>;
+            interrupts = <116 0>;
+            label = "puart";
+            dev_clk = <1>;
+            status = "disabled";
+        };
+
+        nor_xpi0: nor_xpi@0xf3040000 {
+            compatible = "riscv,hpm-nor-xpi";
+            dev_clk = <98>;
+            reg = <0xf3040000 0x4000>;
+            header = <0xfcf90001>;
+            option0 = <0x00000007>;
+            option1 = <0x00000000>;
+            label = "xpi0";
+        };
+
+        nor_xpi1: nor_xpi@0xF3044000 {
+            compatible = "riscv,hpm-nor-xpi";
+            dev_clk = <99>;
+            reg = <0xF3044000 0x4000>;
+            header = <0xfcf90001>;
+            option0 = <0x00000007>;
+            option1 = <0x00000000>;
+            label = "xpi1";
+            status = "disabled";
+        };
+
+        lcdc0: lcdc@0xF1000000 {
+            compatible = "riscv,hpm-lcdc";
+            reg = <0xF1000000 0x4000>;
+            interrupts = <99 0>;
+            dev_clk = <165>;
+            dev_apb_clk = <0>;
+            dev_pix_clk = <0>;
+            label = "lcdc0";
+            status = "disabled";
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+        /*
+        gtmr1: gtmr1@0xF3004000{
+            compatible = "riscv,hpm_gtmr_timestamp";
+            reg = <0xF3004000 0x4000>;
+            interrupts = <IRQn_TMR1 0>;
+            dev_clk = <HPM_CLK_GTMR1>;
+            label = "gtmr1";
+            status = "disabled";
+        };
+        */
+        eth0: eth@0xF2000000{
+            compatible = "riscv,hpm_ethernet";
+            reg = <0xF2000000 0x4000>;
+            interrupts = <108 0>;
+            mac_top_clk = <68>;
+            mac_clk = <170>;
+            mac_ptp_clk = <70>;
+            phy_clk = <18>;
+            enet_conctl_reg_addr = <0xF2040008>;
+            enet_conctl_clk_dly_reg_addr = <0xF2040000>;
+            enet_conctl_clk_dly_offset = <0>;
+            edge_device_port;
+            label = "eth0";
+            status = "disabled";
+            ipaddr = "192.168.137.251";
+            gateway = "192.168.137.1";
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+        eth1: eth@0xF2004000{
+            compatible = "riscv,hpm_ethernet";
+            reg = <0xF2004000 0x4000>;
+            interrupts = <109 0>;
+            mac_top_clk = <69>;
+            mac_clk = <171>;
+            mac_ptp_clk = <71>;
+            phy_clk = <18>;
+            enet_conctl_reg_addr = <0xF204000c>;
+            enet_conctl_clk_dly_reg_addr = <0xF2040000>;
+            enet_conctl_clk_dly_offset = <10>;
+            edge_device_port;
+            label = "eth1";
+            ipaddr = "192.168.138.251";
+            gateway = "192.168.138.1";
+            status = "disabled";
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+        can0: can@F0080000{
+            compatible = "riscv,hpm_can";
+            reg = <0xF0080000 0x4000>;
+            interrupts = <47 0>;
+            dev_top_clk_id = <54>;
+            dev_clk_id = <144>;
+            edge_device_port;
+            label = "can0";
+            status = "disabled";
+        };
+        can1: can@F0084000{
+            compatible = "riscv,hpm_can";
+            reg = <0xF0084000 0x4000>;
+            interrupts = <48 0>;
+            dev_top_clk_id = <55>;
+            dev_clk_id = <145>;
+            edge_device_port;
+            label = "can1";
+            status = "disabled";
+        };
+        can2: can@F0088000{
+            compatible = "riscv,hpm_can";
+            reg = <0xF0088000 0x4000>;
+            interrupts = <49 0>;
+            dev_top_clk_id = <56>;
+            dev_clk_id = <146>;
+            edge_device_port;
+            label = "can2";
+            status = "disabled";
+        };
+        can3: can@F008c000{
+            compatible = "riscv,hpm_can";
+            reg = <0xF008c000 0x4000>;
+            interrupts = <50 0>;
+            dev_top_clk_id = <57>;
+            dev_clk_id = <147>;
+            edge_device_port;
+            label = "can3";
+            status = "disabled";
+        };
+        adc0: adc12@0xF0010000 {
+            compatible = "riscv,hpm-adc12";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0xF0010000 0x4000>;
+            dev_clk = <149>;
+            interrupts = <19 0>;
+            label = "adc0";
+            adc_chan_start = <0>;
+            adc_chan_count = <19>;
+            status = "disabled";
+        };
+
+        adc1: adc12@0xF0014000 {
+            compatible = "riscv,hpm-adc12";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0xF0014000 0x4000>;
+            dev_clk = <150>;
+            interrupts = <20 0>;
+            label = "adc1";
+            adc_chan_start = <19>;
+            adc_chan_count = <19>;
+            status = "disabled";
+        };
+
+        adc2: adc12@0xF0018000 {
+            compatible = "riscv,hpm-adc12";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0xF0018000 0x4000>;
+            dev_clk = <151>;
+            interrupts = <21 0>;
+            label = "adc2";
+            adc_chan_start = <38>;
+            adc_chan_count = <19>;
+            status = "disabled";
+        };
+
+        adc3: adc16@0xF001C000 {
+            compatible = "riscv,hpm-adc16";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0xF001C000 0x4000>;
+            dev_clk = <152>;
+            interrupts = <22 0>;
+            label = "adc3";
+            adc_chan_start = <57>;
+            adc_chan_count = <8>;
+            status = "disabled";
+        };
+
+        i2c0: i2c@0xF3020000{
+            compatible = "riscv,hpm_i2c";
+            reg = <0xF3020000UL 0x4000>;
+            status = "disabled";
+            dev_clk = <136>;
+            label = "i2c0";
+            bus_speed = <100000>;
+            inum_source = <68>;
+            interrupts = <68 0>;
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+
+        i2c1: i2c@0xF3024000{
+            compatible = "riscv,hpm_i2c";
+            reg = <0xF3024000 0x4000>;
+            status = "disabled";
+            dev_clk = <137>;
+            label = "i2c1";
+            bus_speed = <100000>;
+            inum_source = <69>;
+            interrupts = <69 0>;
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+
+        i2c2: i2c@0xF3028000{
+            compatible = "riscv,hpm_i2c";
+            reg = <0xF3028000 0x4000>;
+            status = "disabled";
+            dev_clk = <138>;
+            label = "i2c2";
+            bus_speed = <100000>;
+            inum_source = <70>;
+            interrupts = <70 0>;
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+
+        i2c3: i2c@0xF302C000{
+            compatible = "riscv,hpm_i2c";
+            reg = <0xF302C000 0x4000>;
+            status = "disabled";
+            dev_clk = <139>;
+            label = "i2c3";
+            bus_speed = <100000>;
+            inum_source = <71>;
+            interrupts = <71 0>;
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+
+        usb0: usb@0xF2020000 {
+            compatible = "riscv,hpm-usb";
+            reg = <0xF2020000 0x4000>;
+            interrupts = <106 0>;
+            dev_clk = <176>;
+            label = "usb0";
+            status = "disabled";
+            epin_num = <8>;
+        };
+
+        usb1: usb@0xF2024000 {
+            compatible = "riscv,hpm-usb";
+            reg = <0xF2024000 0x4000>;
+            interrupts = <107 0>;
+            dev_clk = <177>;
+            label = "usb1";
+            status = "disabled";
+            epin_num = <8>;
+        };
+
+        spi0:spi@0xF0030000 {
+            compatible = "riscv,hpm-spi_int";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "spi0";
+            reg = <0xF0030000 0x4000>;
+            interrupts = <27 0>;
+            dev_clk = <140>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        spi1:spi@0xF0034000 {
+            compatible = "riscv,hpm-spi_int";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "spi1";
+            reg = <0xF0034000 0x4000>;
+            interrupts = <28 0>;
+            dev_clk = <141>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        spi2:spi@0xF0038000 {
+            compatible = "riscv,hpm-spi_int";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "spi2";
+            reg = <0xF0038000 0x4000>;
+            interrupts = <29 0>;
+            dev_clk = <142>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        spi3:spi@0xF003C000 {
+            compatible = "riscv,hpm-spi_int";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "spi3";
+            reg = <0xF003C000 0x4000>;
+            interrupts = <30 0>;
+            dev_clk = <143>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        spiex2:spiex@0xF0038000 {
+            compatible = "riscv,hpm-spiex";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "spiex2";
+            reg = <0xF0038000 0x4000>;
+            interrupts = <29 0>;
+            dev_clk = <142>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        TIMR0: timer@0xF3000000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF3000000 0x4000>;
+            dev_clk = <112>;
+            interrupts = <60 0>;
+            label = "timer0";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer0_chan0: timer_chan@0xF3000000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3000000 0x40>;
+                label = "timer0_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer0_chan1: timer_chan@0xF3000040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3000040 0x40>;
+                label = "timer0_chan1";
+                status = "disabled";
+            };
+
+            timer0_chan2: timer_chan@0xF3000080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3000080 0x40>;
+                label = "timer0_chan2";
+                status = "disabled";
+            };
+
+            timer0_chan3: timer_chan@0xF30000C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF30000C0 0x40>;
+                label = "timer0_chan3";
+                status = "disabled";
+            };
+        };
+
+        TIMR1: timer@0xF3004000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF3004000 0x4000>;
+            dev_clk = <113>;
+            interrupts = <61 0>;
+            label = "timer1";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer1_chan0: timer_chan@0xF3004000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3004000 0x40>;
+                label = "timer1_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer1_chan1: timer_chan@0xF3004040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3004040 0x40>;
+                label = "timer1_chan1";
+                status = "disabled";
+            };
+
+            timer1_chan2: timer_chan@0xF3004080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3004080 0x40>;
+                label = "timer1_chan2";
+                status = "disabled";
+            };
+
+            timer1_chan3: timer_chan@0xF30040C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF30040C0 0x40>;
+                label = "timer1_chan3";
+                status = "disabled";
+            };
+        };
+        /*
+        //该定时器被用作系统定时器
+        TIMR2: timer@0xF3008000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF3008000 0x4000>;
+            dev_clk = <HPM_CLK_GTMR2>;
+            interrupts = <IRQn_TMR2 0>;
+            label = "timer2";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer2_chan0: timer_chan@0xF3008000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3008000 0x40>;
+                label = "timer2_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer2_chan1: timer_chan@0xF3008040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3008040 0x40>;
+                label = "timer2_chan1";
+                status = "disabled";
+            };
+
+            timer2_chan2: timer_chan@0xF3008080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3008080 0x40>;
+                label = "timer2_chan2";
+                status = "disabled";
+            };
+
+            timer2_chan3: timer_chan@0xF30080C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF30080C0 0x40>;
+                label = "timer2_chan3";
+                status = "disabled";
+            };
+        };
+        */
+        TIMR3: timer@0xF300C000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF300C000 0x4000>;
+            dev_clk = <115>;
+            interrupts = <63 0>;
+            label = "timer3";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer3_chan0: timer_chan@0xF300C000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF300C000 0x40>;
+                label = "timer3_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer3_chan1: timer_chan@0xF300C040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF300C040 0x40>;
+                label = "timer3_chan1";
+                status = "disabled";
+            };
+
+            timer3_chan2: timer_chan@0xF300C080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF300C080 0x40>;
+                label = "timer3_chan2";
+                status = "disabled";
+            };
+
+            timer3_chan3: timer_chan@0xF300C0C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF300C0C0 0x40>;
+                label = "timer3_chan3";
+                status = "disabled";
+            };
+        };
+
+        TIMR4: timer@0xF3010000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF3010000 0x4000>;
+            dev_clk = <116>;
+            interrupts = <64 0>;
+            label = "timer4";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer4_chan0: timer_chan@0xF3010000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3010000 0x40>;
+                label = "timer4_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer4_chan1: timer_chan@0xF3010040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3010040 0x40>;
+                label = "timer4_chan1";
+                status = "disabled";
+            };
+
+            timer4_chan2: timer_chan@0xF3010080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3010080 0x40>;
+                label = "timer4_chan2";
+                status = "disabled";
+            };
+
+            timer4_chan3: timer_chan@0xF30100C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF30100C0 0x40>;
+                label = "timer4_chan3";
+                status = "disabled";
+            };
+        };
+
+        TIMR5: timer@0xF3014000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF3014000 0x4000>;
+            dev_clk = <117>;
+            interrupts = <65 0>;
+            label = "timer5";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer5_chan0: timer_chan@0xF3014000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3014000 0x40>;
+                label = "timer5_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer5_chan1: timer_chan@0xF3014040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3014040 0x40>;
+                label = "timer5_chan1";
+                status = "disabled";
+            };
+
+            timer5_chan2: timer_chan@0xF3014080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3014080 0x40>;
+                label = "timer5_chan2";
+                status = "disabled";
+            };
+
+            timer5_chan3: timer_chan@0xF30140C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF30140C0 0x40>;
+                label = "timer5_chan3";
+                status = "disabled";
+            };
+        };
+
+        TIMR6: timer@0xF3018000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF3018000 0x4000>;
+            dev_clk = <118>;
+            interrupts = <66 0>;
+            label = "timer6";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer6_chan0: timer_chan@0xF3018000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3018000 0x40>;
+                label = "timer6_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer6_chan1: timer_chan@0xF3018040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3018040 0x40>;
+                label = "timer6_chan1";
+                status = "disabled";
+            };
+
+            timer6_chan2: timer_chan@0xF3018080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF3018080 0x40>;
+                label = "timer6_chan2";
+                status = "disabled";
+            };
+
+            timer6_chan3: timer_chan@0xF30180C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF30180C0 0x40>;
+                label = "timer6_chan3";
+                status = "disabled";
+            };
+        };
+
+        TIMR7: timer@0xF301C000 {
+            compatible = "riscv,hpm-timer";
+            reg = <0xF301C000 0x4000>;
+            dev_clk = <119>;
+            interrupts = <67 0>;
+            label = "timer7";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x1>;
+
+            timer7_chan0: timer_chan@0xF301C000 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF301C000 0x40>;
+                label = "timer7_chan0";
+                hwtimer_delay_enable;
+                status = "disabled";
+            };
+
+            timer7_chan1: timer_chan@0xF301C040 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF301C040 0x40>;
+                label = "timer7_chan1";
+                status = "disabled";
+            };
+
+            timer7_chan2: timer_chan@0xF301C080 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF301C080 0x40>;
+                label = "timer7_chan2";
+                status = "disabled";
+            };
+
+            timer7_chan3: timer_chan@0xF301C0C0 {
+                compatible = "riscv,hpm-timer-chan";
+                reg = <0xF301C0C0 0x40>;
+                label = "timer7_chan3";
+                status = "disabled";
+            };
+        };
+
+        sdio0: sdio@0xF2030000 {
+            compatible = "riscv,hpm-sdio";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0xF2030000 0x4000>;
+            interrupts = <110 0>;
+            dev_clk = <174>;
+            label = "sdio0";
+            edge_device_port;
+            status = "disabled";
+        };
+
+        sdio1: sdio@0xF2034000 {
+            compatible = "riscv,hpm-sdio";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            reg = <0xF2034000 0x4000>;
+            interrupts = <111 0>;
+            dev_clk = <175>;
+            label = "sdio1";
+            edge_device_port;
+            status = "disabled";
+        };
+
+        otp: otp@0xF40C8000 {
+            compatible = "riscv,hpm-otp";
+            reg = <0xF40C8000 0x4000>,<0xF40C4000 0x4000>;
+            label = "otp";
+        };
+
+        rtc:rtc@0xF5044000 {
+            compatible = "riscv,hpm-rtc";
+            label = "rtc";
+            reg = <0xF5044000 0x4000>;
+            interrupts = <120 0>;
+            status = "disabled";
+        };
+
+        ptpc: ptpc@0xF00B0000{
+            compatible = "riscv,hpm_ptpc";
+            label = "ptpc";
+            reg = <0xF00B0000 0x4000>;
+            dev_clk = <148>;
+            interrupts = <51 0>;
+            status = "okay";
+        };
+
+        wdt0: wdt@F0090000 {
+            compatible = "riscv,hpm-wdt";
+            reg = <0xF0090000 0x4000>;
+            dev_clk = <108>;
+            interrupts = <52 0>;
+            label = "wdt0";
+            status = "disabled";
+        };
+
+        wdt1: wdt@F0094000 {
+            compatible = "riscv,hpm-wdt";
+            reg = <0xF0094000 0x4000>;
+            dev_clk = <109>;
+            interrupts = <53 0>;
+            label = "wdt1";
+            status = "disabled";
+        };
+
+        wdt2: wdt@F0098000 {
+            compatible = "riscv,hpm-wdt";
+            reg = <0xF0098000 0x4000>;
+            dev_clk = <110>;
+            interrupts = <54 0>;
+            label = "wdt2";
+            status = "disabled";
+        };
+
+        wdt3: wdt@F009C000 {
+            compatible = "riscv,hpm-wdt";
+            reg = <0xF009C000 0x4000>;
+            dev_clk = <111>;
+            interrupts = <55 0>;
+            label = "wdt3";
+            status = "disabled";
+        };
+
+        multi_core:multi_core{
+            compatible = "riscv,hpm_multi_core";
+            label = "multi_core";
+            edge_device_port;
+            status = "disabled";
+        };
+
+        // 在HPM平台上可以把PWM0和PWM1，PWM2和PWM3，PWM4和PWM5，PWM6和PWM7 设置为互补的PWM输出。
+        PWM0: pwm@0xF0200000 {
+            compatible = "riscv,hpm-pwm-ctrl";
+            reg = <0xF0200000 0x4000>;
+            dev_clk = <161>;
+            interrupts = <72 0>;
+            label = "pwm0";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x0>;
+            // reg为pwm通道号，complementary-handle为互补通道节点
+            pwm0_chan0: pwm0_chan0@0 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan0";
+                reg = <0>;
+                complementary-handle = <&pwm0_chan1>;
+                status = "disabled";
+            };
+
+            pwm0_chan1: pwm0_chan1@1 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan1";
+                reg = <1>;
+                status = "disabled";
+            };
+
+            pwm0_chan2: pwm0_chan2@2 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan2";
+                reg = <2>;
+                complementary-handle = <&pwm0_chan3>;
+                status = "disabled";
+            };
+
+            pwm0_chan3: pwm0_chan3@3{
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan3";
+                reg = <3>;
+                status = "disabled";
+            };
+
+            pwm0_chan4: pwm0_chan4@4 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan4";
+                reg = <4>;
+                complementary-handle = <&pwm0_chan5>;
+                status = "disabled";
+            };
+
+            pwm0_chan5: pwm0_chan5@5 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan5";
+                reg = <6>;
+                status = "disabled";
+            };
+
+            pwm0_chan6: pwm0_chan6@6 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan6";
+                reg = <6>;
+                complementary-handle = <&pwm0_chan7>;
+                status = "disabled";
+            };
+
+            pwm0_chan7: pwm0_chan7@7 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm0_chan7";
+                reg = <7>;
+                status = "disabled";
+            };
+        };
+
+        PWM1: pwm@0xF0210000 {
+            compatible = "riscv,hpm-pwm-ctrl";
+            reg = <0xF0210000 0x4000>;
+            dev_clk = <162>;
+            interrupts = <75 0>;
+            label = "pwm1";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x00>;
+            // reg为通道号，complementary-handle为互补通道节点
+            pwm1_chan0: pwm1_chan0@0 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan0";
+                reg = <0>;
+                complementary-handle = <&pwm1_chan1>;
+                status = "disabled";
+            };
+
+            pwm1_chan1: pwm1_chan1@1 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan1";
+                reg = <1>;
+                status = "disabled";
+            };
+
+            pwm1_chan2: pwm1_chan2@2 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan2";
+                reg = <2>;
+                complementary-handle = <&pwm1_chan3>;
+                status = "disabled";
+            };
+
+            pwm1_chan3: pwm1_chan3@3 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan3";
+                reg = <3>;
+                status = "disabled";
+            };
+
+            pwm1_chan4: pwm1_chan4@4 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan4";
+                reg = <4>;
+                complementary-handle = <&pwm1_chan5>;
+                status = "disabled";
+            };
+
+            pwm1_chan5: pwm1_chan5@5 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan5";
+                reg = <5>;
+                status = "disabled";
+            };
+
+            pwm1_chan6: pwm1_chan6@6 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan6";
+                reg = <6>;
+                complementary-handle = <&pwm1_chan7>;
+                status = "disabled";
+            };
+
+            pwm1_chan7: pwm1_chan7@7 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm1_chan5";
+                reg = <7>;
+                status = "disabled";
+            };
+        };
+
+        PWM2: pwm@0xF0220000 {
+            compatible = "riscv,hpm-pwm-ctrl";
+            reg = <0xF0220000 0x4000>;
+            dev_clk = <163>;
+            interrupts = <78 0>;
+            label = "pwm2";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x00>;
+            // reg为通道号，complementary-handle为互补通道节点
+            pwm2_chan0: pwm2_chan0@0 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan0";
+                reg = <0>;
+                complementary-handle = <&pwm2_chan1>;
+                status = "disabled";
+            };
+
+            pwm2_chan1: pwm2_chan1@1 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan1";
+                reg = <1>;
+                status = "disabled";
+            };
+
+            pwm2_chan2: pwm2_chan2@2 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan2";
+                reg = <2>;
+                complementary-handle = <&pwm2_chan3>;
+                status = "disabled";
+            };
+
+            pwm2_chan3: pwm2_chan3@3 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan3";
+                reg = <3>;
+                status = "disabled";
+            };
+
+            pwm2_chan4: pwm2_chan4@4 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan4";
+                reg = <4>;
+                complementary-handle = <&pwm2_chan5>;
+                status = "disabled";
+            };
+
+            pwm2_chan5: pwm2_chan5@5 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan5";
+                reg = <5>;
+                status = "disabled";
+            };
+
+            pwm2_chan6: pwm2_chan6@6 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan6";
+                reg = <6>;
+                complementary-handle = <&pwm2_chan7>;
+                status = "disabled";
+            };
+
+            pwm2_chan7: pwm2_chan7@7 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm2_chan7";
+                reg = <7>;
+                status = "disabled";
+            };
+
+        };
+
+        PWM3: pwm@0xF0230000 {
+            compatible = "riscv,hpm-pwm-ctrl";
+            reg = <0xF0230000 0x4000>;
+            dev_clk = <164>;
+            interrupts = <81 0>;
+            label = "pwm3";
+            status = "disabled";
+            #address-cells = <0x1>;
+            #size-cells = <0x0>;
+            // reg为通道号，complementary-handle为互补通道节点
+            pwm3_chan0: pwm3_chan0@0 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan0";
+                reg = <0>;
+                complementary-handle = <&pwm3_chan1>;
+                status = "disabled";
+            };
+
+            pwm3_chan1: pwm3_chan1@1 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan1";
+                reg = <1>;
+                status = "disabled";
+            };
+
+            pwm3_chan2: pwm3_chan2@2 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan2";
+                reg = <2>;
+                complementary-handle = <&pwm3_chan3>;
+                status = "disabled";
+            };
+
+            pwm3_chan3: pwm3_chan3@3 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan3";
+                reg = <3>;
+                status = "disabled";
+            };
+
+            pwm3_chan4: pwm3_chan4@4 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan4";
+                reg = <4>;
+                complementary-handle = <&pwm3_chan5>;
+                status = "disabled";
+            };
+
+            pwm3_chan5: pwm3_chan5@5 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan5";
+                reg = <5>;
+                status = "disabled";
+            };
+
+            pwm3_chan6: pwm3_chan6@6 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan6";
+                reg = <6>;
+                complementary-handle = <&pwm3_chan7>;
+                status = "disabled";
+            };
+
+            pwm3_chan7: pwm3_chan7@7 {
+                compatible = "riscv,hpm-pwm";
+                label = "pwm3_chan7";
+                reg = <7>;
+                status = "disabled";
+            };
+        };
+
+
+        MBX0A:mbx@0xF00A0000 {
+            compatible = "riscv,hpm_mbx";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "mbx0a";
+            reg = <0xF00A0000 0x4000>;
+            interrupts = <56 0>;
+            dev_clk = <0>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        MBX0B:mbx@0xF00A4000 {
+            compatible = "riscv,hpm_mbx";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "mbx0b";
+            reg = <0xF00A4000 0x4000>;
+            interrupts = <57 0>;
+            dev_clk = <0>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+
+        MBX1A:mbx@0xF00A8000 {
+            compatible = "riscv,hpm_mbx";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "mbx1a";
+            reg = <0xF00A8000 0x4000>;
+            interrupts = <58 0>;
+            dev_clk = <0>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        MBX1B:mbx@0xF00AC000 {
+            compatible = "riscv,hpm_mbx";
+            #address-cells = <1>;
+            #size-cells = <0>;
+            label = "mbx1b";
+            reg = <0xF00AC000 0x4000>;
+            interrupts = <59 0>;
+            dev_clk = <0>;
+            edge_device_port;
+            status = "disabled";
+        };
+
+        camera0: camera@0xF1008000 {
+            compatible = "riscv,hpm-cam";
+            reg = <0xF1008000 0x4000>;
+            interrupts = <97 0>;
+            dev_clk = <166>;
+            label = "cam0";
+            status = "disabled";
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+
+        camera1: camera@0xF100C000 {
+            compatible = "riscv,hpm-cam";
+            reg = <0xF100C000 0x4000>;
+            interrupts = <98 0>;
+            dev_clk = <167>;
+            label = "cam1";
+            status = "disabled";
+            edge_device_port;
+            #address-cells = <1>;
+            #size-cells = <0>;
+        };
+
+        i2s1: i2s@0xF0104000 {
+            compatible = "riscv,hpm-i2s";
+            reg = <0xF0104000 0x4000>;
+            interrupts = <92 0>;
+            dev_clk = <155>;
+            tx_dma_type = <(43)>;
+            label = "i2s1";
+            status = "disabled";
+        };
+
+        dao: dao@0xF0110000 {
+            compatible = "riscv,hpm-dao";
+            reg = <0xF0110000 0x4000>;
+            dev_clk = <159>;
+            label = "dao";
+            status = "disabled";
+        };
+
+        HDMA: dma@0xF00C4000 {
+            compatible = "riscv,hpm-dma";
+            reg = <0xF00C4000 0x4000>,<0xF00C0000 0x4000>;
+            interrupts = <88 0>;
+            label = "hdma";
+            dev_clk = <103>;
+            dmamux_clk = <103>;
+            status = "disabled";
+        };
+
+        XDMA: dma@0xF3048000UL {
+            compatible = "riscv,hpm-dma";
+            reg = <0xF3048000UL 0x4000>,<0xF00C0000 0x4000>;
+            interrupts = <87 0>;
+            label = "xdma";
+            dev_clk = <104>;
+            //dmamux与hdma属于同一时钟源,使用dmamux必须使能HDMA的时钟.
+            dmamux_clk = <103>;
+            status = "disabled";
+        };
+    };
+};
+
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm_awbl.dtsi" 1
+/*******************************************************************************
+*                                 AWorks
+*                       ----------------------------
+*                       innovating embedded platform
+*
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+* ALL rights reserved.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+*
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+* https://opensource.org/licenses/LGPL-2.1
+*
+* Contact information:
+* web site:    http://www.zlg.cn/
+*******************************************************************************/
+
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_inum.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_inum.h"
+/**
+
+ * \file
+
+ * \brief inum defines for rv32m1.
+
+ *
+
+ * \internal
+
+ * \par modification history:
+
+ * \endinternal
+
+ */
+# 177 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_inum.h"
+/* end of file */
+# 21 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm_awbl.dtsi" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin.h"
+/**
+
+ * \file
+
+ * \brief rv32m1 引脚定义.
+
+ *
+
+ * \internal
+
+ * \par modification history:
+
+ * \endinternal
+
+ */
+# 32 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin.h"
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/**
+
+ * \file
+
+ * \brief AWBus-lite hpm GPIO 驱动上私有的一些功能
+
+ * \internal
+
+ * \par modification history:
+
+ * \endinternal
+
+ */
+# 137 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* Bitfield definition for register: FUNC_CTL */
+/*
+
+ * LOOP_BACK (RW)
+
+ *
+
+ * force input on
+
+ * 0: disable
+
+ * 1: enable
+
+ */
+# 149 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * ANALOG (RW)
+
+ *
+
+ * select analog pin in pad
+
+ * 0: disable
+
+ * 1: enable
+
+ */
+# 160 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * ALT_SELECT (RW)
+
+ *
+
+ * alt select
+
+ * 0: ALT0
+
+ * 1: ALT1
+
+ * …
+
+ * 31:ALT31
+
+ */
+# 174 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* Bitfield definition for register: PAD_CTL */
+/*
+
+ * MS (RW)
+
+ *
+
+ * pin voltage select:
+
+ * 0: 3.3V
+
+ * 1: 1.8V
+
+ */
+# 186 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * OD (RW)
+
+ *
+
+ * open drain
+
+ * 0: open drain disable
+
+ * 1: open drain enable
+
+ */
+# 198 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * SMT (RW)
+
+ *
+
+ * schmitt trigger enable
+
+ * 0: disable
+
+ * 1: enable
+
+ */
+# 209 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * PS (RW)
+
+ *
+
+ * pull select
+
+ * 2: pull down
+
+ * 1: pull up
+
+ */
+# 221 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * PE (RW)
+
+ *
+
+ * pull enable
+
+ * 0: pull disable
+
+ * 1: pull enable
+
+ */
+# 233 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/*
+
+ * DS (RW)
+
+ *
+
+ * drive strength
+
+ * 000：100Ω
+
+ * 001：66Ω
+
+ * 010：50Ω
+
+ * 011：40Ω
+
+ * 111：33Ω
+
+ */
+# 248 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA00_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA01_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA02_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA03_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA04_FUNC_CTL function mux definitions */
+# 289 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA05_FUNC_CTL function mux definitions */
+# 299 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA06_FUNC_CTL function mux definitions */
+# 309 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA07_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA08_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA09_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA10_FUNC_CTL function mux definitions */
+# 343 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA11_FUNC_CTL function mux definitions */
+# 353 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA12_FUNC_CTL function mux definitions */
+# 363 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA13_FUNC_CTL function mux definitions */
+# 373 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA14_FUNC_CTL function mux definitions */
+# 383 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA15_FUNC_CTL function mux definitions */
+# 394 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA16_FUNC_CTL function mux definitions */
+# 404 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA17_FUNC_CTL function mux definitions */
+# 414 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA18_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA19_FUNC_CTL function mux definitions */
+# 432 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA20_FUNC_CTL function mux definitions */
+# 443 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA21_FUNC_CTL function mux definitions */
+# 452 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA22_FUNC_CTL function mux definitions */
+# 461 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA23_FUNC_CTL function mux definitions */
+# 470 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA24_FUNC_CTL function mux definitions */
+# 479 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA25_FUNC_CTL function mux definitions */
+# 488 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA26_FUNC_CTL function mux definitions */
+# 497 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA27_FUNC_CTL function mux definitions */
+# 506 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA28_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PA29_FUNC_CTL function mux definitions */
+# 524 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA30_FUNC_CTL function mux definitions */
+# 534 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PA31_FUNC_CTL function mux definitions */
+# 543 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB00_FUNC_CTL function mux definitions */
+# 553 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB01_FUNC_CTL function mux definitions */
+# 562 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB02_FUNC_CTL function mux definitions */
+# 571 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB03_FUNC_CTL function mux definitions */
+# 580 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB04_FUNC_CTL function mux definitions */
+# 591 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB05_FUNC_CTL function mux definitions */
+# 600 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB06_FUNC_CTL function mux definitions */
+# 609 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB07_FUNC_CTL function mux definitions */
+# 618 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB08_FUNC_CTL function mux definitions */
+# 627 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB09_FUNC_CTL function mux definitions */
+# 637 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB10_FUNC_CTL function mux definitions */
+# 646 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB11_FUNC_CTL function mux definitions */
+# 656 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB12_FUNC_CTL function mux definitions */
+# 666 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB13_FUNC_CTL function mux definitions */
+# 675 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB14_FUNC_CTL function mux definitions */
+# 685 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB15_FUNC_CTL function mux definitions */
+# 694 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB16_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PB17_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PB18_FUNC_CTL function mux definitions */
+# 717 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB19_FUNC_CTL function mux definitions */
+# 726 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB20_FUNC_CTL function mux definitions */
+# 735 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PB21_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB22_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB23_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB24_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB25_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB26_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PB27_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PB28_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB29_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PB30_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PB31_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PC00_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PC01_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC02_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC03_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC04_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC05_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC06_FUNC_CTL function mux definitions */
+# 875 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC07_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC08_FUNC_CTL function mux definitions */
+# 892 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC09_FUNC_CTL function mux definitions */
+# 901 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC10_FUNC_CTL function mux definitions */
+# 910 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC11_FUNC_CTL function mux definitions */
+# 919 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC12_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC13_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC14_FUNC_CTL function mux definitions */
+# 944 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC15_FUNC_CTL function mux definitions */
+# 953 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC16_FUNC_CTL function mux definitions */
+# 962 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC17_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC18_FUNC_CTL function mux definitions */
+# 979 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC19_FUNC_CTL function mux definitions */
+# 988 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC20_FUNC_CTL function mux definitions */
+# 997 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC21_FUNC_CTL function mux definitions */
+# 1006 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC22_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC23_FUNC_CTL function mux definitions */
+# 1023 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC24_FUNC_CTL function mux definitions */
+# 1032 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC25_FUNC_CTL function mux definitions */
+# 1041 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC26_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC27_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC28_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC29_FUNC_CTL function mux definitions */
+# 1074 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PC30_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PC31_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PD00_FUNC_CTL function mux definitions */
+# 1099 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD01_FUNC_CTL function mux definitions */
+# 1109 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD02_FUNC_CTL function mux definitions */
+# 1118 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD03_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PD04_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PD05_FUNC_CTL function mux definitions */
+# 1144 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD06_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PD07_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PD08_FUNC_CTL function mux definitions */
+# 1170 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD09_FUNC_CTL function mux definitions */
+# 1180 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD10_FUNC_CTL function mux definitions */
+# 1191 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD11_FUNC_CTL function mux definitions */
+# 1200 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD12_FUNC_CTL function mux definitions */
+# 1211 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD13_FUNC_CTL function mux definitions */
+# 1222 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD14_FUNC_CTL function mux definitions */
+# 1232 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD15_FUNC_CTL function mux definitions */
+# 1241 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD16_FUNC_CTL function mux definitions */
+# 1251 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD17_FUNC_CTL function mux definitions */
+# 1260 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD18_FUNC_CTL function mux definitions */
+# 1270 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD19_FUNC_CTL function mux definitions */
+# 1280 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD20_FUNC_CTL function mux definitions */
+# 1290 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD21_FUNC_CTL function mux definitions */
+# 1299 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD22_FUNC_CTL function mux definitions */
+# 1308 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD23_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PD24_FUNC_CTL function mux definitions */
+# 1325 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD25_FUNC_CTL function mux definitions */
+# 1334 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD26_FUNC_CTL function mux definitions */
+# 1343 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD27_FUNC_CTL function mux definitions */
+# 1352 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD28_FUNC_CTL function mux definitions */
+# 1361 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD29_FUNC_CTL function mux definitions */
+# 1370 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD30_FUNC_CTL function mux definitions */
+# 1380 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PD31_FUNC_CTL function mux definitions */
+# 1390 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE00_FUNC_CTL function mux definitions */
+# 1399 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE01_FUNC_CTL function mux definitions */
+# 1408 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE02_FUNC_CTL function mux definitions */
+# 1417 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE03_FUNC_CTL function mux definitions */
+# 1427 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE04_FUNC_CTL function mux definitions */
+# 1437 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE05_FUNC_CTL function mux definitions */
+# 1446 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE06_FUNC_CTL function mux definitions */
+# 1456 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE07_FUNC_CTL function mux definitions */
+# 1465 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE08_FUNC_CTL function mux definitions */
+# 1474 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE09_FUNC_CTL function mux definitions */
+# 1484 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE10_FUNC_CTL function mux definitions */
+# 1494 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE11_FUNC_CTL function mux definitions */
+# 1505 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE12_FUNC_CTL function mux definitions */
+# 1514 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE13_FUNC_CTL function mux definitions */
+# 1523 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE14_FUNC_CTL function mux definitions */
+# 1534 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE15_FUNC_CTL function mux definitions */
+# 1544 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE16_FUNC_CTL function mux definitions */
+# 1554 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE17_FUNC_CTL function mux definitions */
+# 1564 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE18_FUNC_CTL function mux definitions */
+# 1574 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE19_FUNC_CTL function mux definitions */
+# 1583 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE20_FUNC_CTL function mux definitions */
+# 1593 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE21_FUNC_CTL function mux definitions */
+# 1602 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE22_FUNC_CTL function mux definitions */
+# 1612 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE23_FUNC_CTL function mux definitions */
+# 1622 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE24_FUNC_CTL function mux definitions */
+# 1631 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE25_FUNC_CTL function mux definitions */
+# 1640 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE26_FUNC_CTL function mux definitions */
+# 1650 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE27_FUNC_CTL function mux definitions */
+# 1660 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE28_FUNC_CTL function mux definitions */
+# 1670 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PE29_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PE30_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PE31_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PF00_FUNC_CTL function mux definitions */
+# 1703 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF01_FUNC_CTL function mux definitions */
+# 1712 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF02_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PF03_FUNC_CTL function mux definitions */
+# 1729 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF04_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+/* IOC_PF05_FUNC_CTL function mux definitions */
+# 1745 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF06_FUNC_CTL function mux definitions */
+# 1755 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF07_FUNC_CTL function mux definitions */
+# 1764 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF08_FUNC_CTL function mux definitions */
+# 1773 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF09_FUNC_CTL function mux definitions */
+# 1783 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PF10_FUNC_CTL function mux definitions */
+
+
+
+
+
+
+
+/* IOC_PX00_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX01_FUNC_CTL function mux definitions */
+
+
+
+
+
+/* IOC_PX02_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX03_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX04_FUNC_CTL function mux definitions */
+
+
+
+
+
+/* IOC_PX05_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX06_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX07_FUNC_CTL function mux definitions */
+
+
+
+/* IOC_PX08_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX09_FUNC_CTL function mux definitions */
+
+
+
+
+/* IOC_PX10_FUNC_CTL function mux definitions */
+
+
+
+/* IOC_PX11_FUNC_CTL function mux definitions */
+
+
+
+/* IOC_PY00_FUNC_CTL function mux definitions */
+# 1863 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY01_FUNC_CTL function mux definitions */
+# 1875 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY02_FUNC_CTL function mux definitions */
+# 1888 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY03_FUNC_CTL function mux definitions */
+# 1899 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY04_FUNC_CTL function mux definitions */
+# 1915 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY05_FUNC_CTL function mux definitions */
+# 1930 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY06_FUNC_CTL function mux definitions */
+# 1941 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY07_FUNC_CTL function mux definitions */
+# 1952 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY08_FUNC_CTL function mux definitions */
+# 1966 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY09_FUNC_CTL function mux definitions */
+# 1980 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY10_FUNC_CTL function mux definitions */
+# 1993 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PY11_FUNC_CTL function mux definitions */
+# 2005 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ00_FUNC_CTL function mux definitions */
+# 2015 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ01_FUNC_CTL function mux definitions */
+# 2025 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ02_FUNC_CTL function mux definitions */
+# 2036 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ03_FUNC_CTL function mux definitions */
+# 2047 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ04_FUNC_CTL function mux definitions */
+# 2060 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ05_FUNC_CTL function mux definitions */
+# 2071 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ06_FUNC_CTL function mux definitions */
+# 2082 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ07_FUNC_CTL function mux definitions */
+# 2092 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ08_FUNC_CTL function mux definitions */
+# 2104 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ09_FUNC_CTL function mux definitions */
+# 2115 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ10_FUNC_CTL function mux definitions */
+# 2128 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* IOC_PZ11_FUNC_CTL function mux definitions */
+# 2147 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* end of file */
+# 33 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin.h" 2
+
+
+
+
+
+
+/** @} */
+
+/******************************************************************************/
+
+/**
+
+ * \name hpm 引脚编号定义
+
+ * @{
+
+ */
+# 47 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin.h"
+/** \brief PAD register group index macro definition */
+# 298 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin.h"
+/** @} */
+
+/**
+
+ * \name rv32m1 引脚编号最大值和引脚总数
+
+ * @{
+
+ */
+/** @} */
+
+/** @} grp_rv32m1_pins */
+
+
+
+
+
+
+
+/* end of file */
+# 22 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm_awbl.dtsi" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/**
+
+ * \file
+
+ * \brief AWBus-lite hpm GPIO 驱动上私有的一些功能
+
+ * \internal
+
+ * \par modification history:
+
+ * \endinternal
+
+ */
+# 2147 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\include/hpm_pin_property.h"
+/* end of file */
+# 23 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm_awbl.dtsi" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\interface\\include/aw_pin_flags.h" 1
+/*******************************************************************************
+
+*                                 AWorks
+
+*                       ----------------------------
+
+*                       innovating embedded platform
+
+*
+
+* Copyright (c) 2001-present Guangzhou ZHIYUAN Electronics Co., Ltd.
+
+* ALL rights reserved.
+
+*
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+*
+
+* The License of this software follows LGPL v2.1, See the LICENSE for more details:
+
+* https://opensource.org/licenses/LGPL-2.1
+
+*
+
+* Contact information:
+
+* web site:    http://www.zlg.cn/
+
+*******************************************************************************/
+# 20 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\interface\\include/aw_pin_flags.h"
+/**
+
+ * \file
+
+ * \brief AWorks PIN 标准接口
+
+ *
+
+ * 使用本服务需要包含头文件 aw_gpio.h
+
+ *
+
+ * 本服务提供了设置引脚功能模式，以及读写PIN引脚输入输出电平的能力。
+
+ *
+
+ * // 更多内容待添加。。。
+
+ *
+
+ * \internal
+
+ * \par modification history:
+
+ * - 1.10 13-04-23  zen, add api aw_gpio_toggle()
+
+ * - 1.00 12-08-23  zen, first implementation
+
+ * \endinternal
+
+ */
+# 41 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\interface\\include/aw_pin_flags.h"
+/**
+
+ * aw_pin_cfg flags 第0位到第2位（共3位）
+
+ * 如果pin支持gpio功能，则这3位将控制这个pin对应的GPIO配置
+
+ * 如果这3位值为0或有效值以外的值，则表示不进行GPIO配置
+
+ */
+# 60 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\interface\\include/aw_pin_flags.h"
+/**
+
+ * aw_pin_cfg flags 第3位到第4位（共2位）
+
+ * 如果pin支持上下拉功能，则这2位将控制这个pin对应的上下拉配置
+
+ * 这两位的配置一定不能省略，因为每一位都有对应的值
+
+ */
+# 78 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\interface\\include/aw_pin_flags.h"
+/**
+
+ * aw_pin_cfg flags 第5位到第6位（共2位）
+
+ * 配置pin的输出模式，如果外设不支持某些模式，请自行选择一个最合适的值
+
+ */
+# 95 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp\\components\\kernel\\interface\\include/aw_pin_flags.h"
+/* end of file */
+# 24 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm_awbl.dtsi" 2
+
+&pin1 {
+    pin_start = <0>;
+    pin_count = <492>;
+};
+# 1358 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\components\\aw_cpu_base_hpm645x_675x\\dts/hpm/riscv_hpm.dtsi" 2
+# 22 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\boards\\EPC6450-AWI\\EPC6450-AWI.dts" 2
+
+
+/ {
+    model = "RISCV HPM board";
+    compatible = "riscv,hpm";
+    soc {
+        /delete-node/ pwm@0xF0210000;
+        /delete-node/ pwm@0xF0220000;
+        /delete-node/ nor_xpi@0xF3044000;
+    };
+
+    buzzer{
+        compatible = "pwm-buzzer";
+        label = "Buzzer";
+        status = "disabled";
+        beep_level = <50>;
+        pwm_freq = <2731>;
+    };
+
+    gpio_led:gpio_led{
+        compatible = "general,gpio_led";
+        label = "gpio_leds";
+        status = "disabled";
+    };
+
+    gpiospi0:gpiospi_0 {
+        compatible = "general,gpio_spi";
+        label = "gpiospi0";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        bus_speed = <400000>;
+        status = "disabled";
+        sclk-pins = <&pin1 (198UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+        mosi-pins = <&pin1 (199UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+        miso-pins = <&pin1 (200UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+        cs-pins = <&pin1 (197UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+        /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+        chipselects = <(197UL) 0 0 0 /* 片选索引 0 */
+                  >;
+    };
+};
+
+&uart0{
+    compatible = "riscv,hpm_uart_dbg";
+    default_baudrate = <115200>;
+    status = "okay";
+};
+
+&sdio0 {
+   cyw43438:cyw43438_sdio{
+        compatible = "cypress,cyw43438_sdio";
+        label = "cyw43438";
+        status = "disabled";
+    };
+    cyw43455:cyw43455_sdio{
+        compatible = "cypress,cyw43455_sdio";
+        label = "cyw43455";
+        status = "disabled";
+    };
+};
+
+&spi2 {
+    spi_flash:spi_flash@0 {
+        compatible = "spi,flash";
+        label = "spiflash";
+        reg = <0>; /* cs索引, 参考SPI主机的chipselects参数 */
+        status = "disabled";
+    };
+};
+
+&spi0 {
+    w25q64fw:w25q64fw@0 {
+        compatible = "jedec,jesd216_nor_flash_spi";
+        reg = <0>; /* cs索引, 参考SPI主机的chipselects参数 */
+        label = "w25q64fw";
+        status = "disabled";
+        partition_0 {
+            label = "w25_nor0";
+            address = <0 (4*1024*1024)>;
+        };
+        partition_1 {
+            label = "w25_nor1";
+            address = <(4*1024*1024) (2*1024*1024)>;
+        };
+        partition_2 {
+            label = "w25_nor2";
+            address = <(6*1024*1024) (2*1024*1024)>;
+        };
+    };
+};
+&gpiospi0{
+    zlg72128:zlg72128@0x0{
+        compatible = "zlg,zlg72128_spi";
+        label = "zlg72128";
+        reg = <0>;/* cs索引, 参考SPI主机的chipselects参数 */
+        is_int;
+        status = "disabled";
+    };
+};
+
+&lcdc0 {
+    monitor_zlg_480_272:monitor_zlg_480_272{
+        compatible = "zlg_tft,monitor-gpio";
+        label = "zlg_480_272";
+        status = "disabled";
+        info_manufacturer = "ZLG";
+        info_x_res = <480>;
+        info_y_res = <272>;
+        info_bpp = <16>;
+
+        cfg_type = "AWB_DISPLAY_MONITOR_CFG_TYPE_DOTCLK";
+        dotclk_dclk_f = <11880000>;
+        dotclk_h_pulse_width = <1>;
+        dotclk_h_active = <480>;
+        dotclk_h_bporch = <42>;
+        dotclk_h_fporch = <5>;
+        dotclk_v_pulse_width = <1>;
+        dotclk_v_active = <272>;
+        dotclk_v_bporch = <11>;
+        dotclk_v_fporch = <8>;
+        dotclk_enable_present = <0>;
+        dotclk_enable_pol = <1>;
+        dotclk_v_pol = <0>;
+        dotclk_h_pol = <0>;
+        dotclk_dotclk_pol = <1>;
+        reset_delay_ms = <10>;
+    };
+    monitor_zlg_800_480:monitor_zlg_800_480{
+        compatible = "zlg_tft,monitor-gpio";
+        label = "zlg_800_480";
+        status = "disabled";
+
+        info_manufacturer = "ZLG";
+        info_x_res = <800>;
+        info_y_res = <480>;
+        info_bpp = <16>;
+
+        cfg_type = "AWB_DISPLAY_MONITOR_CFG_TYPE_DOTCLK";
+        dotclk_dclk_f = <40000000>;
+        dotclk_h_pulse_width = <6>;
+        dotclk_h_active = <800>;
+        dotclk_h_bporch = <48>;
+        dotclk_h_fporch = <48>;
+        dotclk_v_pulse_width = <1>;
+        dotclk_v_active = <480>;
+        dotclk_v_bporch = <23>;
+        dotclk_v_fporch = <22>;
+        dotclk_enable_present = <1>;
+        dotclk_enable_pol = <1>;
+        dotclk_dotclk_pol = <1>;
+        dotclk_v_pol = <0>;
+        dotclk_h_pol = <0>;
+
+        reset_delay_ms = <10>;
+    };
+};
+
+&eth0 {
+    phy-handle = <&yt8512h_0>;
+    is_internal_clk;
+};
+
+&eth1 {
+    phy-handle = <&yt8512h_1>;
+    is_internal_clk;
+    yt8512h_0:yt8512h_phy@0x02{
+        compatible = "motorcomm,yt8512h";
+        status = "disabled";
+        dev_clk = <18>;
+        label = "yt8512h_0";
+        reg = <0x02>;
+    };
+    yt8512h_1:yt8512h_phy@0x03{
+        compatible = "motorcomm,yt8512h";
+        status = "disabled";
+        dev_clk = <18>;
+        label = "yt8512h_1";
+        reg = <0x03>;
+    };
+};
+
+
+&i2c0{
+    atmel_ds2460@40 {
+        compatible = "atmel,24cxx";
+        label = "ds2460";
+        device_type = "AWBL_EP24CXX_DS2460";
+        reg = <0x40>;
+        status = "disabled";
+    };
+
+
+    zlg7291:zlg7291@0x30{
+        compatible = "zlg,zlg7291";
+        label = "zlg7291";
+        reg = <0x30>;
+        is_int;
+        status = "disabled";
+    };
+
+};
+
+
+&camera0 {
+    ov7725:ov7725@0x21{
+        i2c-handle = <&i2c3>;
+        compatible = "OV,7725";
+        label = "ov7725";
+        reg = <0x21>;
+        status = "disabled";
+
+        hsync_active = <1>; /* 行同步高电平有效 */
+        vsync_active = <1>; /* 场同步高电平有效 */
+        data_active = <0>;
+        pclk_sample = <1>; /* 上升沿采样数据 */
+        clock_frequency = <24000000>;
+    };
+};
+
+&i2c3{
+    gt911:gt911@5d{
+        compatible = "goodix,gt911";
+        label = "gt911";
+        reg = <0x5d>;
+        status = "disabled";
+        cfg_group = [
+        32 20 03 e0 01 05 3D 00 02 08
+        28 08 5A 46 03 05 00 00 00 00
+        00 00 04 04 04 04 03 88 29 0A
+        4B 4D 0C 08 00 00 00 21 02 1D
+        00 01 00 00 00 00 00 00 00 00
+        00 46 64 94 D5 02 07 00 00 04
+        83 48 00 77 4D 00 6D 53 00 64
+        59 00 5A 60 00 5A 00 00 00 00
+        00 00 00 00 00 00 00 00 00 00
+        00 00 00 00 00 00 00 00 00 00
+        00 00 00 00 00 00 00 00 00 00
+        00 00 02 04 06 08 0A 0C 0E 10
+        12 14 FF FF FF FF 00 00 00 00
+        00 00 00 00 00 00 00 00 00 00
+        00 00 00 02 04 06 08 0F 10 12
+        16 18 1C 1D 1E 1F 20 21 22 FF
+        FF FF FF FF FF FF FF FF 00 00
+        00 00 00 00 00 00 00 00 00 00
+        00 00 00 00 ba 01];
+    };
+    bu21029muv:bu21029muv@0x40{
+        compatible = "rohm,bu21029muv";
+        label = "bu21029muv";
+        x_plate_ohms = <760>;
+        status = "disabled";
+        reg = <0x40>;
+    };
+    pcf85063:pcf85063@0x51{
+        compatible = "nxp,pcf85063";
+        status = "disabled";
+        label = "PCF85063";
+        reg = <0x51>;
+    };
+
+    ft5x06:ft5x06@0x38{
+        compatible = "focaltech,ft5x06";
+        label = "ft5x06";
+        status = "disabled";
+        reg = <0x38>;
+    };
+
+};
+
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\boards\\EPC6450-AWI\\dts/pins.dts" 1
+&uart0 {
+    pins = <&pin1 (190UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)
+            &pin1 (189UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&uart2 {
+    pins = <&pin1 (192UL) ((((((2) << (0U)) & (0x1FU))) << 7)|(1 << 3)) ((((((2) << (0U)) & (0x1FU))) << 7)|(1 << 3)) ((((((2) << (0U)) & (0x1FU))) << 7)|(1 << 3))
+            &pin1 (191UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)
+            &pin1 (41UL) (((((3) << (0U)) & (0x1FU))) << 7) (((((3) << (0U)) & (0x1FU))) << 7) (((((3) << (0U)) & (0x1FU))) << 7)
+            &pin1 (40UL) (((((3) << (0U)) & (0x1FU))) << 7) (((((3) << (0U)) & (0x1FU))) << 7) (((((3) << (0U)) & (0x1FU))) << 7)>;
+};
+
+//对应底板丝印的UART1
+&uart5 {
+    pins = <&pin1 (152UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)
+            &pin1 (153UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&uart7 {
+    pins = <&pin1 (158UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)
+            &pin1 (159UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&uart10 {
+    pins = <&pin1 (119UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)
+            &pin1 (120UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&uart13 {
+    pins = <&pin1 (203UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)
+            &pin1 (204UL) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7) (((((2) << (0U)) & (0x1FU))) << 7)>;
+    rs485-pins = <&pin1 (169UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&puart {
+    pins = <&pin1 (190UL) ((((((1) << (0U)) & (0x1FU))) << 7) | ((1) << 14)) ((((((1) << (0U)) & (0x1FU))) << 7) | ((1) << 14)) ((((((1) << (0U)) & (0x1FU))) << 7) | ((1) << 14))
+            &pin1 (189UL) ((((((1) << (0U)) & (0x1FU))) << 7) | ((1) << 14)) ((((((1) << (0U)) & (0x1FU))) << 7) | ((1) << 14)) ((((((1) << (0U)) & (0x1FU))) << 7) | ((1) << 14))>;
+};
+
+&usb0 {
+    pins = <&pin1 (170UL) (((((24) << (0U)) & (0x1FU))) << 7) (((((24) << (0U)) & (0x1FU))) << 7) (((((24) << (0U)) & (0x1FU))) << 7)
+            &pin1 (162UL) ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))
+                           ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))
+                           ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))>;
+};
+
+&usb1 {
+    pins = < &pin1 (167UL) (((((24) << (0U)) & (0x1FU))) << 7) (((((24) << (0U)) & (0x1FU))) << 7) (((((24) << (0U)) & (0x1FU))) << 7)
+             &pin1 (163UL) ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))
+                            ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))
+                            ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))>;
+};
+
+&lcdc0 {
+    pins = <&pin1 (35UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (36UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (32UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (31UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (26UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (21UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (27UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (28UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (38UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (33UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (22UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (23UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (29UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (24UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (30UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (25UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (37UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (39UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (34UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (16UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (12UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (17UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (13UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (18UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (20UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (15UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (19UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)
+            &pin1 (14UL) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7) (((((20) << (0U)) & (0x1FU))) << 7)>;
+};
+
+
+&monitor_zlg_480_272 {
+    //rst_pin对应PF06
+    rst-pins = <&pin1 (166UL)
+                    ((0x4 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))
+                    ((0x4 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))
+                    ((0x4 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+    bl-pins = <&pin1 (131UL)
+                    ((((((0) << (0U)) & (0x1FU))) << 7)|(0x3 << 0)|(1 << 3))
+                    ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0)|(1 << 3))
+                    ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0)|(1 << 3))>;
+};
+
+&monitor_zlg_800_480 {
+    //rst_pin对应PF06
+    rst-pins = <&pin1 (166UL)
+                            ((0x4 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))
+                            ((0x4 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))
+                            ((0x4 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+    bl-pins = <&pin1 (131UL)
+              ((((((0) << (0U)) & (0x1FU))) << 7)|(0x3 << 0)|(1 << 3))
+              ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0)|(1 << 3))
+              ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0)|(1 << 3))
+        >;
+};
+
+&eth0{
+    pins = <&pin1 (127UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (132UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+
+            &pin1 (126UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (134UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (125UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (128UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)>;
+
+    /* refclk configuration independent to distinguish whether to use internal clk */
+    refclk-pins = <&pin1 (159UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&eth1{
+    pins = <&pin1 (107UL) (((((19) << (0U)) & (0x1FU))) << 7) (((((19) << (0U)) & (0x1FU))) << 7) (((((19) << (0U)) & (0x1FU))) << 7)
+            &pin1 (110UL) (((((19) << (0U)) & (0x1FU))) << 7) (((((19) << (0U)) & (0x1FU))) << 7) (((((19) << (0U)) & (0x1FU))) << 7)
+            &pin1 (142UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (143UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (146UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (148UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+
+            &pin1 (145UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)
+            &pin1 (147UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)>;
+
+    /* refclk configuration independent to distinguish whether to use internal clk */
+    refclk-pins = <&pin1 (144UL) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7) (((((18) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&yt8512h_0 {
+    rst-pins = <&pin1 (205UL) ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0))
+                                 ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0))
+                                 ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0))>;
+};
+
+&yt8512h_1 {
+    rst-pins = <&pin1 (206UL) ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0))
+                                 ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0))
+                                 ((((((0) << (0U)) & (0x1FU))) << 7)|(0x4 << 0))>;
+};
+
+&can0{
+    pins = <&pin1 (47UL) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7)
+            &pin1 (49UL) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&can2{
+    pins = <&pin1 (193UL) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7)
+            &pin1 (194UL) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&can3{
+    pins = <&pin1 (133UL) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7)
+            &pin1 (44UL) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7) (((((7) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&adc0 {
+    adc0_0 { label = "adc0_ch0"; swadcchan = <0>; status = "disabled";
+        pins = <&pin1 (142UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_1 { label = "adc0_ch1"; swadcchan = <1>; status = "disabled";
+        pins = <&pin1 (143UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_2 { label = "adc0_ch2"; swadcchan = <2>; status = "disabled";
+        pins = <&pin1 (144UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_3 { label = "adc0_ch3"; swadcchan = <3>; status = "disabled";
+        pins = <&pin1 (145UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_4 { label = "adc0_ch4"; swadcchan = <4>; status = "disabled";
+        pins = <&pin1 (146UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_5 { label = "adc0_ch5"; swadcchan = <5>; status = "disabled";
+        pins = <&pin1 (147UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_6 { label = "adc0_ch6"; swadcchan = <6>; status = "disabled";
+        pins = <&pin1 (148UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_7 { label = "adc0_ch7"; swadcchan = <7>; status = "disabled";
+        pins = <&pin1 (149UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_8 { label = "adc0_ch8"; swadcchan = <8>; status = "disabled";
+        pins = <&pin1 (150UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_9 { label = "adc0_ch9"; swadcchan = <9>; status = "disabled";
+        pins = <&pin1 (151UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_10 { label = "adc0_ch10"; swadcchan = <10>; status = "disabled";
+        pins = <&pin1 (152UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_11 { label = "adc0_ch11"; swadcchan = <11>; status = "disabled";
+        pins = <&pin1 (153UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_12 { label = "adc0_ch12"; swadcchan = <12>; status = "disabled";
+        pins = <&pin1 (154UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_13 { label = "adc0_ch13"; swadcchan = <13>; status = "disabled";
+        pins = <&pin1 (155UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_14 { label = "adc0_ch14"; swadcchan = <14>; status = "disabled";
+        pins = <&pin1 (156UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_15 { label = "adc0_ch15"; swadcchan = <15>; status = "disabled";
+        pins = <&pin1 (157UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_16 { label = "adc0_ch16"; swadcchan = <16>; status = "disabled";
+        pins = <&pin1 (158UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_17 { label = "adc0_ch17"; swadcchan = <17>; status = "disabled";
+        pins = <&pin1 (160UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc0_18 { label = "adc0_ch18"; swadcchan = <18>; status = "disabled";};
+};
+
+&adc1 {
+    adc1_0 { label = "adc1_ch0"; swadcchan = <0>; status = "disabled";
+        pins = <&pin1 (142UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_1 { label = "adc1_ch1"; swadcchan = <1>; status = "disabled";
+        pins = <&pin1 (143UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_2 { label = "adc1_ch2"; swadcchan = <2>; status = "disabled";
+        pins = <&pin1 (144UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_3 { label = "adc1_ch3"; swadcchan = <3>; status = "disabled";
+        pins = <&pin1 (145UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_4 { label = "adc1_ch4"; swadcchan = <4>; status = "disabled";
+        pins = <&pin1 (146UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_5 { label = "adc1_ch5"; swadcchan = <5>; status = "disabled";
+        pins = <&pin1 (147UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_6 { label = "adc1_ch6"; swadcchan = <6>; status = "disabled";
+        pins = <&pin1 (148UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_7 { label = "adc1_ch7"; swadcchan = <7>; status = "disabled";
+        pins = <&pin1 (149UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_8 { label = "adc1_ch8"; swadcchan = <8>; status = "disabled";
+        pins = <&pin1 (150UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_9 { label = "adc1_ch9"; swadcchan = <9>; status = "disabled";
+        pins = <&pin1 (151UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_10 { label = "adc1_ch10"; swadcchan = <10>; status = "disabled";
+        pins = <&pin1 (152UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_11 { label = "adc1_ch11"; swadcchan = <11>; status = "disabled";
+        pins = <&pin1 (153UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_12 { label = "adc1_ch12"; swadcchan = <12>; status = "disabled";
+        pins = <&pin1 (158UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_13 { label = "adc1_ch13"; swadcchan = <13>; status = "disabled";
+        pins = <&pin1 (159UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_14 { label = "adc1_ch14"; swadcchan = <14>; status = "disabled";
+        pins = <&pin1 (160UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_15 { label = "adc1_ch15"; swadcchan = <15>; status = "disabled";
+        pins = <&pin1 (161UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_16 { label = "adc1_ch16"; swadcchan = <16>; status = "disabled";
+        pins = <&pin1 (162UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_17 { label = "adc1_ch17"; swadcchan = <17>; status = "disabled";
+        pins = <&pin1 (164UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc1_18 { label = "adc1_ch18"; swadcchan = <18>; status = "disabled";};
+};
+
+&adc2 {
+    adc2_0 { label = "adc2_ch0"; swadcchan = <0>; status = "disabled";
+        pins = <&pin1 (142UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_1 { label = "adc2_ch1"; swadcchan = <1>; status = "disabled";
+        pins = <&pin1 (143UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_2 { label = "adc2_ch2"; swadcchan = <2>; status = "disabled";
+        pins = <&pin1 (144UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_3 { label = "adc2_ch3"; swadcchan = <3>; status = "disabled";
+        pins = <&pin1 (145UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_4 { label = "adc2_ch4"; swadcchan = <4>; status = "disabled";
+        pins = <&pin1 (146UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_5 { label = "adc2_ch5"; swadcchan = <5>; status = "disabled";
+        pins = <&pin1 (147UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_6 { label = "adc2_ch6"; swadcchan = <6>; status = "disabled";
+        pins = <&pin1 (148UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_7 { label = "adc2_ch7"; swadcchan = <7>; status = "disabled";
+        pins = <&pin1 (149UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_8 { label = "adc2_ch8"; swadcchan = <8>; status = "disabled";
+        pins = <&pin1 (150UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_9 { label = "adc2_ch9"; swadcchan = <9>; status = "disabled";
+        pins = <&pin1 (151UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_10 { label = "adc2_ch10"; swadcchan = <10>; status = "disabled";
+        pins = <&pin1 (152UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_11 { label = "adc2_ch11"; swadcchan = <11>; status = "disabled";
+        pins = <&pin1 (153UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_12 { label = "adc2_ch12"; swadcchan = <12>; status = "disabled";
+        pins = <&pin1 (162UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_13 { label = "adc2_ch13"; swadcchan = <13>; status = "disabled";
+        pins = <&pin1 (163UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_14 { label = "adc2_ch14"; swadcchan = <14>; status = "disabled";
+        pins = <&pin1 (164UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_15 { label = "adc2_ch15"; swadcchan = <15>; status = "disabled";
+        pins = <&pin1 (165UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_16 { label = "adc2_ch16"; swadcchan = <16>; status = "disabled";
+        pins = <&pin1 (166UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_17 { label = "adc2_ch17"; swadcchan = <17>; status = "disabled";
+        pins = <&pin1 (168UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc2_18 { label = "adc2_ch18"; swadcchan = <18>; status = "disabled";};
+};
+
+&adc3 {
+    adc3_0 { label = "adc3_ch0"; swadcchan = <0>; status = "disabled";
+        pins = <&pin1 (147UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_1 { label = "adc3_ch1"; swadcchan = <1>; status = "disabled";
+        pins = <&pin1 (155UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_2 { label = "adc3_ch2"; swadcchan = <2>; status = "disabled";
+        pins = <&pin1 (157UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_3 { label = "adc3_ch3"; swadcchan = <3>; status = "disabled";
+        pins = <&pin1 (163UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_4 { label = "adc3_ch4"; swadcchan = <4>; status = "disabled";
+        pins = <&pin1 (165UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_5 { label = "adc3_ch5"; swadcchan = <5>; status = "disabled";
+        pins = <&pin1 (167UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_6 { label = "adc3_ch6"; swadcchan = <6>; status = "disabled";
+        pins = <&pin1 (169UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+
+    adc3_7 { label = "adc3_ch7"; swadcchan = <7>; status = "disabled";
+        pins = <&pin1 (170UL) ((1) << 12) ((1) << 12) ((1) << 12)>;};
+};
+
+&i2c0 {
+    pins = <&pin1 (43UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (42UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13)) >;
+};
+
+&i2c1 {
+    pins = <&pin1 (11UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (10UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13)) >;
+};
+
+&i2c2 {
+    pins = <&pin1 (15UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (14UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13)) >;
+};
+
+&i2c3 {
+    pins = <&pin1 (45UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (46UL) ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((4) << (0U)) & (0x1FU))) << 7)|((1) << 13)) >;
+};
+
+&gt911 {
+   int-pins = <&pin1 (130UL) (((((0) << (0U)) & (0x1FU))) << 7)
+                              (((((0) << (0U)) & (0x1FU))) << 7)
+                              (((((0) << (0U)) & (0x1FU))) << 7)>;
+   rst-pins = <&pin1 (129UL) (((((0) << (0U)) & (0x1FU))) << 7)
+                              (((((0) << (0U)) & (0x1FU))) << 7)
+                              (((((0) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&spi0 {
+    pins = <&pin1 (198UL) ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+
+            &pin1 (199UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            &pin1 (200UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            >;
+
+    cs-pins = < /* 如果使用硬件cs，CS引脚需要复用为SPIx_CSN */
+                /*
+                &pin1 PIN_PZ02 (IOC_PZ02_FUNC_CTL_SPI0_CSN)
+                               (IOC_PZ02_FUNC_CTL_SPI0_CSN)
+                               (IOC_PZ02_FUNC_CTL_SPI0_CSN)
+                */
+                /* 如果使用软件cs，CS引脚需要复用为普通GPIO功能 */
+                &pin1 (197UL) ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+              >;
+
+    /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+    chipselects = <(197UL) 0 0 0 /* 片选索引 0 */
+                  >;
+};
+
+&spi1 {
+    pins = <&pin1 (21UL) ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (16UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            &pin1 (23UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            >;
+
+    cs-pins = </* 如果使用硬件cs，CS引脚需要复用为SPIx_CSN */
+                /*&pin1 PIN_PA18 (IOC_PA18_FUNC_CTL_SPI1_CSN)
+                               (IOC_PA18_FUNC_CTL_SPI1_CSN)
+                               (IOC_PA18_FUNC_CTL_SPI1_CSN) */
+
+                /* 如果使用软件cs，CS引脚需要复用为普通GPIO功能 */
+                &pin1 (18UL) ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+              >;
+
+    /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+    chipselects = <(18UL) 0 0 0 /* 片选索引 0 */
+                  >;
+};
+
+&spi2 {
+    pins = <&pin1 (155UL) ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (158UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            &pin1 (156UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            >;
+
+    cs-pins = </* 如果使用硬件cs，CS引脚需要复用为SPIx_CSN */
+                /*&pin1 PIN_PE31 (IOC_PE31_FUNC_CTL_SPI2_CSN)
+                                 (IOC_PE31_FUNC_CTL_SPI2_CSN)
+                                 (IOC_PE31_FUNC_CTL_SPI2_CSN)*/
+
+                /* 如果使用软件cs，CS引脚需要复用为普通GPIO功能 */
+                &pin1 (159UL) ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+              >;
+
+    /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+    chipselects = <(159UL) 0 0 0 /* 片选索引 0 */
+                  >;
+};
+
+&spi3 {
+    pins = <&pin1 (164UL) ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+                           ((((((5) << (0U)) & (0x1FU))) << 7)|((1) << 13))
+            &pin1 (167UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            &pin1 (166UL) ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+                           ((((((5) << (0U)) & (0x1FU))) << 7))
+            >;
+
+    cs-pins = </* 如果使用硬件cs，CS引脚需要复用为SPIx_CSN */
+                /*&pin1 PIN_PF03 (IOC_PF03_FUNC_CTL_SPI3_CSN)
+                                 (IOC_PF03_FUNC_CTL_SPI3_CSN)
+                                 (IOC_PF03_FUNC_CTL_SPI3_CSN)*/
+
+                /* 如果使用软件cs，CS引脚需要复用为普通GPIO功能 */
+                &pin1 (163UL) ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+                               ((((((0) << (0U)) & (0x1FU))) << 7) | (0x4 << 0))
+              >;
+
+    /* 从左至右参数：<引脚编号> <CS是否高有效> <是否硬件CS> <如果是硬件CS，其硬件CS索引(参考寄存器)> */
+    chipselects = <(163UL) 0 0 0 /* 片选索引 0 */
+                  >;
+};
+
+&timer0_chan0 {
+    pins = <&pin1 (15UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)
+            &pin1 (6UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer0_chan1 {
+    pins = <&pin1 (14UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer3_chan0 {
+    pins = <&pin1 (142UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)
+            &pin1 (147UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer3_chan1 {
+    pins = <&pin1 (145UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer4_chan0 {
+    pins = <&pin1 (149UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)
+            &pin1 (150UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer4_chan1 {
+    pins = <&pin1 (153UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer5_chan0 {
+    pins = <&pin1 (168UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)
+            &pin1 (164UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer5_chan1 {
+    pins = <&pin1 (166UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer6_chan0 {
+    pins = <&pin1 (192UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)
+            &pin1 (191UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer6_chan1 {
+    pins = <&pin1 (188UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer7_chan0 {
+    pins = <&pin1 (199UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)
+            &pin1 (203UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&timer7_chan1 {
+    pins = <&pin1 (205UL) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7) (((((1) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&sdio0 {
+
+   cmd-pins = <&pin1 (150UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((1) << 13)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((1) << 13)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((1) << 13)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   clk-pins = <&pin1 (155UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data0-pins = <&pin1 (154UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data1-pins = <&pin1 (149UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data2-pins = <&pin1 (156UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data3-pins = <&pin1 (151UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+};
+
+&sdio1 {
+   cd-pins = <&pin1 (124UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                             ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                             ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3)) >;
+
+   cmd-pins = <&pin1 (117UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((1) << 13)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((1) << 13)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((1) << 13)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   clk-pins = <&pin1 (118UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                              ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data0-pins = <&pin1 (114UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data1-pins = <&pin1 (113UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data2-pins = <&pin1 (123UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+
+   data3-pins = <&pin1 (122UL) ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))
+                                ((((((17) << (0U)) & (0x1FU))) << 7)|((6) << 16)|((1) << 19)|(1 << 3))>;
+};
+
+&cyw43438 {
+    wake-pins = <&pin1 (121UL) ((0x1 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x1 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x1 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+
+    reset-pins= <&pin1 (111UL) ((0x3 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x3 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x3 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+};
+
+&cyw43455 {
+    wake-pins = <&pin1 (121UL) ((0x1 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x1 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x1 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+
+    reset-pins= <&pin1 (111UL) ((0x3 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x3 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                                ((0x3 << 0)|(2 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+};
+
+&pwm0_chan0 {
+    pins = <&pin1 (65UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan1 {
+    pins = <&pin1 (64UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan2 {
+    pins = <&pin1 (32UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan3 {
+    pins = <&pin1 (31UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan4 {
+    pins = <&pin1 (27UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan5 {
+    pins = <&pin1 (58UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan6 {
+    pins = <&pin1 (55UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm0_chan7 {
+    pins = <&pin1 (52UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm3_chan1 {
+    pins = <&pin1 (135UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&pwm3_chan4 {
+    pins = <&pin1 (133UL) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7) (((((16) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&camera0 {
+    pins = <&pin1 (7UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (3UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (8UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (9UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (0UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (4UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (1UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (2UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+
+            &pin1 (11UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (10UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (6UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)
+            &pin1 (5UL) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7) (((((22) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&ov7725 {
+    rst-pins = <&pin1 (158UL) ((((((0) << (0U)) & (0x1FU))) << 7)|(1 << 3))
+                                ((((((0) << (0U)) & (0x1FU))) << 7)|(1 << 3))
+                                ((((((0) << (0U)) & (0x1FU))) << 7)|(1 << 3))>;
+    en-pins = <&pin1 (116UL) ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))
+                                ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))
+                                ((((((0) << (0U)) & (0x1FU))) << 7)|(2 << 3))>;
+};
+
+&gpio_led {
+    led_run: led_0 {pins = <&pin1 (188UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+                    active_low = "true";
+                    label = "led_run";
+                    status = "disabled";
+    };
+};
+
+&pin1 {
+    /* 注意：此处添加的引脚复用功能，初始化时会对引脚的复用功能进行配置 */
+    default-pins = < &pin1 (161UL) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7) (((((0) << (0U)) & (0x1FU))) << 7)>;
+};
+
+&bu21029muv {
+    int-pins = <&pin1 (130UL) ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+    /* rst-pin = <0>; // optional */
+};
+
+&ft5x06 {
+    int-pins = <&pin1 (130UL) ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+};
+
+&zlg7291{
+    int-pins = <&pin1 (152UL) ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+    reset-pins = <&pin1 (160UL) ((0x3 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x3 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x3 << 0)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+};
+
+&zlg72128{
+    int-pins = <&pin1 (152UL) ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x1 << 0)|(1 << 3)|(((((0) << (0U)) & (0x1FU))) << 7))>;
+    reset-pins = <&pin1 (160UL) ((0x3 << 0)|(1 << 3)| (((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x3 << 0)|(1 << 3)| (((((0) << (0U)) & (0x1FU))) << 7))
+                               ((0x3 << 0)|(1 << 3)| (((((0) << (0U)) & (0x1FU))) << 7))>;
+};
+# 292 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\platforms\\platform-hpm-aworks-lp\\boards\\EPC6450-AWI\\EPC6450-AWI.dts" 2
+# 0 "<command-line>" 2
+# 1 "D:\\aworks_lp_hpm6450_general_sdk-0.9.1\\frameworks\\64cf32e2-aworks_lp/dts/common/common.dts" 1
+/* SPDX-License-Identifier: Apache-2.0 */
+
+/*
+ * Common Device Tree source, used for pulling in features and
+ * additions by the build system.
+ */
+# 0 "<command-line>" 2
+# 1 ".axioenvs\\application.modbus_tcp_slave\\build\\gcc-riscv32.release\\gen\\empty.c"

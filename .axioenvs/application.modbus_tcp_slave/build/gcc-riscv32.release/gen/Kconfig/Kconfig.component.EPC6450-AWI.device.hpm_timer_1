@@ -1,0 +1,29 @@
+
+menuconfig DEV_TIMER1
+    bool "timer1"
+    default n
+    visible if y
+    select DRV_HPM_TIMER
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_61
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/timer1"
+
+      dts_dev_prop:
+          name(unit): "hpm_timer" (1)
+          compatible: ['riscv,hpm-timer']
+          dts_path: /soc/timer@0xF3004000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\timer\riscv,hpm-timer.yaml
+
+
+
+
+if DEV_TIMER1
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_chan_4"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_chan_5"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_chan_6"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.hpm_timer_chan_7"
+
+endif #DEV_TIMER1

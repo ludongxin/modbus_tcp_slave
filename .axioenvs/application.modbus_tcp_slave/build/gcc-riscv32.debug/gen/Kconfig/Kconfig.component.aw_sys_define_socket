@@ -1,0 +1,10 @@
+
+menuconfig AW_SYS_DEFINE_SOCKET
+    bool "AWorks Sockets Base"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

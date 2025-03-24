@@ -1,0 +1,10 @@
+
+menuconfig AWB_FS_DEVFS
+    bool "AWorks Device filsystem"
+    libsafe 
+    select AW_IO_BASE
+    default n
+    help
+        Version: 0.0.0
+
+        

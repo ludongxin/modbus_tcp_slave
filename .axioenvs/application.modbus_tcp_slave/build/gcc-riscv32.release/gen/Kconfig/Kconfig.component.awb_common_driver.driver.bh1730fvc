@@ -1,0 +1,21 @@
+
+menuconfig DRV_BH1730FVC
+    bool "bh1730fvc ['ROHM,bh1730fvc']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            bh1730fvc:bh1730fvc@29 {
+                compatible = "ROHM,bh1730fvc";
+                label = "BH1730FVC";
+                status = "disabled";
+                reg = <0x29>;
+            };
+        };
+
+        Parameters:
+
+           integration_time_denominator:  integration time denominator
+

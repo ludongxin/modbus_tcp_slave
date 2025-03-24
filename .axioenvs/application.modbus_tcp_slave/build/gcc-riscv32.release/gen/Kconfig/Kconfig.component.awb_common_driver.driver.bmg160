@@ -1,0 +1,28 @@
+
+menuconfig DRV_BMG160
+    bool "bmg160 ['BST,bmg160']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            bmg160:bmg160@68 {
+                compatible = "BST,bmg160";
+                label = "BMG160";
+                status = "disabled";
+                reg = <0x68>;
+                event-pins = <&pin1 GPIO1_25 GPIO1_25_GPIO (GPIO1_25_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_25_GPIO>;
+                data-pins  = <&pin1 GPIO1_26 GPIO1_26_GPIO (GPIO1_26_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_26_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &bmg160{
+            event-pins = <&pin1 GPIO1_25 GPIO1_25_GPIO (GPIO1_25_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_25_GPIO>;
+            data-pins  = <&pin1 GPIO1_26 GPIO1_26_GPIO (GPIO1_26_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_26_GPIO>;
+        };

@@ -1,0 +1,20 @@
+
+menuconfig AWB_INET_SOCKET
+    bool "AWorks implementation for internet socket"
+    libsafe 
+    select AW_MEM_MANAGE_MEM_POOL
+    select AW_COMMON_IOCTL_CODE
+    select AW_CTYPE
+    select AW_STDLIB
+    select AW_SOCKET_IODEV
+    default n
+    help
+        Version: 0.0.0
+
+        
+if AWB_INET_SOCKET
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/net/awb_inet_socket/Kconfig.opts"
+
+endif #AWB_INET_SOCKET
+

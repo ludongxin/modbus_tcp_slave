@@ -1,0 +1,79 @@
+
+menuconfig DEV_SPI3
+    bool "spi3"
+    default n
+    visible if y
+    select DRV_HPM_SPI_INT
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_30
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_164
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_167
+    select DEV_PIN_1_PIN_RES_166
+    select DEV_PIN_1_PIN_RES_163
+
+    help
+      Filename: "/dev/spi3"
+
+      dts_dev_prop:
+          name(unit): "hpm_spi_int" (3)
+          compatible: ['riscv,hpm-spi_int']
+          dts_path: /soc/spi@0xF003C000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\spi\riscv,hpm-spi_int.yaml
+
+
+if DEV_SPI3
+
+config DEV_SPI3_DEFAULT_SPI_CLK_RATE
+    int "the rate of SPI's CLK signal"
+    default 1000000
+    enum
+        500000
+        1000000
+        2000000
+        4000000
+        5000000
+        10000000
+
+
+config DEV_SPI3_CSHT
+    string "The minimum time that cs should stay high"
+    default "spi_csht_half_sclk_12"
+    enum
+        "spi_csht_half_sclk_1"
+        "spi_csht_half_sclk_2"
+        "spi_csht_half_sclk_3"
+        "spi_csht_half_sclk_4"
+        "spi_csht_half_sclk_5"
+        "spi_csht_half_sclk_6"
+        "spi_csht_half_sclk_7"
+        "spi_csht_half_sclk_8"
+        "spi_csht_half_sclk_9"
+        "spi_csht_half_sclk_10"
+        "spi_csht_half_sclk_11"
+        "spi_csht_half_sclk_12"
+        "spi_csht_half_sclk_13"
+        "spi_csht_half_sclk_14"
+        "spi_csht_half_sclk_15"
+        "spi_csht_half_sclk_16"
+
+
+config DEV_SPI3_CS2SCLK
+    string "The time from cs becoming valid to the first sck edge"
+    default "spi_cs2sclk_half_sclk_4"
+    enum
+        "spi_cs2sclk_half_sclk_1"
+        "spi_cs2sclk_half_sclk_2"
+        "spi_cs2sclk_half_sclk_3"
+        "spi_cs2sclk_half_sclk_4"
+
+config DEV_SPI3_CHIPSELECT_0
+    bool "CS 0"
+    default n
+    help
+      spi3 Chip Select 0
+endif #DEV_SPI3
+
+

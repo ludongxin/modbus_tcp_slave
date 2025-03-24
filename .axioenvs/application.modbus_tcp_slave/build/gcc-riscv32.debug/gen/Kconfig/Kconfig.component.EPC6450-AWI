@@ -1,0 +1,24 @@
+
+menuconfig EPC6450_AWI
+    bool "Board EPC6450-AWI"
+    libsafe 
+    select BSP_HPM
+    select AW_CPU_BASE_HPM645X_675X
+    select AWB_COMMON_DRIVER
+    select AW_BITMAP_ALLOCATOR
+    select AW_API_NVRAM
+    default n
+    help
+        Version: 0.1.0
+
+        
+if EPC6450_AWI
+
+
+osource "$AW_BOARD_DEVICES_KCONFIG_MENU"
+
+osource "$(topic_components, System::Board::Components)"
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/boards/EPC6450-AWI/Kconfig.opts"
+
+endif #EPC6450_AWI
+

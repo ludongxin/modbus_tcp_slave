@@ -1,0 +1,118 @@
+
+menuconfig DEV_ETH0
+    bool "eth0"
+    default n
+    visible if y
+    select DRV_HPM_ENET
+    select DEV_PLIC0
+    select DEV_PIN_1
+    select DEV_PLIC0_INTERRUPT_RES_108
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+    select DEV_PIN_1_PIN_RES_127
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_132
+    select DEV_PIN_1_PIN_RES_126
+    select DEV_PIN_1_PIN_RES_134
+    select DEV_PIN_1_PIN_RES_125
+    select DEV_PIN_1_PIN_RES_128
+    select DEV_PIN_1_PIN_RES_159
+
+    help
+      Filename: "/dev/eth0"
+
+      dts_dev_prop:
+          name(unit): "hpm_enet" (0)
+          compatible: ['riscv,hpm_ethernet']
+          dts_path: /soc/eth@0xF2000000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\enet\riscv,hpm_ethernet.yaml
+
+
+if DEV_ETH0
+
+config DEV_ETH0_IPADDR
+    string "IP address"
+    default "192.168.137.251"
+
+
+config DEV_ETH0_NETMASK
+    string "Netmask"
+    default "255.255.255.0"
+
+
+config DEV_ETH0_GATEWAY
+    string "Gateway"
+    default "192.168.137.1"
+
+
+config DEV_ETH0_DHCP_EN
+    bool "Enable DHCP"
+    default n
+
+
+config DEV_ETH0_INT_TSK_PRIO
+    int "Int Task Prio"
+    default 2
+
+
+config DEV_ETH0_FEC_RBD_NUM
+    int "Recv buffer descripter Count"
+    default 64
+    range 8 256
+
+
+config DEV_ETH0_FEC_TBD_NUM
+    int "Transmit buffer descripter Count"
+    default 24
+    range 8 256
+
+
+config DEV_ETH0_PASS_ALL_MULTICAST
+    bool "enable pass all multicast"
+    default n
+    help 
+        enabled, this bit indicates that all received frames with a multicast destination address (the first bit in the Destination Address field is "1") are delivered.
+
+
+config DEV_ETH0_PROMISCUOUS_MODE
+    bool "Promiscuous Mode"
+    default n
+    help 
+        enabled, the netif will turn off (MAC) address filtering and pass through all network frames.
+
+
+config DEV_ETH0_IS_INTERNAL_CLK
+    bool "Enable internal clk"
+    default y
+
+
+config DEV_ETH0_RX_DELAY
+    int "Receive Clock Delay"
+    default 0
+    range 0 32
+    help 
+        Receive Clock Delay, this parameter may be different in different hardware borad.
+
+
+config DEV_ETH0_TX_DELAY
+    int "Transmit Clock Delay"
+    default 0
+    range 0 32
+    help 
+        Transmit Clock Delay , this parameter may be different in different hardware borad.
+
+
+config DEV_ETH0_CACHE_RAW_RX_PACKET_COUNT
+    int "if user read raw ethernet packet is enabled,this control the max packet count in receive buffer."
+    default 64
+    range 0 65536
+
+
+config DEV_ETH0_PTP_ENABLE
+    bool "PTP timer enable"
+    default n
+    select DRV_ENET_1588_TIMESTAMP_EN 
+    select AW_SUBSYS_TIME 
+
+endif #DEV_ETH0
+
+

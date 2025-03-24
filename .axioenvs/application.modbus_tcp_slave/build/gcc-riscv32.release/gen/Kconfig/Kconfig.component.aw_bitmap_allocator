@@ -1,0 +1,10 @@
+
+menuconfig AW_BITMAP_ALLOCATOR
+    bool "Memory allocator using bitmap"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        

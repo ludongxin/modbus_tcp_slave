@@ -1,0 +1,5 @@
+
+menuconfig DRV_ARMV7M_SYSTICK_SYSTIMER
+    bool "armv7m_systick_systimer ['arm,armv7m-systick-systimer']"
+    select AWBUS
+    default n

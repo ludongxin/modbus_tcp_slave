@@ -1,0 +1,10 @@
+
+menuconfig AW_SUBSYS_DRIVER_SPIEX
+    bool "Subsys for spiex master device"
+    libsafe 
+    select AWBUS
+    default n
+    help
+        Version: 0.0.0
+
+        

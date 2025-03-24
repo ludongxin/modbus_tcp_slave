@@ -1,0 +1,41 @@
+
+menuconfig DEV_DAO
+    bool "dao"
+    default n
+    visible if y
+    select DRV_HPM_DAO
+
+    help
+      Filename: "/dev/dao"
+
+      dts_dev_prop:
+          name(unit): "hpm_dao" (0)
+          compatible: ['riscv,hpm-dao']
+          dts_path: /soc/dao@0xF0110000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\dao\riscv,hpm-dao.yaml
+
+
+if DEV_DAO
+
+config DEV_DAO_MONO_OUTPUT
+    bool "mono_output"
+    default n
+
+
+config DEV_DAO_DEFAULT_OUTPUT_LEVEL
+    string "default output level"
+    default "DAO_DEFAULT_OUTPUT_ALL_LOW"
+    enum
+        "DAO_DEFAULT_OUTPUT_ALL_LOW"
+        "DAO_DEFAULT_OUTPUT_ALL_HIGH"
+        "DAO_DEFAULT_OUTPUT_P_HIGH_N_LOW"
+        "DAO_DEFAULT_OUTPUT_DISABLED"
+
+
+config DEV_DAO_CARD_ID
+    int "Sound Card ID"
+    default 0
+
+endif #DEV_DAO
+
+

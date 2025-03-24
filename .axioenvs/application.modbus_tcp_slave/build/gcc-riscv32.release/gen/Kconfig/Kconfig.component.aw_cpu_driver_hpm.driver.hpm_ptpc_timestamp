@@ -1,0 +1,5 @@
+
+menuconfig DRV_HPM_PTPC_TIMESTAMP
+    bool "hpm_ptpc_timestamp ['riscv,hpm_ptpc']"
+    select AWBUS
+    default n

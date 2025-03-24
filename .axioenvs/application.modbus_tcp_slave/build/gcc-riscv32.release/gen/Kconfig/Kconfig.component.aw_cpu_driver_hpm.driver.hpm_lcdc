@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_LCDC
+    bool "hpm_lcdc ['riscv,hpm-lcdc']"
+    select AW_SUBSYS_DRIVER_DISPLAY
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

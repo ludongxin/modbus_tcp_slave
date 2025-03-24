@@ -1,0 +1,2490 @@
+
+menuconfig DEV_PIN_1
+    bool "pin_1"
+    default y
+    visible if y
+    select DRV_HPM_GPIO
+    select DEV_PIN_1_PIN_RES_161
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+    help
+      Filename: "/dev/pin_1"
+
+      dts_dev_prop:
+          name(unit): "hpm_gpio" (0)
+          compatible: ['riscv,hpm-gpio']
+          dts_path: /soc/pin@F0000000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\pin\riscv,hpm-gpio.yaml
+
+
+if DEV_PIN_1
+
+config DEV_PIN_1_AWB_PIN_SERVICE
+    def_bool y
+
+if DEV_PIN_1_AWB_PIN_SERVICE
+config DEV_PIN_1_PIN_RES_0
+    bool "pin 0 (0)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_1
+    bool "pin 1 (1)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_2
+    bool "pin 2 (2)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_3
+    bool "pin 3 (3)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_4
+    bool "pin 4 (4)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_5
+    bool "pin 5 (5)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_6
+    bool "pin 6 (6)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_7
+    bool "pin 7 (7)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_8
+    bool "pin 8 (8)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_9
+    bool "pin 9 (9)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_10
+    bool "pin 10 (10)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_11
+    bool "pin 11 (11)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_12
+    bool "pin 12 (12)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_13
+    bool "pin 13 (13)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_14
+    bool "pin 14 (14)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_15
+    bool "pin 15 (15)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_16
+    bool "pin 16 (16)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_17
+    bool "pin 17 (17)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_18
+    bool "pin 18 (18)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_19
+    bool "pin 19 (19)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_20
+    bool "pin 20 (20)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_21
+    bool "pin 21 (21)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_22
+    bool "pin 22 (22)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_23
+    bool "pin 23 (23)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_24
+    bool "pin 24 (24)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_25
+    bool "pin 25 (25)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_26
+    bool "pin 26 (26)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_27
+    bool "pin 27 (27)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_28
+    bool "pin 28 (28)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_29
+    bool "pin 29 (29)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_30
+    bool "pin 30 (30)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_31
+    bool "pin 31 (31)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_32
+    bool "pin 32 (32)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_33
+    bool "pin 33 (33)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_34
+    bool "pin 34 (34)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_35
+    bool "pin 35 (35)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_36
+    bool "pin 36 (36)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_37
+    bool "pin 37 (37)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_38
+    bool "pin 38 (38)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_39
+    bool "pin 39 (39)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_40
+    bool "pin 40 (40)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_41
+    bool "pin 41 (41)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_42
+    bool "pin 42 (42)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_43
+    bool "pin 43 (43)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_44
+    bool "pin 44 (44)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_45
+    bool "pin 45 (45)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_46
+    bool "pin 46 (46)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_47
+    bool "pin 47 (47)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_48
+    bool "pin 48 (48)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_49
+    bool "pin 49 (49)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_50
+    bool "pin 50 (50)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_51
+    bool "pin 51 (51)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_52
+    bool "pin 52 (52)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_53
+    bool "pin 53 (53)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_54
+    bool "pin 54 (54)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_55
+    bool "pin 55 (55)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_56
+    bool "pin 56 (56)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_57
+    bool "pin 57 (57)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_58
+    bool "pin 58 (58)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_59
+    bool "pin 59 (59)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_60
+    bool "pin 60 (60)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_61
+    bool "pin 61 (61)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_62
+    bool "pin 62 (62)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_63
+    bool "pin 63 (63)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_64
+    bool "pin 64 (64)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_65
+    bool "pin 65 (65)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_66
+    bool "pin 66 (66)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_67
+    bool "pin 67 (67)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_68
+    bool "pin 68 (68)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_69
+    bool "pin 69 (69)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_70
+    bool "pin 70 (70)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_71
+    bool "pin 71 (71)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_72
+    bool "pin 72 (72)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_73
+    bool "pin 73 (73)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_74
+    bool "pin 74 (74)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_75
+    bool "pin 75 (75)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_76
+    bool "pin 76 (76)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_77
+    bool "pin 77 (77)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_78
+    bool "pin 78 (78)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_79
+    bool "pin 79 (79)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_80
+    bool "pin 80 (80)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_81
+    bool "pin 81 (81)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_82
+    bool "pin 82 (82)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_83
+    bool "pin 83 (83)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_84
+    bool "pin 84 (84)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_85
+    bool "pin 85 (85)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_86
+    bool "pin 86 (86)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_87
+    bool "pin 87 (87)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_88
+    bool "pin 88 (88)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_89
+    bool "pin 89 (89)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_90
+    bool "pin 90 (90)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_91
+    bool "pin 91 (91)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_92
+    bool "pin 92 (92)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_93
+    bool "pin 93 (93)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_94
+    bool "pin 94 (94)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_95
+    bool "pin 95 (95)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_96
+    bool "pin 96 (96)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_97
+    bool "pin 97 (97)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_98
+    bool "pin 98 (98)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_99
+    bool "pin 99 (99)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_100
+    bool "pin 100 (100)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_101
+    bool "pin 101 (101)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_102
+    bool "pin 102 (102)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_103
+    bool "pin 103 (103)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_104
+    bool "pin 104 (104)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_105
+    bool "pin 105 (105)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_106
+    bool "pin 106 (106)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_107
+    bool "pin 107 (107)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_108
+    bool "pin 108 (108)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_109
+    bool "pin 109 (109)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_110
+    bool "pin 110 (110)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_111
+    bool "pin 111 (111)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_112
+    bool "pin 112 (112)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_113
+    bool "pin 113 (113)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_114
+    bool "pin 114 (114)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_115
+    bool "pin 115 (115)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_116
+    bool "pin 116 (116)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_117
+    bool "pin 117 (117)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_118
+    bool "pin 118 (118)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_119
+    bool "pin 119 (119)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_120
+    bool "pin 120 (120)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_121
+    bool "pin 121 (121)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_122
+    bool "pin 122 (122)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_123
+    bool "pin 123 (123)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_124
+    bool "pin 124 (124)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_125
+    bool "pin 125 (125)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_126
+    bool "pin 126 (126)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_127
+    bool "pin 127 (127)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_128
+    bool "pin 128 (128)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_129
+    bool "pin 129 (129)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_130
+    bool "pin 130 (130)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_131
+    bool "pin 131 (131)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_132
+    bool "pin 132 (132)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_133
+    bool "pin 133 (133)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_134
+    bool "pin 134 (134)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_135
+    bool "pin 135 (135)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_136
+    bool "pin 136 (136)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_137
+    bool "pin 137 (137)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_138
+    bool "pin 138 (138)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_139
+    bool "pin 139 (139)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_140
+    bool "pin 140 (140)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_141
+    bool "pin 141 (141)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_142
+    bool "pin 142 (142)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_143
+    bool "pin 143 (143)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_144
+    bool "pin 144 (144)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_145
+    bool "pin 145 (145)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_146
+    bool "pin 146 (146)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_147
+    bool "pin 147 (147)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_148
+    bool "pin 148 (148)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_149
+    bool "pin 149 (149)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_150
+    bool "pin 150 (150)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_151
+    bool "pin 151 (151)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_152
+    bool "pin 152 (152)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_153
+    bool "pin 153 (153)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_154
+    bool "pin 154 (154)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_155
+    bool "pin 155 (155)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_156
+    bool "pin 156 (156)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_157
+    bool "pin 157 (157)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_158
+    bool "pin 158 (158)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_159
+    bool "pin 159 (159)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_160
+    bool "pin 160 (160)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_161
+    bool "pin 161 (161)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_162
+    bool "pin 162 (162)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_163
+    bool "pin 163 (163)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_164
+    bool "pin 164 (164)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_165
+    bool "pin 165 (165)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_166
+    bool "pin 166 (166)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_167
+    bool "pin 167 (167)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_168
+    bool "pin 168 (168)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_169
+    bool "pin 169 (169)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_170
+    bool "pin 170 (170)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_171
+    bool "pin 171 (171)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_172
+    bool "pin 172 (172)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_173
+    bool "pin 173 (173)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_174
+    bool "pin 174 (174)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_175
+    bool "pin 175 (175)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_176
+    bool "pin 176 (176)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_177
+    bool "pin 177 (177)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_178
+    bool "pin 178 (178)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_179
+    bool "pin 179 (179)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_180
+    bool "pin 180 (180)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_181
+    bool "pin 181 (181)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_182
+    bool "pin 182 (182)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_183
+    bool "pin 183 (183)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_184
+    bool "pin 184 (184)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_185
+    bool "pin 185 (185)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_186
+    bool "pin 186 (186)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_187
+    bool "pin 187 (187)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_188
+    bool "pin 188 (188)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_189
+    bool "pin 189 (189)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_190
+    bool "pin 190 (190)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_191
+    bool "pin 191 (191)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_192
+    bool "pin 192 (192)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_193
+    bool "pin 193 (193)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_194
+    bool "pin 194 (194)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_195
+    bool "pin 195 (195)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_196
+    bool "pin 196 (196)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_197
+    bool "pin 197 (197)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_198
+    bool "pin 198 (198)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_199
+    bool "pin 199 (199)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_200
+    bool "pin 200 (200)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_201
+    bool "pin 201 (201)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_202
+    bool "pin 202 (202)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_203
+    bool "pin 203 (203)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_204
+    bool "pin 204 (204)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_205
+    bool "pin 205 (205)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_206
+    bool "pin 206 (206)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_207
+    bool "pin 207 (207)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_208
+    bool "pin 208 (208)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_209
+    bool "pin 209 (209)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_210
+    bool "pin 210 (210)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_211
+    bool "pin 211 (211)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_212
+    bool "pin 212 (212)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_213
+    bool "pin 213 (213)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_214
+    bool "pin 214 (214)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_215
+    bool "pin 215 (215)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_216
+    bool "pin 216 (216)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_217
+    bool "pin 217 (217)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_218
+    bool "pin 218 (218)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_219
+    bool "pin 219 (219)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_220
+    bool "pin 220 (220)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_221
+    bool "pin 221 (221)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_222
+    bool "pin 222 (222)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_223
+    bool "pin 223 (223)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_224
+    bool "pin 224 (224)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_225
+    bool "pin 225 (225)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_226
+    bool "pin 226 (226)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_227
+    bool "pin 227 (227)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_228
+    bool "pin 228 (228)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_229
+    bool "pin 229 (229)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_230
+    bool "pin 230 (230)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_231
+    bool "pin 231 (231)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_232
+    bool "pin 232 (232)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_233
+    bool "pin 233 (233)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_234
+    bool "pin 234 (234)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_235
+    bool "pin 235 (235)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_236
+    bool "pin 236 (236)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_237
+    bool "pin 237 (237)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_238
+    bool "pin 238 (238)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_239
+    bool "pin 239 (239)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_240
+    bool "pin 240 (240)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_241
+    bool "pin 241 (241)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_242
+    bool "pin 242 (242)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_243
+    bool "pin 243 (243)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_244
+    bool "pin 244 (244)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_245
+    bool "pin 245 (245)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_246
+    bool "pin 246 (246)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_247
+    bool "pin 247 (247)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_248
+    bool "pin 248 (248)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_249
+    bool "pin 249 (249)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_250
+    bool "pin 250 (250)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_251
+    bool "pin 251 (251)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_252
+    bool "pin 252 (252)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_253
+    bool "pin 253 (253)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_254
+    bool "pin 254 (254)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_255
+    bool "pin 255 (255)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_256
+    bool "pin 256 (256)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_257
+    bool "pin 257 (257)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_258
+    bool "pin 258 (258)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_259
+    bool "pin 259 (259)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_260
+    bool "pin 260 (260)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_261
+    bool "pin 261 (261)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_262
+    bool "pin 262 (262)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_263
+    bool "pin 263 (263)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_264
+    bool "pin 264 (264)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_265
+    bool "pin 265 (265)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_266
+    bool "pin 266 (266)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_267
+    bool "pin 267 (267)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_268
+    bool "pin 268 (268)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_269
+    bool "pin 269 (269)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_270
+    bool "pin 270 (270)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_271
+    bool "pin 271 (271)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_272
+    bool "pin 272 (272)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_273
+    bool "pin 273 (273)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_274
+    bool "pin 274 (274)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_275
+    bool "pin 275 (275)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_276
+    bool "pin 276 (276)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_277
+    bool "pin 277 (277)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_278
+    bool "pin 278 (278)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_279
+    bool "pin 279 (279)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_280
+    bool "pin 280 (280)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_281
+    bool "pin 281 (281)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_282
+    bool "pin 282 (282)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_283
+    bool "pin 283 (283)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_284
+    bool "pin 284 (284)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_285
+    bool "pin 285 (285)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_286
+    bool "pin 286 (286)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_287
+    bool "pin 287 (287)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_288
+    bool "pin 288 (288)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_289
+    bool "pin 289 (289)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_290
+    bool "pin 290 (290)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_291
+    bool "pin 291 (291)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_292
+    bool "pin 292 (292)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_293
+    bool "pin 293 (293)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_294
+    bool "pin 294 (294)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_295
+    bool "pin 295 (295)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_296
+    bool "pin 296 (296)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_297
+    bool "pin 297 (297)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_298
+    bool "pin 298 (298)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_299
+    bool "pin 299 (299)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_300
+    bool "pin 300 (300)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_301
+    bool "pin 301 (301)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_302
+    bool "pin 302 (302)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_303
+    bool "pin 303 (303)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_304
+    bool "pin 304 (304)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_305
+    bool "pin 305 (305)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_306
+    bool "pin 306 (306)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_307
+    bool "pin 307 (307)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_308
+    bool "pin 308 (308)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_309
+    bool "pin 309 (309)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_310
+    bool "pin 310 (310)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_311
+    bool "pin 311 (311)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_312
+    bool "pin 312 (312)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_313
+    bool "pin 313 (313)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_314
+    bool "pin 314 (314)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_315
+    bool "pin 315 (315)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_316
+    bool "pin 316 (316)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_317
+    bool "pin 317 (317)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_318
+    bool "pin 318 (318)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_319
+    bool "pin 319 (319)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_320
+    bool "pin 320 (320)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_321
+    bool "pin 321 (321)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_322
+    bool "pin 322 (322)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_323
+    bool "pin 323 (323)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_324
+    bool "pin 324 (324)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_325
+    bool "pin 325 (325)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_326
+    bool "pin 326 (326)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_327
+    bool "pin 327 (327)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_328
+    bool "pin 328 (328)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_329
+    bool "pin 329 (329)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_330
+    bool "pin 330 (330)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_331
+    bool "pin 331 (331)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_332
+    bool "pin 332 (332)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_333
+    bool "pin 333 (333)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_334
+    bool "pin 334 (334)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_335
+    bool "pin 335 (335)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_336
+    bool "pin 336 (336)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_337
+    bool "pin 337 (337)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_338
+    bool "pin 338 (338)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_339
+    bool "pin 339 (339)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_340
+    bool "pin 340 (340)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_341
+    bool "pin 341 (341)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_342
+    bool "pin 342 (342)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_343
+    bool "pin 343 (343)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_344
+    bool "pin 344 (344)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_345
+    bool "pin 345 (345)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_346
+    bool "pin 346 (346)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_347
+    bool "pin 347 (347)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_348
+    bool "pin 348 (348)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_349
+    bool "pin 349 (349)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_350
+    bool "pin 350 (350)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_351
+    bool "pin 351 (351)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_352
+    bool "pin 352 (352)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_353
+    bool "pin 353 (353)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_354
+    bool "pin 354 (354)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_355
+    bool "pin 355 (355)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_356
+    bool "pin 356 (356)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_357
+    bool "pin 357 (357)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_358
+    bool "pin 358 (358)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_359
+    bool "pin 359 (359)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_360
+    bool "pin 360 (360)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_361
+    bool "pin 361 (361)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_362
+    bool "pin 362 (362)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_363
+    bool "pin 363 (363)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_364
+    bool "pin 364 (364)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_365
+    bool "pin 365 (365)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_366
+    bool "pin 366 (366)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_367
+    bool "pin 367 (367)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_368
+    bool "pin 368 (368)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_369
+    bool "pin 369 (369)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_370
+    bool "pin 370 (370)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_371
+    bool "pin 371 (371)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_372
+    bool "pin 372 (372)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_373
+    bool "pin 373 (373)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_374
+    bool "pin 374 (374)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_375
+    bool "pin 375 (375)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_376
+    bool "pin 376 (376)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_377
+    bool "pin 377 (377)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_378
+    bool "pin 378 (378)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_379
+    bool "pin 379 (379)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_380
+    bool "pin 380 (380)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_381
+    bool "pin 381 (381)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_382
+    bool "pin 382 (382)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_383
+    bool "pin 383 (383)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_384
+    bool "pin 384 (384)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_385
+    bool "pin 385 (385)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_386
+    bool "pin 386 (386)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_387
+    bool "pin 387 (387)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_388
+    bool "pin 388 (388)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_389
+    bool "pin 389 (389)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_390
+    bool "pin 390 (390)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_391
+    bool "pin 391 (391)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_392
+    bool "pin 392 (392)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_393
+    bool "pin 393 (393)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_394
+    bool "pin 394 (394)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_395
+    bool "pin 395 (395)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_396
+    bool "pin 396 (396)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_397
+    bool "pin 397 (397)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_398
+    bool "pin 398 (398)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_399
+    bool "pin 399 (399)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_400
+    bool "pin 400 (400)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_401
+    bool "pin 401 (401)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_402
+    bool "pin 402 (402)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_403
+    bool "pin 403 (403)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_404
+    bool "pin 404 (404)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_405
+    bool "pin 405 (405)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_406
+    bool "pin 406 (406)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_407
+    bool "pin 407 (407)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_408
+    bool "pin 408 (408)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_409
+    bool "pin 409 (409)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_410
+    bool "pin 410 (410)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_411
+    bool "pin 411 (411)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_412
+    bool "pin 412 (412)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_413
+    bool "pin 413 (413)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_414
+    bool "pin 414 (414)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_415
+    bool "pin 415 (415)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_416
+    bool "pin 416 (416)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_417
+    bool "pin 417 (417)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_418
+    bool "pin 418 (418)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_419
+    bool "pin 419 (419)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_420
+    bool "pin 420 (420)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_421
+    bool "pin 421 (421)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_422
+    bool "pin 422 (422)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_423
+    bool "pin 423 (423)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_424
+    bool "pin 424 (424)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_425
+    bool "pin 425 (425)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_426
+    bool "pin 426 (426)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_427
+    bool "pin 427 (427)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_428
+    bool "pin 428 (428)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_429
+    bool "pin 429 (429)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_430
+    bool "pin 430 (430)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_431
+    bool "pin 431 (431)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_432
+    bool "pin 432 (432)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_433
+    bool "pin 433 (433)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_434
+    bool "pin 434 (434)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_435
+    bool "pin 435 (435)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_436
+    bool "pin 436 (436)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_437
+    bool "pin 437 (437)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_438
+    bool "pin 438 (438)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_439
+    bool "pin 439 (439)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_440
+    bool "pin 440 (440)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_441
+    bool "pin 441 (441)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_442
+    bool "pin 442 (442)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_443
+    bool "pin 443 (443)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_444
+    bool "pin 444 (444)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_445
+    bool "pin 445 (445)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_446
+    bool "pin 446 (446)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_447
+    bool "pin 447 (447)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_448
+    bool "pin 448 (448)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_449
+    bool "pin 449 (449)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_450
+    bool "pin 450 (450)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_451
+    bool "pin 451 (451)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_452
+    bool "pin 452 (452)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_453
+    bool "pin 453 (453)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_454
+    bool "pin 454 (454)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_455
+    bool "pin 455 (455)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_456
+    bool "pin 456 (456)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_457
+    bool "pin 457 (457)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_458
+    bool "pin 458 (458)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_459
+    bool "pin 459 (459)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_460
+    bool "pin 460 (460)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_461
+    bool "pin 461 (461)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_462
+    bool "pin 462 (462)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_463
+    bool "pin 463 (463)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_464
+    bool "pin 464 (464)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_465
+    bool "pin 465 (465)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_466
+    bool "pin 466 (466)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_467
+    bool "pin 467 (467)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_468
+    bool "pin 468 (468)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_469
+    bool "pin 469 (469)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_470
+    bool "pin 470 (470)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_471
+    bool "pin 471 (471)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_472
+    bool "pin 472 (472)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_473
+    bool "pin 473 (473)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_474
+    bool "pin 474 (474)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_475
+    bool "pin 475 (475)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_476
+    bool "pin 476 (476)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_477
+    bool "pin 477 (477)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_478
+    bool "pin 478 (478)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_479
+    bool "pin 479 (479)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_480
+    bool "pin 480 (480)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_481
+    bool "pin 481 (481)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_482
+    bool "pin 482 (482)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_483
+    bool "pin 483 (483)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_484
+    bool "pin 484 (484)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_485
+    bool "pin 485 (485)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_486
+    bool "pin 486 (486)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_487
+    bool "pin 487 (487)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_488
+    bool "pin 488 (488)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_489
+    bool "pin 489 (489)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_490
+    bool "pin 490 (490)"
+    default n
+
+
+config DEV_PIN_1_PIN_RES_491
+    bool "pin 491 (491)"
+    default n
+
+
+endif # DEV_PIN_1_AWB_PIN_SERVICE
+
+endif #DEV_PIN_1
+
+

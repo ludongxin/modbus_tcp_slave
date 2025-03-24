@@ -1,0 +1,8 @@
+
+menuconfig DRV_HPM_DAO
+    bool "hpm_dao ['riscv,hpm-dao']"
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AWSA_FRAMEWORK
+    select DEV_I2S1
+    select DEV_HDMA
+    default n

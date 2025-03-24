@@ -1,0 +1,28 @@
+
+menuconfig DRV_BMA253
+    bool "bma253 ['BOSCH,bma253']"
+    select AW_SUBSYS_DRIVER_SENSOR
+    select AW_OS_ISR_DEFER
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &i2c1{
+            bma253:bma253@18 {
+                compatible = "BOSCH,bma253";
+                label = "BMA253";
+                status = "disabled";
+                reg = <0x18>;
+                event-pins = <&pin1 GPIO1_2 GPIO1_2_GPIO (GPIO1_2_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_2_GPIO>;
+                data-pins  = <&pin1 GPIO1_3 GPIO1_3_GPIO (GPIO1_3_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_3_GPIO>;
+            };
+        };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &bma253{
+            event-pins = <&pin1 GPIO1_2 GPIO1_2_GPIO (GPIO1_2_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_2_GPIO>;
+            data-pins  = <&pin1 GPIO1_3 GPIO1_3_GPIO (GPIO1_3_GPIO|AW_PIN_CFG_GPIO_INPUT) GPIO1_3_GPIO>;
+        };

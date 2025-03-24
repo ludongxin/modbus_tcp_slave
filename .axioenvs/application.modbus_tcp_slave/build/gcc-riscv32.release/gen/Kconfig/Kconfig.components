@@ -1,0 +1,415 @@
+
+menu "Components"
+
+menu "3rdparty"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_aliyun"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_tencentcloud"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_zws"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.cjson"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.ffmpeg"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.goahead"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.iec61850"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.libcurl"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.libjpeg_turbo"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.lua"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.mbedtls"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.ncnn"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.openamp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.sqlite3"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.wolfssh"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.wolfssl"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.zlib"
+endmenu
+
+menu "Application"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_aliyun_adapter"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_face_recognition"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_ftpd"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_gnss"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_gprs"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_input_utils"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_iot_common"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_log"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_modbus"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_ptp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_sntp_app"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_tencentcloud_adapter"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awsa_framework"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.canopen"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.dhcp_server"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.tkc"
+endmenu
+
+menu "AWTK"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awtk"
+endmenu
+
+menu "compiler"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.compiler_arm_none_eabi_gcc"
+endmenu
+
+menu "Drivers"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.wiced"
+endmenu
+
+menu "Hardware"
+
+menu "Drivers"
+
+menu "ADC12"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_adc12"
+endmenu
+
+menu "ADC16"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_adc16"
+endmenu
+
+menu "Buzzer"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.general_dc_buzzer"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.pwm_buzzer"
+endmenu
+
+menu "CAM"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_cam"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ov7725_camera"
+endmenu
+
+menu "CAN"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_can"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_can_fast"
+endmenu
+
+menu "Converter"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.canfdsm_uart_can"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ch395_spi_enet"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ch395_uart_enet"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.csm300x_spi_can"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.csm300x_uart_can"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.mcp2515"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.mcp2517fd"
+endmenu
+
+menu "Core"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.arm_gic"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.armcm_nvic"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.armv6m_nvic"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.armv7a_pme_timestamp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.armv7m_systick_timestamp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.riscv_mcycle"
+endmenu
+
+menu "DAC"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_dac"
+endmenu
+
+menu "DAO"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_dao"
+endmenu
+
+menu "DMA"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_dma"
+endmenu
+
+menu "EEPROM"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.24cxx"
+endmenu
+
+menu "ENET"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_enet"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_enet_raw"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_enet_virtual"
+endmenu
+
+menu "External Memories"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gigadevice"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.is37sml01g1"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.jedec_jesd216_nor_flash_spi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.jedec_jesd216_nor_flash_spiex"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.onfi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.s34ml0xg2"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.sdio_mem_card"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.spicard"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.winbond"
+endmenu
+
+menu "I2C"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_i2c"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_i2c_slave"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gpio_i2c"
+endmenu
+
+menu "I2S"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_i2s"
+endmenu
+
+menu "IO"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.general_zlg72128_i2c"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.general_zlg72128_spi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.general_zlg7291"
+endmenu
+
+menu "Key"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gpio_key"
+endmenu
+
+menu "LCDC"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_lcdc"
+endmenu
+
+menu "LED"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gpio_led"
+endmenu
+
+menu "LIN"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_lin"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.general_uart_lin"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.nxp_tja1027_lin"
+endmenu
+
+menu "MBX"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_mbx"
+endmenu
+
+menu "MCAN"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_mcan"
+endmenu
+
+menu "MDIO"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gpio_mdio"
+endmenu
+
+menu "Monitor"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.zlg_tft_monitor"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.zlg_tft_monitor_gpio"
+endmenu
+
+menu "Multi Core"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_multi_core"
+endmenu
+
+menu "Nvram"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.virtual_nvram"
+endmenu
+
+menu "OTP"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_otp"
+endmenu
+
+menu "PHY"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.dp83848_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.dp83867_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.fixed_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.generic_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ksz9031_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.lan8720a_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.rtl9010_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.yt8512h_phy"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.yt8531s_phy"
+endmenu
+
+menu "PINS"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_gpio"
+endmenu
+
+menu "PLIC"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.riscv_hpm_plic"
+endmenu
+
+menu "PWM"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_pwm_timer"
+endmenu
+
+menu "RAM-Disk"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ramdisk"
+endmenu
+
+menu "RTC"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_rtc"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.pcf85063"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.rx8025sa"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.rx8025t"
+endmenu
+
+menu "SDIO"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_sdio"
+endmenu
+
+menu "Sensor"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.bh1730fvc"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.bma253"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.bme280"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.bmg160"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.bmp280"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.hts221"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.lis2dw12tr"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.lis3mdl"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.lps22hb"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.lsm6dsl"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ltr553"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.mmc5883ma"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.shtc1"
+endmenu
+
+menu "SPI"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_spi_int"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_spi_polling"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_spi_slave"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gpio_spi"
+endmenu
+
+menu "SPI-Flash"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.spi_flash"
+endmenu
+
+menu "SPIEX"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_spiex"
+endmenu
+
+menu "Systmr"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_gtmr_systmr"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.arm_gtimer_systimer"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.armv7m_systick_systimer"
+endmenu
+
+menu "Timer"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_timer"
+endmenu
+
+menu "Timestamp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_gtmr_timestamp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_ptpc_timestamp"
+endmenu
+
+menu "Touch Screen Controller"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.bu21029muv"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.ft5x06"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.gt911"
+endmenu
+
+menu "UART"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_uart"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_uart_debug"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_uart_lin"
+endmenu
+
+menu "USB"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_usb"
+endmenu
+
+menu "WDT"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_wdt"
+endmenu
+
+menu "WiFi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.cyw43362_sdio"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.cyw43362_spi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.cyw43438_sdio"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.cyw43455_sdio"
+endmenu
+
+menu "Wkuptmr"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_ptmr_wkuptmr"
+endmenu
+
+menu "WM8731"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_common_driver.driver.wm8731"
+endmenu
+
+menu "XPI"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm.driver.hpm_nor_xpi"
+endmenu
+endmenu
+endmenu
+
+menu "OSBase"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_compiler_common_posix_socket"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_compiler_cpp11_std_thread_gcc"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.awb_pm_notify"
+endmenu
+
+menu "Platform"
+
+menu "Components"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_cpu_driver_hpm"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.bsp_hpm"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.mtb_shared"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_cpu_base_hpm628x/Kconfig"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_cpu_base_hpm636x/Kconfig"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_cpu_base_hpm645x_675x/Kconfig"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_hpm_hardware_encrypt/Kconfig"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_hpm_jpeg_support/Kconfig"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/platforms/platform-hpm-aworks-lp/components/aw_hpm_pdma_support/Kconfig"
+endmenu
+endmenu
+
+menu "Shell:Command"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_awterminal"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_clk_tree"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_coremark"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_cpuload"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_dhcps"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_dns_lookup"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_dns_server"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_ethloopback"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_hexdump"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_io"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_ip"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_iperf"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_mnt"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_mtd"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_ping"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_ping6"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_sftp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_shutdown"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_simple_fdisk"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_stack"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_app_aw_shell_wifi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_shell_playback"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.telnet"
+endmenu
+
+menu "Subsys:Driver"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_onfi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_sfdp"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_awsa_pcm"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_adc"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_cam"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_can"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_dac"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_display"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_dma"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_hwtimer"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_hwtimer_cap"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_hwtimer_count"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_hwtimer_delay"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_hwtimer_period"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_hwwdog"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_i2c"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_i2c_slave"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_input"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_led"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_mii"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_mtd"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_phy_poll"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_pwm"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_sdio"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_sensor"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_serial"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_spi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_spiex"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_wifi"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_driver_xip_flash"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_time"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_usb"
+endmenu
+
+menu "Subsys:System"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_pm_wakeup_timer"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_storage_blockdev"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_system_intctlr"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_system_pin"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.release/gen/Kconfig/Kconfig.component.aw_subsys_system_sysdebug"
+    source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/aw_subsys_system_pm_pin/Kconfig"
+endmenu
+endmenu

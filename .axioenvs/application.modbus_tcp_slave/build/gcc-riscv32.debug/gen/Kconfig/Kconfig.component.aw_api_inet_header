@@ -1,0 +1,10 @@
+
+menuconfig AW_API_INET_HEADER
+    bool "AWorks API of inet's header"
+    libsafe 
+    select AWORKS_BASE
+    default n
+    help
+        Version: 0.0.0
+
+        

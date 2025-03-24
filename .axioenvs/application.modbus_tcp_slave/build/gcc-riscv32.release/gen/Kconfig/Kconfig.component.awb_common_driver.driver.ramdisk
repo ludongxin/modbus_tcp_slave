@@ -1,0 +1,23 @@
+
+menuconfig DRV_RAMDISK
+    bool "ramdisk ['general,ramdisk']"
+    select AWBUS
+    select AW_SUBSYS_STORAGE_BLOCKDEV
+    default n
+    help
+        Example of adding device to board.dts:
+
+        / {
+            ramdisk@0{
+                compatible = "general,ramdisk";
+                label = "ramdisk";
+                reg = <0 4>;
+                status = "disabled";
+            };
+        };
+
+if DRV_RAMDISK
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/ramdisk/general,ramdisk.Kconfig.opts"
+
+endif #DRV_RAMDISK

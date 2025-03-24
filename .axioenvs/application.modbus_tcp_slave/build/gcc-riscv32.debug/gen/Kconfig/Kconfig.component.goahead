@@ -1,0 +1,17 @@
+
+menuconfig GOAHEAD
+    bool "GoAhead"
+    libsafe 
+    select MBEDTLS
+    default n
+    help
+        Version: 5.2.1
+
+        
+if GOAHEAD
+
+
+osource  "$(ax_imp_paths,goahead_adapter_interface,,False)"
+
+endif #GOAHEAD
+

@@ -1,0 +1,9 @@
+
+menuconfig AW_SUBSYS_DRIVER_DMA
+    bool "Subsys for direct memory access(DMA)"
+    libsafe 
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,40 @@
+
+menuconfig DRV_NXP_TJA1027_LIN
+    bool "nxp,tja1027-lin ['nxp,tja1027-lin']"
+    select AWBUS
+    default n
+    help
+        Example of adding device to board.dts:
+
+           / {
+              lin_0:lin0{
+                  compatible = "nxp,tja1027-lin";
+                  label = "lin0";
+                  uart_id = <&uart8>;
+                  status = "disabled";
+                  /**
+                   * enable pin
+                   * If the hardware pulls the NSLP pin by default,TJA1027 is always enabled,
+                   * so you can omit this pin configuration.
+                   */
+                  pins = <&pin1 PIN_PD17 (IOC_PD17_FUNC_CTL_GPIO_D_17|AW_PIN_CFG_GPIO_OUTPUT_LOW)
+                                         (IOC_PD17_FUNC_CTL_GPIO_D_17|AW_PIN_CFG_GPIO_OUTPUT_LOW)
+                                         (IOC_PD17_FUNC_CTL_GPIO_D_17|AW_PIN_CFG_GPIO_OUTPUT_LOW)>;
+              };
+          };
+        
+
+        And also, you can config pin in pins.dts as follow:
+        
+
+        &lin_0{  
+             /* enable pin */
+             pins = <&pin1 PIN_PD17 (IOC_PD17_FUNC_CTL_GPIO_D_17|AW_PIN_CFG_GPIO_OUTPUT_LOW)
+                                    (IOC_PD17_FUNC_CTL_GPIO_D_17|AW_PIN_CFG_GPIO_OUTPUT_LOW)
+                                    (IOC_PD17_FUNC_CTL_GPIO_D_17|AW_PIN_CFG_GPIO_OUTPUT_LOW)>;
+        };
+
+        Parameters:
+
+           uart_id:  Must be bound to the serial port, otherwise, device operate will fail.
+

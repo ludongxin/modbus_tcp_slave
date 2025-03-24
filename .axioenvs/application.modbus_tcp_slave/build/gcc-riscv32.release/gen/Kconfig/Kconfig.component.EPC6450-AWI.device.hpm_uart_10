@@ -1,0 +1,63 @@
+
+menuconfig DEV_UART11
+    bool "uart11"
+    default n
+    visible if y
+    select DRV_HPM_UART
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_42
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/uart11"
+
+      dts_dev_prop:
+          name(unit): "hpm_uart" (10)
+          compatible: ['riscv,hpm_uart']
+          dts_path: /soc/uart@F006C000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\uart\riscv,hpm_uart.yaml
+
+
+if DEV_UART11
+
+config DEV_UART11_DEFAULT_BAUDRATE
+    int "the default Baudrate for uart"
+    default 115200
+
+
+config DEV_UART11_RX_BUF_SIZE
+    int "Size of receive buffer"
+    default 128
+
+
+config DEV_UART11_TX_BUF_SIZE
+    int "Size of transmit buffer"
+    default 0
+
+
+config DEV_UART11_EN_RS485
+    bool "Enable RS-485 or not"
+    default n
+
+
+if DEV_UART11_EN_RS485
+
+config DEV_UART11_RS485_TX_LEVEL_HIGH
+    bool "If Enable, Pin is high when RS-485 is in TX mode"
+    default n
+    help 
+        Default: Pin is low when RS-485 is in TX mode. If Enable, Pin is high when RS-485 is in TX mode
+
+
+config DEV_UART11_RS485_CUT_TIME
+    int "Delay time for switching to receive mode after transmit in ms"
+    default 1
+    range 0 5000
+    help 
+        Delay time for switching to receive mode after transmit, Uint: ms. It takes effect after rs485 is enabled
+
+endif #DEV_UART11_EN_RS485
+
+endif #DEV_UART11
+
+

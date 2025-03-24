@@ -1,0 +1,6 @@
+
+menuconfig DRV_HPM_SPI_POLLING
+    bool "hpm_spi_polling ['riscv,hpm-spi_polling']"
+    select AW_SUBSYS_DRIVER_SPI
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n

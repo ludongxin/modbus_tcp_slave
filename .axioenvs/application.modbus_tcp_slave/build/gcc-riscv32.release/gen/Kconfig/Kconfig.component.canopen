@@ -1,0 +1,18 @@
+
+menuconfig CANOPEN
+    bool "AWorks CANopen Protocol Stack"
+    libsafe 
+    select AW_DEV_API
+    select COMPILER_SUPPORT_STDIO
+    select RTK_OBJECT_CREATE_EN
+    default n
+    help
+        Version: 0.2.2
+
+        
+if CANOPEN
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/04a64c39-canopen/Kconfig.opts"
+
+endif #CANOPEN
+

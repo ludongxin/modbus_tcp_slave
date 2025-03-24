@@ -1,0 +1,59 @@
+
+menuconfig DEV_YT8512H_0
+    bool "yt8512h_0 @ eth1"
+    default n
+    visible if y
+    select DRV_YT8512H_PHY
+    select DEV_ETH1
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_205
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+    help
+      Filename: "/dev/yt8512h_0"
+
+      dts_dev_prop:
+          name(unit): "yt8512h_phy" (0)
+          compatible: ['motorcomm,yt8512h']
+          dts_path: /soc/eth@0xF2004000/yt8512h_phy@0x02
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\phy\motorcomm,yt8512h.yaml
+
+
+if DEV_YT8512H_0
+
+config DEV_YT8512H_0_LINK_LED
+    string "Link LED"
+    default "YT8512H_LED0"
+    help 
+        The LED which will on when enet link up.
+    enum
+        "YT8512H_LED0"
+        "YT8512H_LED1"
+
+
+config DEV_YT8512H_0_LINK_LED_INVERT
+    bool "Link LED invert"
+    default n
+    help 
+        The LED will invert
+
+
+config DEV_YT8512H_0_ACTIVE_LED
+    string "Active LED"
+    default "YT8512H_LED1"
+    help 
+        The LED which will blink when enet trans active.
+    enum
+        "YT8512H_LED0"
+        "YT8512H_LED1"
+
+
+config DEV_YT8512H_0_ACTIVE_LED_INVERT
+    bool "Active LED invert"
+    default n
+    help 
+        The LED will invert
+
+endif #DEV_YT8512H_0
+
+

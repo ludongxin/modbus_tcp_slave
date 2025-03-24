@@ -1,0 +1,64 @@
+
+menu "Devices"
+
+
+menu "Buzzer (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.pwm_buzzer_0"
+endmenu
+
+menu "CAM (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.ov7725_camera_0"
+endmenu
+
+menu "EEPROM (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.24cxx_0"
+endmenu
+
+menu "External Memories (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.jedec_jesd216_nor_flash_spi_0"
+endmenu
+
+menu "IO (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.general_zlg7291_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.general_zlg72128_spi_0"
+endmenu
+
+menu "LED (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.gpio_led_0"
+endmenu
+
+menu "Monitor (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.zlg_tft_monitor_gpio_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.zlg_tft_monitor_gpio_1"
+endmenu
+
+menu "PHY (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.yt8512h_phy_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.yt8512h_phy_1"
+endmenu
+
+menu "RTC (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.pcf85063_0"
+endmenu
+
+menu "SPI (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.gpio_spi_0"
+endmenu
+
+menu "SPI-Flash (1)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.spi_flash_0"
+endmenu
+
+menu "Touch Screen Controller (3)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.gt911_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.bu21029muv_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.ft5x06_0"
+endmenu
+
+menu "WiFi (2)"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.cyw43438_sdio_0"
+osource "D:/aworks_lp_hpm6450_general_sdk-0.9.1/demos/component/modbus/modbus_tcp_slave/.axioenvs/application.modbus_tcp_slave/build/gcc-riscv32.debug/gen/Kconfig/Kconfig.component.EPC6450-AWI.device.cyw43455_sdio_0"
+endmenu
+
+
+endmenu # menu "Devices"

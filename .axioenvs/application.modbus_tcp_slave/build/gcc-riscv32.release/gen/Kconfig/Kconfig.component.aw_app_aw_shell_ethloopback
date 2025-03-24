@@ -1,0 +1,15 @@
+
+menuconfig AW_APP_AW_SHELL_ETHLOOPBACK
+    bool "AWorks Shell supports ethloopback commands"
+    libsafe 
+    select AW_APP_SHELL
+    select AW_DEV_API
+    select AW_STDLIB
+    select AWB_NETIF_USER_INTERFACE
+    select AWB_NETIF_SEND_RAW_PACKETS
+    select AWB_NETIF_RECV_RAW_PACKETS
+    default n
+    help
+        Version: 0.0.0
+
+        

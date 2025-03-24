@@ -1,0 +1,35 @@
+
+menuconfig DEV_GPIO_LEDS
+    bool "gpio_leds"
+    default n
+    visible if y
+    select DRV_GPIO_LED
+
+    help
+      Filename: "/dev/gpio_leds"
+
+      dts_dev_prop:
+          name(unit): "gpio_led" (0)
+          compatible: ['general,gpio_led']
+          dts_path: /gpio_led
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\led\general,gpio_led.yaml
+
+
+if DEV_GPIO_LEDS
+config DEV_GPIO_LEDS_LED_RUN
+    bool "led_run"
+    default n
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_188
+    select DEV_PIN_1_AWB_PIN_SERVICE
+
+
+    help
+       Filename:"/dev/led_run"
+
+if DEV_GPIO_LEDS_LED_RUN
+
+endif #DEV_GPIO_LEDS_LED_RUN
+endif #DEV_GPIO_LEDS
+
+

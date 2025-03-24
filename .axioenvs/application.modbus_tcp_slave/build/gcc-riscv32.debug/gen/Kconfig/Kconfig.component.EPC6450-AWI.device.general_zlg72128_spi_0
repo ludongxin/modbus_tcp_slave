@@ -1,0 +1,38 @@
+
+menuconfig DEV_ZLG72128
+    bool "zlg72128 @ gpiospi0 #CS0"
+    default n
+    visible if y
+    select DRV_GENERAL_ZLG72128_SPI
+    select DEV_GPIOSPI0
+    select DEV_PIN_1
+    select DEV_PIN_1_PIN_RES_152
+    select DEV_PIN_1_AWB_PIN_SERVICE
+    select DEV_PIN_1_PIN_RES_160
+    select DEV_GPIOSPI0_CHIPSELECT_0
+
+    help
+      Filename: "/dev/zlg72128"
+
+      dts_dev_prop:
+          name(unit): "general,zlg72128_spi" (0)
+          compatible: ['zlg,zlg72128_spi']
+          dts_path: /gpiospi_0/zlg72128@0x0
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\frameworks\64cf32e2-aworks_lp\subsys\awb_common_driver\dts\bindings\zlg72128\zlg,zlg72128_spi.yaml
+
+
+if DEV_ZLG72128
+
+config DEV_ZLG72128_IS_INT
+    bool "interrupt pin trigger mode"
+    default y
+
+
+config DEV_ZLG72128_SPI_SPEED_HZ
+    int "SPI host clock speed(Hz), spi_speed_hz <= 0.85*(sysclk/2)"
+    default 2000000
+    range 500000 20000000
+
+endif #DEV_ZLG72128
+
+

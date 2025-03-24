@@ -1,0 +1,17 @@
+
+menuconfig AW_APP_AW_SHELL_COREMARK
+    bool "AWorks Shell supports coremark commands"
+    libsafe 
+    select AW_APP_SHELL
+    select RTK_OBJECT_CREATE_EN
+    default n
+    help
+        Version: 0.1.0
+
+        
+if AW_APP_AW_SHELL_COREMARK
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/app/applications/aw_shell_coremark/Kconfig.opts"
+
+endif #AW_APP_AW_SHELL_COREMARK
+

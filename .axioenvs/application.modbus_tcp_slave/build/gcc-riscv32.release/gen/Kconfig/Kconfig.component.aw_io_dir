@@ -1,0 +1,10 @@
+
+menuconfig AW_IO_DIR
+    bool "AWorks IO Dir support"
+    libsafe 
+    select AW_INTERFACE
+    default n
+    help
+        Version: 0.0.0
+
+        Detail:This component provide base IO dirs APIs(such as,aw_opendir,aw_closedir,aw_readdir) in AWorks

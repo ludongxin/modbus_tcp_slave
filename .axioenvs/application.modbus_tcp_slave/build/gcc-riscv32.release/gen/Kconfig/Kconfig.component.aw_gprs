@@ -1,0 +1,17 @@
+
+menuconfig AW_GPRS
+    bool "GPRS"
+    libsafe 
+    select PPP_SUPPORT
+    default n
+    help
+        Version: 1.0.16
+
+        Detail:This component provide 4G/GPRS module base command and attach LWIP by PPP connect.
+if AW_GPRS
+
+
+osource  "$(ax_imp_paths,gprs_adapter_inteface,,False)"
+
+endif #AW_GPRS
+

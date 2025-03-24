@@ -1,0 +1,23 @@
+
+menuconfig DEV_MBX0B
+    bool "mbx0b"
+    default n
+    visible if y
+    select DRV_HPM_MBX
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_57
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/mbx0b"
+
+      dts_dev_prop:
+          name(unit): "hpm_mbx" (1)
+          compatible: ['riscv,hpm_mbx']
+          dts_path: /soc/mbx@0xF00A4000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\mbx\riscv,hpm_mbx.yaml
+
+
+
+
+

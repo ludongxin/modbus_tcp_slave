@@ -1,0 +1,11 @@
+
+menuconfig WICED
+    bool "WICED"
+    libsafe 
+    select AWB_SUBSYS_NETIF
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    default n
+    help
+        Version: 1.0.19
+
+        

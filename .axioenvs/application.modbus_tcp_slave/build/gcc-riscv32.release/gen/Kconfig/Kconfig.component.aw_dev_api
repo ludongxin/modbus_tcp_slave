@@ -1,0 +1,12 @@
+
+menuconfig AW_DEV_API
+    bool "AWorks API of devices"
+    libsafe 
+    select AW_COMMON_IOCTL_CODE
+    select AW_API_TIMETRANS_LOCAL
+    select AW_MEM_MANAGER_RINGBUFFER
+    default y
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,17 @@
+
+menuconfig AW_ZWS
+    bool "ZWS"
+    libsafe 
+    select AW_ZWS_ADAPTER
+    default n
+    help
+        Version: 0.3.0
+
+        
+if AW_ZWS
+
+
+osource  "$(ax_imp_paths,zws_adapter_interface,,False)"
+
+endif #AW_ZWS
+

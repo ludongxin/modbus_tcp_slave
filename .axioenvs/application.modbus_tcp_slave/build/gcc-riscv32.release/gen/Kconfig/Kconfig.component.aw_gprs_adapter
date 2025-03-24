@@ -1,0 +1,12 @@
+
+menuconfig AW_GPRS_ADAPTER
+    bool "AWorks GPRS Adapter"
+    libsafe 
+    select AWB_INET_LWIP_TOP
+    select AW_INTERFACE
+    select COMPILER_SUPPORT_LIBC_MALLOC_FREE
+    default n
+    help
+        Version: 0.0.0
+
+        

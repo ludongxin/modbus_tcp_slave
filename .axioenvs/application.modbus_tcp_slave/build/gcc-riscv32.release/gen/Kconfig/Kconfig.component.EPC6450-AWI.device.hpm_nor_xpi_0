@@ -1,0 +1,41 @@
+
+menuconfig DEV_XPI0
+    bool "xpi0"
+    default y
+    visible if y
+    select DRV_HPM_NOR_XPI
+
+    help
+      Filename: "/dev/xpi0"
+
+      dts_dev_prop:
+          name(unit): "hpm_nor_xpi" (0)
+          compatible: ['riscv,hpm-nor-xpi']
+          dts_path: /soc/nor_xpi@0xf3040000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\nor_api\riscv,hpm-nor-xpi.yaml
+
+
+if DEV_XPI0
+
+config DEV_XPI0_DEVICE_TYPE
+    string "device type"
+    default "MTD_device"
+    help 
+
+        if select MTD_device
+            Flash will register 2 partition devices({dev_name}_code,{dev_name}_data) to kernel,default;
+            when code running in Flash, the size of {dev_name}_data determined by ld file;
+            when code running in SDRAM or SRAM, size of {dev_name}_data is total of flash chip, the size of {dev_name}_code is 0;
+            Application can operate "/dev/{dev_name}_data" by MTD APIs(examples:peripheral/flash/flash_lffs,peripheral/flash/flash_mtd);
+            And also {dev_name}_data partition can split into multiple partitions for different application. For details, please refer to HPM_Driver_Using_Note
+        
+        if select User_device
+           Flash will register 1 flash device to kernal;
+           Application can operte "/dev/{dev_name}" by Flash APIs (examples:peripheral/flash/spiflash).
+    enum
+        "MTD_device"
+        "User_device"
+
+endif #DEV_XPI0
+
+

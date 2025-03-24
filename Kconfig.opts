@@ -1,0 +1,23 @@
+config DEMO_MODEBUS_TCP_SLAVE
+    bool "choose demo modbus tcp slave"
+    select AW_MB_TCP_ENABLE
+    libsafe
+    default y
+
+config NETWORK_DEVICE
+    string  "The device name of enet in this test" 
+    default "$(user_dev_name,enet,0)"
+    libsafe
+    enum
+        $(user_dev_name,enet)
+        $(user_dev_name,wifi)
+    help
+        Select the network card device to be used for testing.
+
+config TCP_PORT
+    int "the default TCP port"
+    default 502
+    libsafe
+    help
+        Port for modbus TCP connections.
+        

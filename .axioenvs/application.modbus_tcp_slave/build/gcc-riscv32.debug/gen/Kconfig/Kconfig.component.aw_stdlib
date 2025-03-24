@@ -1,0 +1,10 @@
+
+menuconfig AW_STDLIB
+    bool "AWorks stdlib functions"
+    libsafe 
+    select AW_CTYPE
+    default n
+    help
+        Version: 0.0.0
+
+        

@@ -1,0 +1,35 @@
+
+menuconfig DEV_HDMA
+    bool "hdma"
+    default n
+    visible if y
+    select DRV_HPM_DMA
+    select DEV_PLIC0
+    select DEV_PLIC0_INTERRUPT_RES_88
+    select DEV_PLIC0_AWBL_INTCTLR_SERVICE
+
+    help
+      Filename: "/dev/hdma"
+
+      dts_dev_prop:
+          name(unit): "hpm_dma" (0)
+          compatible: ['riscv,hpm-dma']
+          dts_path: /soc/dma@0xF00C4000
+          binding: D:\aworks_lp_hpm6450_general_sdk-0.9.1\platforms\platform-hpm-aworks-lp\components\aw_cpu_driver_hpm\dts\bindings\dma\riscv,hpm-dma.yaml
+
+
+if DEV_HDMA
+
+config DEV_HDMA_DAEMON_TASK_NAME
+    string "daemon task name"
+    default "dma_daemon_task"
+
+
+config DEV_HDMA_DAEMON_TASK_PRIORITY
+    int "daemon task priority"
+    default 1
+    range 0 7
+
+endif #DEV_HDMA
+
+

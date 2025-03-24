@@ -1,0 +1,7 @@
+
+menuconfig DRV_HPM_I2C
+    bool "hpm_i2c ['riscv,hpm_i2c']"
+    select AW_SUBSYS_DRIVER_I2C
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    select AW_DEV_API
+    default n

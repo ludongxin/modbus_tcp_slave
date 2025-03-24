@@ -1,0 +1,24 @@
+
+menuconfig AW_MBEDTLS_ADAPTER
+    bool "mbedtls adaptation layer of AWorks"
+    libsafe 
+    select AW_INTERFACE
+    select AW_API_TIME
+    select AW_OS_DELAYED_WORK
+    select AWB_SUBSYS_NETIF
+    select AW_COMMON_IOCTL_CODE
+    select COMPILER_SUPPORT_POSIX_SOCKET
+    select COMPILER_SUPPORT_POSIX_FILE
+    select COMPILER_SUPPORT_LIBC_TIME
+    select COMPILER_SUPPORT_STDIO
+    default n
+    help
+        Version: 1.0.9-lp
+
+        
+if AW_MBEDTLS_ADAPTER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/components/aw_mbedtls_adapter/Kconfig.opts"
+
+endif #AW_MBEDTLS_ADAPTER
+

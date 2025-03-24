@@ -1,0 +1,33 @@
+
+menuconfig DRV_GENERAL_DC_BUZZER
+    bool "general,dc_buzzer ['general,dc_buzzer']"
+    select AWBUS
+    select AW_SUBSYS_SYSTEM_PM_PIN
+    default n
+    help
+        Example of adding device to board.dts:
+
+         /{
+            dc_buzzer{
+               compatible = "general,dc_buzzer";
+               label = "dc_buzzers";
+               status = "disabled";
+               dc_buzzer0{
+                   pins = <&pin1 GPIO4_14 GPIO4_14_GPIO GPIO4_14_GPIO GPIO4_14_GPIO>;
+                   label = "dc_buzzer0";
+                   active_low = "true"; 
+                   status = "disabled";
+               };
+            };
+         };
+
+        Subnode parameters:
+
+           active_low:  if buzzer on when PIN output low, must set "active_low = "true"", otherwise set "active_low = "false"".
+
+
+if DRV_GENERAL_DC_BUZZER
+
+source "D:/aworks_lp_hpm6450_general_sdk-0.9.1/frameworks/64cf32e2-aworks_lp/subsys/awb_common_driver/dts/bindings/buzzer/general,dc_buzzer.Kconfig.opts"
+
+endif #DRV_GENERAL_DC_BUZZER

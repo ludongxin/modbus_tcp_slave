@@ -1,0 +1,10 @@
+
+menuconfig AW_LUA_ADAPTER
+    bool "LUA AWorks Adapter"
+    libsafe 
+    select AW_APP_SHELL
+    default n
+    help
+        Version: 1.0.6
+
+        

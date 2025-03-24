@@ -1,0 +1,10 @@
+
+menuconfig AW_SQLITE3_ADAPTER
+    bool "AWorks SQlite3 Adapter"
+    libsafe 
+    select AW_API_TIME
+    default n
+    help
+        Version: 1.0.7
+
+        

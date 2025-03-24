@@ -1,0 +1,7 @@
+
+menuconfig DRV_ARM_GIC
+    bool "arm_gic ['arm,gic']"
+    select AWBL_INTCTLR_SERVICE
+    select AW_SUBSYS_SYSTEM_INTCTLR
+    select AWBUS
+    default n

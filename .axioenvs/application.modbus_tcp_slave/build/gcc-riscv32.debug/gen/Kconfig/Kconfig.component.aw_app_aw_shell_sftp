@@ -1,0 +1,12 @@
+
+menuconfig AW_APP_AW_SHELL_SFTP
+    bool "AWorks Shell supports sftp commands"
+    libsafe 
+    select AW_APP_SHELL
+    select WOLFSSH
+    select AW_APP_AW_SHELL_IO
+    default n
+    help
+        Version: 0.0.0
+
+        

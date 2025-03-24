@@ -1,0 +1,10 @@
+
+menuconfig AW_API_IF
+    bool "AWorks API of network interface like posix"
+    libsafe 
+    select AWB_INET_IF
+    default n
+    help
+        Version: 0.0.0
+
+        

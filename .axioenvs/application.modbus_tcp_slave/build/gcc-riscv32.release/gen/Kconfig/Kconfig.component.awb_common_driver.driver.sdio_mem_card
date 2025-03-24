@@ -1,0 +1,17 @@
+
+menuconfig DRV_SDIO_MEM_CARD
+    bool "sdio_mem_card ['general,sdio_mem_card']"
+    select AW_SUBSYS_DRIVER_SDIO
+    select AW_SUBSYS_STORAGE_BLOCKDEV
+    default n
+    help
+        Example of adding device to board.dts:
+
+        &sdio1 {
+            sdio_mem_card0@0{
+                compatible = "general,sdio_mem_card";
+                label = "sdcardA";
+                reg = <0 4>;
+                status = "disabled";
+            };
+        };
