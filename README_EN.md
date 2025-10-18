@@ -7,7 +7,7 @@ We welcome developers from all over the world to help improve, optimize, or add 
 ---
 
 ## 🌟 About This Project
-This project aims to provide a simple and educational open-source platform for Using zhou ligong hpm6450 development board and based on aworks_lp embedded real-time operating system, modbus tcp/ip communication protocol is implemented
+This project aims to provide a simple and educational open-source platform for Using ZLG hpm6450 development board and based on aworks_lp embedded real-time operating system, modbus tcp/ip communication protocol is implemented
 
 ---
 
