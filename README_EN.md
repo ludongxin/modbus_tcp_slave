@@ -44,7 +44,7 @@ This project aims to provide a simple and educational open-source platform for [
 ---
 
 ## 🛠️ Tech Stack
-(Adjust this based on your project)
+-
 - Arduino / ESP32 / STM32
 - Python / C++
 - HTML / JavaScript / Flutter
