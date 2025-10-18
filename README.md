@@ -44,7 +44,9 @@
 ---
 
 ## 🛠️ 技术栈
-（根据你的项目填写）
+- Hpm6450
+- Aworks_lp
+- Modbus tcp/ip
 - Arduino / ESP32 / STM32
 - Python / C++
 - HTML / JavaScript / Flutter
